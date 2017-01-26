@@ -133,7 +133,6 @@ class Vector{
 	   var sum = 0;
 	   var arr = this.flat;
 	   for(var i of arr){
-		   console.log(i);
 		   sum += i;
 	   }
 	   return sum;

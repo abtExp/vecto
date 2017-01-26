@@ -24,53 +24,41 @@
 [2,3,4,1,5,7,3,4,9,0,6,8], [2,2,3], 12, 3  Scratchpad/1:214:2
 [1,3,4,2,5,7,0,8,9], [2,3], 6, 2  Scratchpad/1:214:2
 [0,0,0,0,0,0,0,0,0,0,0,0], [2,2,3], 12, 3  Scratchpad/1:214:2
-2  Scratchpad/1:137:6
-3  Scratchpad/1:137:6
-4  Scratchpad/1:137:6
-1  Scratchpad/1:137:6
-5  Scratchpad/1:137:6
-7  Scratchpad/1:137:6
-3  Scratchpad/1:137:6
-4  Scratchpad/1:137:6
-9  Scratchpad/1:137:6
-0  Scratchpad/1:137:6
-6  Scratchpad/1:137:6
-8  Scratchpad/1:137:6
 52  Scratchpad/1:219:2
-14  Scratchpad/1:223:23
-16  Scratchpad/1:223:23
-18  Scratchpad/1:223:23
-12  Scratchpad/1:223:23
-110  Scratchpad/1:223:23
-114  Scratchpad/1:223:23
-16  Scratchpad/1:223:23
-18  Scratchpad/1:223:23
-118  Scratchpad/1:223:23
-10  Scratchpad/1:223:23
-112  Scratchpad/1:223:23
-116  Scratchpad/1:223:23
-2NaN (9 times) Scratchpad/1:227:24
-310  Scratchpad/1:229:25
-315  Scratchpad/1:229:25
-320  Scratchpad/1:229:25
-35  Scratchpad/1:229:25
-325  Scratchpad/1:229:25
-335  Scratchpad/1:229:25
-315  Scratchpad/1:229:25
-320  Scratchpad/1:229:25
-345  Scratchpad/1:229:25
-30  Scratchpad/1:229:25
-330  Scratchpad/1:229:25
-340  Scratchpad/1:229:25
-410  Scratchpad/1:232:37
-415  Scratchpad/1:232:37
-420  Scratchpad/1:232:37
-45  Scratchpad/1:232:37
-425  Scratchpad/1:232:37
-435  Scratchpad/1:232:37
-415  Scratchpad/1:232:37
-420  Scratchpad/1:232:37
-445  Scratchpad/1:232:37
-40  Scratchpad/1:232:37
-430  Scratchpad/1:232:37
-440  Scratchpad/1:232:37
+1 4  Scratchpad/1:223:23
+1 6  Scratchpad/1:223:23
+1 8  Scratchpad/1:223:23
+1 2  Scratchpad/1:223:23
+1 10  Scratchpad/1:223:23
+1 14  Scratchpad/1:223:23
+1 6  Scratchpad/1:223:23
+1 8  Scratchpad/1:223:23
+1 18  Scratchpad/1:223:23
+1 0  Scratchpad/1:223:23
+1 12  Scratchpad/1:223:23
+1 16  Scratchpad/1:223:23
+2 NaN (9 times) Scratchpad/1:227:24
+3 10  Scratchpad/1:229:25
+3 15  Scratchpad/1:229:25
+3 20  Scratchpad/1:229:25
+3 5  Scratchpad/1:229:25
+3 25  Scratchpad/1:229:25
+3 35  Scratchpad/1:229:25
+3 15  Scratchpad/1:229:25
+3 20  Scratchpad/1:229:25
+3 45  Scratchpad/1:229:25
+3 0  Scratchpad/1:229:25
+3 30  Scratchpad/1:229:25
+3 40  Scratchpad/1:229:25
+4 10  Scratchpad/1:232:37
+4 15  Scratchpad/1:232:37
+4 20  Scratchpad/1:232:37
+4 5  Scratchpad/1:232:37
+4 25  Scratchpad/1:232:37
+4 35  Scratchpad/1:232:37
+4 15  Scratchpad/1:232:37
+4 20  Scratchpad/1:232:37
+4 45  Scratchpad/1:232:37
+4 0  Scratchpad/1:232:37
+4 30  Scratchpad/1:232:37
+4 40  Scratchpad/1:232:37

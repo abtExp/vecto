@@ -11,7 +11,7 @@ function test_func(){
 
 	/* test Sum(class) function */
 	var arr = Vector.Sum(new_vector_2,new_vector_2);
-	arr.forEach((elem)=>{console.log("1" + elem);});
+	arr.forEach((elem)=>{console.log("1 " + elem);});
 
 	/* test prod method */
 	var arr2 = new_vector_3.prod(new_vector_2);
