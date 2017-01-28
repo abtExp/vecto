@@ -54,7 +54,7 @@ class Vector{
    /* fills the vector acc to passed args */
    static fill(len, ...args){
 		var arr = [];
-		if(!args){
+		if(!args || args[0].length === 0){
 			for(var i=0; i<len; i++){
 				arr[i] = Math.random();
 			}
@@ -165,13 +165,20 @@ class Vector{
 	arrange(elems){
 		var finalArr = [];
 		var arr = [],parts = this.shape[this.shape.length-1],j=0,partElem=[];
-		for(var i=j; i<parts; i++){
-			partElem[i] = elem[i];
-			j++;
+		if(elems){
+			for(var k=0; k<this.shape[this.shape.length-2]; k++){
+				for(var i=j; i<parts; i++){
+					partElem[i] = elems[i];
+				    j++;
+		        }
+			    arr.push(Vector.fill(parts,partElem));
+		    }
 		}
-		for(var k=0; k<this.shape[this.shape.length-2]; k++){
-			arr.push(Vector.fill(parts,partElem));
-		}
+		else{
+			for(var k=0; k<this.shape[this.shape.length-2]; k++){
+				arr.push(Vectors.fill(parts));
+		    }
+		}	
 		finalArr.push(arr);
 		this.arr = finalArr;
 	}
