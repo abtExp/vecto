@@ -160,27 +160,26 @@ class Vector{
 	   }
 	}
     
-	
-
-	arrange(elems){
-		var finalArr = [];
-		var arr = [],parts = this.shape[this.shape.length-1],j=0,partElem=[];
-		if(elems){
-			for(var k=0; k<this.shape[this.shape.length-2]; k++){
-				for(var i=j; i<parts; i++){
-					partElem[i] = elems[i];
-				    j++;
-		        }
-			    arr.push(Vector.fill(parts,partElem));
-		    }
+	/* a method to arrange or create a Vector from the given elements */
+	arrange(elems_arr){
+		var dim = this.dim;
+		var base_arr_size = this.shape[dim-1];
+		var final_arr = [];
+		var base_elems = 1, j=0;
+		if(dim > 2){
+			base_elems = this.shape[dim-2];  /* only for 3-D vectors */
 		}
-		else{
-			for(var k=0; k<this.shape[this.shape.length-2]; k++){
-				arr.push(Vectors.fill(parts));
-		    }
-		}	
-		finalArr.push(arr);
-		this.arr = finalArr;
+		for(var i=0; i<base_elems; i++){
+			var part = [];
+		    for(var k=0; k<base_arr_size; k++){
+				part[k] = elems_arr[j++];
+				if(j>=elems_arr.length){
+				j=0;
+				}
+			}
+			final_arr.push(Vector.fill(base_arr_size,part));
+		}
+		this.array = final_arr;
 	}
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
@@ -212,5 +211,9 @@ class Vector{
 
 	/* more to come */
 }
+
+
+/* some generic array methods */
+
 
 export default 'Vector';
