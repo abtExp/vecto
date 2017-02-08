@@ -3,7 +3,7 @@
  * 
  * Project-Name : Ndime.
  * Code-Name : numjs.
- * Version : 0.5.
+ * Version : 0.6.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
 
@@ -166,19 +166,24 @@ class Vector{
 		var dim = this.dim;
 		var base_arr_size = this.shape[dim-1];
 		var final_arr = [];
-		var base_elems = 1, j=0;
+		var base_elems = 0, j=0;
 		if(dim > 2){
 			base_elems = this.shape[dim-2];  /* only for 3-D vectors */
 		}
 		for(var i=0; i<base_elems; i++){
-			var part = [];
-		    for(var k=0; k<base_arr_size; k++){
-				part[k] = elems_arr[j++];
-				if(j>=elems_arr.length){
-				j=0;
+			if(elems_arr){
+				var part = [];
+				for(var k=0; k<base_arr_size; k++){
+					part[k] = elems_arr[j++];
+					if(j>=elems_arr.length){
+					j=0;
+					}
 				}
+				final_arr.push(Vector.fill(base_arr_size,part));
 			}
-			final_arr.push(Vector.fill(base_arr_size,part));
+			else{
+				final_arr.push(Vector.fill(base_arr_size));
+			}		
 		}
 		this.array = final_arr;
 	}
@@ -215,6 +220,29 @@ class Vector{
 
 
 /* some generic array methods */
+function product(arr1,arr2){
+	if(arr1.length === arr2.length){
+		var len = arr1.length = arr2.length;
+		var prod = [];
+		for(var i=0; i<len; i++){
+			prod[i] = arr1[i]*arr2[i];
+		}
+		return prod;
+	}
+	else{
+		return new Error("Uneven size");
+	}
+}
 
-
-export default 'Vector';
+function sum(arr1,arr2){
+	if(arr1.length === arr2.length){
+		var sum = [];
+		for(var i=0; i<arr1.length; i++){
+			sum[i] = arr1[i] + arr2[i];
+		}
+		return sum;
+	}
+	else{
+		return new Error("Uneven size!");
+	}
+}
