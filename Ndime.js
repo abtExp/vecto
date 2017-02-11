@@ -235,14 +235,21 @@ function product(arr1,arr2){
 }
 
 function sum(arr1,arr2){
-	if(arr1.length === arr2.length){
-		var sum = [];
-		for(var i=0; i<arr1.length; i++){
-			sum[i] = arr1[i] + arr2[i];
+	if(arr2){
+		if(arr1.length === arr2.length){
+			var sum = [];
+			for(var i=0; i<arr1.length; i++){
+				sum[i] = arr1[i] + arr2[i];
+			}
+			return sum;
 		}
-		return sum;
+		else{
+			return new Error("Uneven size!");
+		}
 	}
 	else{
-		return new Error("Uneven size!");
+		var sum = 0;
+		arr1.forEach((i)=>{sum += i;});
+		return sum;
 	}
 }
