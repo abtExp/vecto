@@ -61,7 +61,7 @@ class Vector{
 			}
 		}
 		else{
-			if(args.length == 1){
+			if(args.length === 1){
 				if(Array.isArray(args[0])){
 					var j=0;
 					for(var i=0; i<len; i++){
