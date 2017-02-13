@@ -38,13 +38,15 @@ class Vector{
 
    	
    /* sum of 2 vectors */
-   static Sum(v1,v2){
-	   if(v1.flat.length === v2.flat.length){
+   static add(v1,v2){
+	   if(v1.shape === v2.shape){
 		   var sum = [];
 		   for(var i=0; i<v1.flat.length; i++){
 			   sum[i] = v1.flat[i] + v2.flat[i];
 		   }
-		   return sum;
+		   var v = new Vector(v1.shape);
+		   v.arrange(sum);
+		   return v;
 	   }
 	   else{
 		   return new Error("Unequal Size");
@@ -61,7 +63,7 @@ class Vector{
 			}
 		}
 		else{
-			if(args.length === 1){
+			if(args.length == 1){
 				if(Array.isArray(args[0])){
 					var j=0;
 					for(var i=0; i<len; i++){
@@ -230,7 +232,7 @@ function product(arr1,arr2){
 		return prod;
 	}
 	else{
-		return new Error("Uneven size");
+		throw new Error("Uneven size");
 	}
 }
 
@@ -244,7 +246,7 @@ function sum(arr1,arr2){
 			return sum;
 		}
 		else{
-			return new Error("Uneven size!");
+			throw new Error("Uneven size!");
 		}
 	}
 	else{
