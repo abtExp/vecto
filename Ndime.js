@@ -57,7 +57,7 @@ class Vector{
    /* fills the vector acc to passed args */
    static fill(len, ...args){
 		var arr = [];
-		if(!args || args[0].length === 0){
+		if(!args || args.length === 0){
 			for(var i=0; i<len; i++){
 				arr[i] = Math.random();
 			}
@@ -167,10 +167,11 @@ class Vector{
 	arrange(elems_arr){
 		var dim = this.dim;
 		var base_arr_size = this.shape[dim-1];
+		console.log(base_arr_size);
 		var final_arr = [];
-		var base_elems = 0, j=0;
-		if(dim > 2){
-			base_elems = this.shape[dim-2];  /* only for 3-D vectors */
+		var base_elems = 1, j=0;
+		if(dim >= 2){
+			base_elems = this.shape[dim-2]; 
 		}
 		for(var i=0; i<base_elems; i++){
 			if(elems_arr){
