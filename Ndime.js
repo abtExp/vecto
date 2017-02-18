@@ -123,7 +123,7 @@ class Vector{
 	flatten(arr){
 		for(var i of arr){
 			if(Array.isArray(i)){
-				this.flatten.call(this,i);
+				this.flatten(i);
 			}
 			else{
 				this.flat.push(i);
