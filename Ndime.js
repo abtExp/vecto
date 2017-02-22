@@ -63,7 +63,7 @@ class Vector{
 			}
 		}
 		else{
-			if(args.length == 1){
+			if(args.length === 1){
 				if(Array.isArray(args[0])){
 					var j=0;
 					for(var i=0; i<len; i++){
@@ -123,7 +123,7 @@ class Vector{
 	flatten(arr){
 		for(var i of arr){
 			if(Array.isArray(i)){
-				this.flatten(i);
+				this.flatten.call(this,i);
 			}
 			else{
 				this.flat.push(i);
@@ -167,7 +167,6 @@ class Vector{
 	arrange(elems_arr){
 		var dim = this.dim;
 		var base_arr_size = this.shape[dim-1];
-		console.log(base_arr_size);
 		var final_arr = [];
 		var base_elems = 1, j=0;
 		if(dim >= 2){
@@ -189,6 +188,7 @@ class Vector{
 			}		
 		}
 		this.array = final_arr;
+		this.flatten(this.array);
 	}
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
@@ -239,20 +239,31 @@ function product(arr1,arr2){
 
 function sum(arr1,arr2){
 	if(arr2){
-		if(arr1.length === arr2.length){
-			var sum = [];
-			for(var i=0; i<arr1.length; i++){
-				sum[i] = arr1[i] + arr2[i];
+		if(typeof arr2 === 'Array'){
+			if(arr1.length === arr2.length){
+				var sum = [];
+				for(var i=0; i<arr1.length; i++){
+					sum[i] = arr1[i] + arr2[i];
+				}
+				return sum;
 			}
-			return sum;
+			else{
+				throw new Error("Uneven size!");
+			}
 		}
 		else{
-			throw new Error("Uneven size!");
+			var sum = [];
+			for(var i=0; i<arr1.length; i++){
+				sum[i] = arr1[i]+arr2;
+			}
+			return sum;
 		}
 	}
 	else{
 		var sum = 0;
-		arr1.forEach((i)=>{sum += i;});
+		for(var i=0; i<arr1.length; i++){
+			sum += arr1[i];
+		}
 		return sum;
 	}
 }
