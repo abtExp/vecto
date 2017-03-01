@@ -132,38 +132,7 @@ class Vector{
 	    }
 	}
 
-   /* operations */
-   sum(){
-	   var sum = 0;
-	   var arr = this.flat;
-	   for(var i of arr){
-		   sum += i;
-	   }
-	   return sum;
-   }
-   
-   prod(v1){
-	   var cArr = this.flat;
-	   if(Array.isArray(v1)){
-		   if(v1.length === cArr.length){
-			   var prodc = [];
-			   for(var i=0; i<cArr.length; i++){
-				   prodc[i] = v1[i]*cArr[i];
-			   }
-			   return prodc;
-		   }
-		   else{
-			   return new Error("Unequal length");
-		   }
-	   }
-	   else{
-		   for(var i=0; i<cArr.length; i++){
-			   cArr[i] = cArr[i]*v1;
-		   }
-		   return cArr;
-	   }
-	}
-    
+  
 	/* a method to arrange or create a Vector from the given elements */
 	arrange(elems_arr){
 		var dim = this.dim;
@@ -239,11 +208,12 @@ function product(arr1,arr2){
 }
 
 function sum(arr1,arr2){
+	var i;
 	if(arr2){
 		if(typeof arr2 === 'Array'){
 			if(arr1.length === arr2.length){
 				var sum = [];
-				for(var i=0; i<arr1.length; i++){
+				for(i=0; i<arr1.length; i++){
 					sum[i] = arr1[i] + arr2[i];
 				}
 				return sum;
@@ -254,7 +224,7 @@ function sum(arr1,arr2){
 		}
 		else{
 			var sum = [];
-			for(var i=0; i<arr1.length; i++){
+			for(i=0; i<arr1.length; i++){
 				sum[i] = arr1[i]+arr2;
 			}
 			return sum;
@@ -262,7 +232,7 @@ function sum(arr1,arr2){
 	}
 	else{
 		var sum = 0;
-		for(var i=0; i<arr1.length; i++){
+		for(i=0; i<arr1.length; i++){
 			sum += arr1[i];
 		}
 		return sum;
