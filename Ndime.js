@@ -209,10 +209,11 @@ function product(arr1,arr2){
 
 function sum(arr1,arr2){
 	var i;
+	var sum;
 	if(arr2){
 		if(Array.isArray(arr2)){
 			if(arr1.length === arr2.length){
-				var sum = [];
+				sum = [];
 				for(i=0; i<arr1.length; i++){
 					sum[i] = arr1[i] + arr2[i];
 				}
@@ -223,7 +224,7 @@ function sum(arr1,arr2){
 			}
 		}
 		else{
-			var sum = [];
+			sum = [];
 			for(i=0; i<arr1.length; i++){
 				sum[i] = arr1[i]+arr2;
 			}
@@ -231,7 +232,7 @@ function sum(arr1,arr2){
 		}
 	}
 	else{
-		var sum = 0;
+		sum = 0;
 		for(i=0; i<arr1.length; i++){
 			sum += arr1[i];
 		}
