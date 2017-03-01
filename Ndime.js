@@ -57,8 +57,9 @@ class Vector{
    /* fills the vector acc to passed args */
    static fill(len, ...args){
 		var arr = [];
+	   	var i;
 		if(!args || args.length === 0){
-			for(var i=0; i<len; i++){
+			for(i=0; i<len; i++){
 				arr[i] = Math.random();
 			}
 		}
@@ -66,7 +67,7 @@ class Vector{
 			if(args.length === 1){
 				if(Array.isArray(args[0])){
 					var j=0;
-					for(var i=0; i<len; i++){
+					for(i=0; i<len; i++){
 						arr[i] = args[0][j++];
 						if(j>=args[0].length){
 							j=0;
@@ -74,7 +75,7 @@ class Vector{
 					}
 				}
 				else{
-					for(var i=0; i<len; i++){
+					for(i=0; i<len; i++){
 						arr[i] = args[0];
 					}
 				}
@@ -82,7 +83,7 @@ class Vector{
 			else{
 				var num = min = args[0];
 				var max = args[1];
-				for(var i=0; i<len; i++){
+				for(i=0; i<len; i++){
 					arr[i] = num++;
 					if(num>max){
 						num = min;
@@ -123,7 +124,7 @@ class Vector{
 	flatten(arr){
 		for(var i of arr){
 			if(Array.isArray(i)){
-				this.flatten.call(this,i);
+				this.flatten(i);
 			}
 			else{
 				this.flat.push(i);
