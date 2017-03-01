@@ -210,7 +210,7 @@ function product(arr1,arr2){
 function sum(arr1,arr2){
 	var i;
 	if(arr2){
-		if(typeof arr2 === 'Array'){
+		if(Array.isArray(arr2)){
 			if(arr1.length === arr2.length){
 				var sum = [];
 				for(i=0; i<arr1.length; i++){
