@@ -194,17 +194,29 @@ class Vector{
 
 /* some generic array methods */
 function product(arr1,arr2){
-	if(arr1.length === arr2.length){
-		var len = arr1.length = arr2.length;
-		var prod = [];
-		for(var i=0; i<len; i++){
-			prod[i] = arr1[i]*arr2[i];
+	var i;
+	var prod;
+	console.log(arr1.length);
+	console.log("Arg1 = " + arr1 + " , Arg2 = " + arr2);
+	if(Array.isArray(arr2)){
+		if(arr1.length === arr2.length){
+			prod = [];
+			for(i=0; i<arr1.length; i++){
+				prod[i] = arr1[i] + arr2[i];
+			}
 		}
-		return prod;
+		else{
+			throw new Error("Uneven size!");
+		}
 	}
 	else{
-		throw new Error("Uneven size");
+		prod = [];
+		for(i=0; i<arr1.length; i++){
+		prod[i] = arr1[i]*arr2;
+		}
 	}
+	console.log("Prod to be returned = " + prod);
+	return prod;
 }
 
 function sum(arr1,arr2){

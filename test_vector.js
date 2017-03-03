@@ -7,25 +7,16 @@ function test_creation(obj){
 
 
 function test_func(){
-	/* test sum(prop) function */
-	console.log(new_vector_2.sum());
-
-	/* test Sum(class) function */
-	var arr = Vector.Sum(new_vector_2,new_vector_2);
+	/* test add(class) function */
+	var arr = Vector.add(new_vector_2,new_vector_2);
 	arr.forEach((elem)=>{console.log("1 " + elem);});
-
-	/* test prod method  */
-	var arr2 = new_vector_3.prod(new_vector_2);
-	arr2.forEach((elem)=>{console.log("2" + elem);});
-	var arr3 = new_vector_2.prod(5);
-	arr3.forEach((elems)=>{console.log("3" + elems);});
 
 	/* test flat method */
 	new_vector_2.flat.forEach((elem)=>{console.log("4" + elem);});
 
 	/* test fill and arrange methods */
 	var nv = new Vector();
-	nv.arrange([1,2,3,4,5,6]);/*error shape is 0 */
+	nv.arrange([1,2,3,4,5,6]);/* correct */
 	console.log("*1 : " + nv.shape + " " +  nv.array.length);
 	nv.array.forEach((i)=>{console.log("*1 : " + i);});
 	var nv2 = new Vector([2,3]);
@@ -37,7 +28,7 @@ function test_func(){
 	console.log("*3 : " + nv3.shape + " " + nv3.array.length);
 	nv3.array.forEach((i)=>{console.log("*3 : " + i);});
 	var nv4 = new Vector([3]);
-	nv4.arrange();/* correct but the array length displayed is wrong */
+	nv4.arrange();/* correct */
 	console.log("*4 : " + nv4.shape + " " + nv4.array.length);
 	nv4.array.forEach((i)=>{console.log("*4 : " + i);});
 	var nv5 = new Vector([5]);
