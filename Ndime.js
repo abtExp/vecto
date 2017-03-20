@@ -94,6 +94,7 @@ class Vector{
 		return arr;
 	}
 
+
  /* -------------------------------------------------------------------------------------------------------------------------------------------- */   
 	
 	/* object specific (property) methods */
@@ -196,8 +197,6 @@ class Vector{
 function product(arr1,arr2){
 	var i;
 	var prod;
-	console.log(arr1.length);
-	console.log("Arg1 = " + arr1 + " , Arg2 = " + arr2);
 	if(Array.isArray(arr2)){
 		if(arr1.length === arr2.length){
 			prod = [];
@@ -215,7 +214,6 @@ function product(arr1,arr2){
 		prod[i] = arr1[i]*arr2;
 		}
 	}
-	console.log("Prod to be returned = " + prod);
 	return prod;
 }
 
@@ -251,3 +249,5 @@ function sum(arr1,arr2){
 		return sum;
 	}
 }
+
+export default Vector
