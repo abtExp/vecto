@@ -198,11 +198,17 @@ function product(arr1,arr2){
 	var i;
 	var prod;
 	if(Array.isArray(arr2)){
+		var j=0;
 		if(arr1.length === arr2.length){
 			prod = [];
-			for(i=0; i<arr1.length; i++){
-				prod[i] = arr1[i] + arr2[i];
-			}
+			arr1.forEach((i)=>{
+				if(Array.isArray(i)){
+					prod.push(product(i,arr2[j++]));
+				}
+				else{
+					prod.push(i*arr2[j++]);
+				}
+			});
 		}
 		else{
 			throw new Error("Uneven size!");
@@ -210,9 +216,14 @@ function product(arr1,arr2){
 	}
 	else{
 		prod = [];
-		for(i=0; i<arr1.length; i++){
-		prod[i] = arr1[i]*arr2;
-		}
+		arr1.forEach((i)=>{
+			if(Array.isArray(i)){
+				prod.push(product(i,arr2));
+			}
+			else{
+				prod.push(i*arr2);
+			}
+		})
 	}
 	return prod;
 }
