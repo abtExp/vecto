@@ -12,7 +12,7 @@ class Vector{
 		this.array = arr;
 		this.shape = ((shape.length)>0) ? shape : (this.calc_shape(this.array));
 		this.size = this.calc_size(this.shape);
-		this.dim = this.shape.length;
+		this.dim = this.find_dim();
 		this.flat = [];
 		this.flatten(this.array);
 	}
@@ -25,13 +25,19 @@ class Vector{
 
     /* make a new zero Vector */
 	static zeroes(shape){
-		var base_arr = this.fill(shape[shape.length-1],0);
-		for(var i=shape.length-2; i>=0; i--){
-			var arr = [];
-			for(var j=0; j<shape[i]; j++){
-				arr.push(base_arr);
+		var arr;
+		if(shape.length == 1){
+			arr = Vector.fill(shape[0],0);
+		}
+		else{
+			var base_arr = Vector.fill(shape[shape.length-1],0);
+			for(var i=shape.length-2; i>=0; i--){
+				arr = [];
+				for(var j=0; j<shape[i]; j++){
+					arr.push(base_arr);
+				}
+				base_arr = arr;
 			}
-			base_arr = arr;
 		}
 		return new Vector(shape,arr);
 	}
@@ -57,7 +63,7 @@ class Vector{
    /* fills the vector acc to passed args */
    static fill(len, ...args){
 		var arr = [];
-	   	var i;
+	  var i;
 		if(!args || args.length === 0){
 			for(i=0; i<len; i++){
 				arr[i] = Math.random();
@@ -100,6 +106,11 @@ class Vector{
 	/* object specific (property) methods */
 
 	/* find the shape of the given array */
+	
+	find_dim(){
+		return this.shape.length;
+	}
+	
 	calc_shape(arr){
 		var shape = [];
 		shape.push(arr.length);
@@ -168,6 +179,7 @@ class Vector{
 			/* reshape */
 			var temp_arr = this.flat;
 			this.shape = new_shape;
+			this.dim = this.find_dim();
 			this.arrange(temp_arr);
 		}
 		else{
@@ -180,6 +192,7 @@ class Vector{
 		var temp_arr = this.flat;
 		this.shape = new_shape;
 		this.size = this.calc_size(this.shape);
+		this.dim = this.find_dim();
 		this.arrange(temp_arr);
 	}
 
