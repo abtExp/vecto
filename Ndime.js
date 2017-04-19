@@ -170,6 +170,7 @@ class Vector{
 			}		
 		}
 		this.array = final_arr;
+		this.flat = [];
 		this.flatten(this.array);
 	}
 
@@ -180,6 +181,7 @@ class Vector{
 			var temp_arr = this.flat;
 			this.shape = new_shape;
 			this.dim = this.find_dim();
+			this.flat = [];
 			this.arrange(temp_arr);
 		}
 		else{
@@ -193,6 +195,7 @@ class Vector{
 		this.shape = new_shape;
 		this.size = this.calc_size(this.shape);
 		this.dim = this.find_dim();
+		this.flat = [];
 		this.arrange(temp_arr);
 	}
 
