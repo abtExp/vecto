@@ -87,6 +87,7 @@ class Vector{
 				}
 			}
 			else{
+				var min;
 				var num = min = args[0];
 				var max = args[1];
 				for(i=0; i<len; i++){
