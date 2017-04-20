@@ -45,7 +45,7 @@ class Vector{
    	
    /* sum of 2 vectors */
    static add(v1,v2){
-	   if(v1.shape === v2.shape){
+	   if(v1.size === v2.size){
 		   var sum = [];
 		   for(var i=0; i<v1.flat.length; i++){
 			   sum[i] = v1.flat[i] + v2.flat[i];
