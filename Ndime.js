@@ -212,35 +212,29 @@ class Vector{
 
 /* some generic array methods */
 function product(arr1,arr2){
-	var i;
-	var prod;
-	if(Array.isArray(arr2)){
-		var j=0;
-		if(arr1.length === arr2.length){
-			prod = [];
-			arr1.forEach((i)=>{
-				if(Array.isArray(i)){
-					prod.push(product(i,arr2[j++]));
-				}
-				else{
-					prod.push(i*arr2[j++]);
-				}
-			});
-		}
-		else{
-			throw new Error("Uneven size!");
-		}
+	var i = 0,prod = [];
+	if(!Array.isArray(arr1) && !Array.isArray(arr2)){
+		return arr1*arr2;
 	}
 	else{
-		prod = [];
-		arr1.forEach((i)=>{
-			if(Array.isArray(i)){
-				prod.push(product(i,arr2));
+		arr1.forEach((j)=>{
+			if(Array.isArray(j)){
+				prod.push(product(j,arr2));
 			}
 			else{
-				prod.push(i*arr2);
+				if(Array.isArray(arr2)){
+					if(arr1.length === arr2.length){
+						prod.push(j*arr2[i++]);
+					}
+					else{
+						throw new Error("Uneven Size!");
+					}
+				}
+				else{
+					prod.push(j*arr2);
+				}
 			}
-		})
+		});
 	}
 	return prod;
 }
