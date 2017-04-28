@@ -9,6 +9,8 @@ Dealing with N-dimensional Arrays and Vectors....<br />
 * Machine Learning Requires computing mostly in terms of multi-dimensional vectors and arrays.
 * Complex matrix and array calculations.
 * Simplifying the complex array operations.
+* Image Processing.
+* Text Processing.
 
 
 # Inspiration 
@@ -95,6 +97,90 @@ It's the 1-d version of the n-dimensional array.
 
 <h1><b> The Methods </b></h1>
 ....................................
+
+<h2><b>Static Methods</b></h2>
+
+<h3><b>Different Creation Methods</b></h3>
+
+<h4>From An Array</h4>
+
+If you have an array of data that you want to turn into a Vector Object, you can either use the
+constructor for passing in the array or the static method <code>Vector.array(array)</code>.
+
+This will return a new Vector object with the array property equal to the array you passed in.
+
+example : 
+<code>
+var array = [[2,3,4],[1,5,7]];
+var v = Vector.array(array);
+</code>
+
+<h4>Zeroes</h4>
+
+You can create a placeholder n-dimensional array for vector filled with zeroes by calling
+<code>Vector.zeroes(shape)</code>
+
+example :
+<code>
+var v = Vector.zeroes([2,3]);
+</code>
+
+v has the array property as : [[0,0,0],[0,0,0]]
+<h4>the <b>fill</b> method</h4>
+
+This is used by the <b>arrange method of the Vector object to fill in the array of the Vector.
+But it can be used to manually assign the array property.
+
+The fill methods recieves two arguments : 1. Length of the array to be filled.
+                                          2. Optional arguments to make the array.
+
+example :
+
+<code>
+var v = new Vector([2,3]);
+var array = Vector.fill(6);
+</code>
+
+<i>if fill is called without passing the second parameter, it will return an array of length = passed length of random numbers   </i>
+
+<code>
+var v = new Vector([2,3]);
+var array = Vector.fill(6,[2,12,323,12,11,0]);
+</code>
+<i> Returns the array of passed array</i>
+
+<code>
+var array = Vector.fill(6,1);
+</code>
+
+<i>Returns an array of length 6 with all elements = 1;</i>
+
+<code>
+var array = Vector.fill(6,2,10);
+</code>
+
+<i>Returns an array of length 6 with elements in range 2 to 10.</i>
+
+<h4>add</h4>
+
+Used to add two Vector objects,returns a new Vector object.
+
+<code>
+Vector.add(v1,v2);
+</code>
+
+<h2>Other Methods</h2>
+
+* find_dim(); // Returns the dimension of the Vector/ndarray.
+* calc_shape(array); // Returns the shape of the ndarray.
+* calc_size(shape); // Returns the size of the ndarray(Number of elements in it).
+* flatten(array); // Turns ndarray into 1d array;
+* arrange(new_array); // Pass in a 1d array and it arranges it in the ndarray.
+* reshape(new_shape); // Change the shape of the array iff size for new_shape == size for old_shhape.
+* resize(new_shape); // Change the shape irrespective of size.
+
+
+.............................................................................................
 
 
 
