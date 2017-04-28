@@ -128,7 +128,7 @@ var v = Vector.zeroes([2,3]);
 v has the array property as : [[0,0,0],[0,0,0]]
 <h4>the <b>fill</b> method</h4>
 
-This is used by the <b>arrange method of the Vector object to fill in the array of the Vector.
+This is used by the <b>arrange</b>method of the Vector object to fill in the array of the Vector.
 But it can be used to manually assign the array property.
 
 The fill methods recieves two arguments : 1. Length of the array to be filled.
