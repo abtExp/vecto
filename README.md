@@ -169,12 +169,19 @@ Used to add two Vector objects,returns a new Vector object.
 Vector.add(v1,v2);
 </code>
 
+<h4>Flatten</h4>
+
+Turns ndarray into 1d array. Pass in the ndarray as the first argument, and an empty array as the second argument,
+the flattened array is stored in the second argument.
+
+<code>Vector.flatten(ndarr,emptArr);</code>
+
+
 <h2>Other Methods</h2>
 
 * find_dim(); // Returns the dimension of the Vector/ndarray.
 * calc_shape(array); // Returns the shape of the ndarray.
 * calc_size(shape); // Returns the size of the ndarray(Number of elements in it).
-* flatten(array); // Turns ndarray into 1d array;
 * arrange(new_array); // Pass in a 1d array and it arranges it in the ndarray.
 * reshape(new_shape); // Change the shape of the array iff size for new_shape == size for old_shhape.
 * resize(new_shape); // Change the shape irrespective of size.
