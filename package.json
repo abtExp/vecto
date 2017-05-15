@@ -1,0 +1,23 @@
+{
+  "name": "vector_js",
+  "version": "0.1.2",
+  "description": "A JS mini library to deal with ndarrays and vectors",
+  "main": "vector_js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abt10/Vector_JS.git"
+  },
+  "keywords": [
+    "ndarray",
+    "vectors"
+  ],
+  "author": "abt10 <atworkstudios@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abt10/Vector_JS/issues"
+  },
+  "homepage": "https://github.com/abt10/Vector_JS#readme"
+}
