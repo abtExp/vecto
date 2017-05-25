@@ -27,9 +27,10 @@ Although it's not that advanced yet, but soon it will be...
 <h2><b> The Exported Object </b></h2>
 
 <p> When you import the script with - </p>
-```
+
+`
 var vector = require('vector_js');
-```
+`
 
 it returns an object with three elements : 
 
