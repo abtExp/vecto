@@ -26,7 +26,7 @@ class Vector{
     /* make a new zero Vector */
 	static zeroes(shape){
 		var arr;
-		if(shape.length == 1){
+		if(shape.length === 1){
 			arr = Vector.fill(shape[0],0);
 		}
 		else{
@@ -76,7 +76,7 @@ class Vector{
    /* fills the vector acc to passed args */
    static fill(len, ...args){
 		var arr = [];
-	  var i;
+	  	var i;
 		if(!args || args.length === 0){
 			for(i=0; i<len; i++){
 				arr[i] = Math.random();
