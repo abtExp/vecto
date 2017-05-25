@@ -27,12 +27,14 @@ Although it's not that advanced yet, but soon it will be...
 <h2><b> The Exported Object </b></h2>
 
 <p> When you import the script with - </p>
-```var vector = require('vector_js');```
+```
+var vector = require('vector_js');
+```
 
 it returns an object with three elements : 
 
 ```
-{<br />
+{
 Vector : Vector,
 sum : sum,
 product : product
@@ -45,9 +47,9 @@ product : product
 <br />
 you can create a new <b>vector</b> or <b>n-dimensional array</b> by : <br /><br />
 
-<code> 
-var v = new vector.Vector(<em>args</em>);
-</code>
+```
+var v = new vector.Vector(args);
+```
 
 <h3> <b> The args </b></h3>
 <p>
