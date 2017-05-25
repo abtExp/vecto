@@ -4,7 +4,7 @@
   "description": "A JS mini library to deal with ndarrays and vectors",
   "main": "vector_js.js",
   "scripts": {
-    "test": "test_vector"
+    "test": "test_vector.js"
   },
   "repository": {
     "type": "git",
