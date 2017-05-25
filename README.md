@@ -27,17 +27,17 @@ Although it's not that advanced yet, but soon it will be...
 <h2><b> The Exported Object </b></h2>
 
 <p> When you import the script with - </p>
-<code> var vector = require('vector_js');</code>
+```var vector = require('vector_js');```
 
 it returns an object with three elements : 
 
-<code>
+```
 {<br />
-Vector : Vector,<br />
-sum : sum,<br />
-product : product<br />
+Vector : Vector,
+sum : sum,
+product : product
 }
-</code>
+```
 
 <h1><b> The Vector object </b></h1>
 
