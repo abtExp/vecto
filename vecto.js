@@ -1,9 +1,5 @@
 /* A JS library for dealing with n-dimensional vectors. 
  * Referenced from numpy.
- * 
- * Project-Name : Ndime.
- * Code-Name : numjs.
- * Version : 0.6.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
 

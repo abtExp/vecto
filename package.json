@@ -1,14 +1,14 @@
 {
-  "name": "vectorize",
+  "name": "vecto",
   "version": "0.1.2",
   "description": "A JS mini library to deal with ndarrays and vectors",
-  "main": "vectorize.js",
+  "main": "vecto.js",
   "scripts": {
     "test": "test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abt10/Vectorize.git"
+    "url": "git+https://github.com/abt10/vecto.git"
   },
   "keywords": [
     "ndarray",
@@ -17,7 +17,7 @@
   "author": "abt10 <atworkstudios@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abt10/Vectorize/issues"
+    "url": "https://github.com/abt10/vecto/issues"
   },
-  "homepage": "https://abt10.github.io/Vectorize"
+  "homepage": "https://abt10.github.io/vecto"
 }

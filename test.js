@@ -1,4 +1,4 @@
-const { Vector,sum,product } = require("./vectorize");
+const { Vector,sum,product } = require("./vecto");
 
 let vect = new Vector([2,3,3]);
 vect.arrange();
