@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto) | [![Build Status](https://travis-ci.org/AbT10/vecto.svg?branch=master)](https://travis-ci.org/AbT10/vecto)
+[![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto) | https://travis-ci.org/AbT10/vecto.svg?branch=master
 
 # vecto 
 Dealing with N-dimensional Arrays and Vectors....<br />
