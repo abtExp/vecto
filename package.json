@@ -1,14 +1,14 @@
 {
-  "name": "vector_js",
+  "name": "vectorize",
   "version": "0.1.2",
   "description": "A JS mini library to deal with ndarrays and vectors",
-  "main": "vector_js.js",
+  "main": "vectorize.js",
   "scripts": {
-    "test": "test_vector.js"
+    "test": "test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abt10/Vector_JS.git"
+    "url": "git+https://github.com/abt10/Vectorize.git"
   },
   "keywords": [
     "ndarray",
@@ -17,7 +17,7 @@
   "author": "abt10 <atworkstudios@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abt10/Vector_JS/issues"
+    "url": "https://github.com/abt10/Vectorize/issues"
   },
-  "homepage": "https://github.com/abt10/Vector_JS#readme"
+  "homepage": "https://abt10.github.io/Vectorize"
 }
