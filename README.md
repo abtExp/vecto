@@ -66,9 +66,9 @@ You can always change or alter the properties via the Vector methods.
 
 </p>
 
-The constructed object for a 2-dimensional array with shape ```js [2,3] ``` 
+The constructed object for a 2-dimensional array with shape ``` [2,3] ``` 
 (meaning 2 elements having 3 elements each)
-and the array ```js [[1,2,3],[4,5,6]] ``` looks like this : <br /><br />
+and the array ``` [[1,2,3],[4,5,6]] ``` looks like this : <br /><br />
 ```js
 Object { array: Array[2], 
 shape: Array[2], 
@@ -85,7 +85,7 @@ A Vector Object Has the following properties : <br />
 <h3><b>Shape</b></h3>
 
 Defines The Structure of the array, i.e., the number of layers inside the array that defines the number of elements and if that element is itself an array, the number of elements inside it.
-As seen in the above example for the shape ```js [2,3]``` The array was a 2-d array with 2 elements(arrays) having 3 elements each.
+As seen in the above example for the shape ``` [2,3]``` The array was a 2-d array with 2 elements(arrays) having 3 elements each.
 
 <h3><b>Array</b></h3>
 
@@ -93,7 +93,7 @@ The array itself, containig the data.
 
 <h3><b>Dimension(dim)</b></h3>
 
-The Dimension of the array. For the above case : ```js dim = 2 ```
+The Dimension of the array. For the above case : ``` dim = 2 ```
 
 <h3><b>Size</b></h3>
 
