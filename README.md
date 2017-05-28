@@ -28,13 +28,13 @@ Although it's not that advanced yet, but soon it will be...
 
 <p> When you import the script with - </p>
 
-`
+```js
 var vector = require('vector_js');
-`
+```
 
 it returns an object with three elements : 
 
-```
+```js
 {
 Vector : Vector,
 sum : sum,
@@ -46,11 +46,13 @@ product : product
 
 <p> This is the main object, It's basically a class to define a vector or an n-dimensional array.
 <br />
-you can create a new <b>vector</b> or <b>n-dimensional array</b> by : <br /><br />
+you can create a new <b>vector</b> or <b>n-dimensional array</b> by : 
+</p>
 
+```js
+var vect = new Vector(args);
 ```
-var v = new vector.Vector(args);
-```
+
 
 <h3> <b> The args </b></h3>
 <p>
@@ -64,12 +66,17 @@ You can always change or alter the properties via the Vector methods.
 
 </p>
 
-The constructed object for a 2-dimensional array with shape <code> [2,3] </code> 
+The constructed object for a 2-dimensional array with shape ```js [2,3] ``` 
 (meaning 2 elements having 3 elements each)
-and the array <code> [[1,2,3],[4,5,6]] </code> looks like this : <br /><br />
-<code>
-Object { array: Array[2], shape: Array[2], size: 6, dim: 2, flat: Array[6] }
-</code>
+and the array ```js [[1,2,3],[4,5,6]] ``` looks like this : <br /><br />
+```js
+Object { array: Array[2], 
+shape: Array[2], 
+size: 6, 
+dim: 2, 
+flat: Array[6] 
+}
+```
 
 <h2><b>The Properties of the Vector Object</b></h2>
 
@@ -78,7 +85,7 @@ A Vector Object Has the following properties : <br />
 <h3><b>Shape</b></h3>
 
 Defines The Structure of the array, i.e., the number of layers inside the array that defines the number of elements and if that element is itself an array, the number of elements inside it.
-As seen in the above example for the shape <code>[2,3]</code> The array was a 2-d array with 2 elements(arrays) having 3 elements each.
+As seen in the above example for the shape ```js [2,3]``` The array was a 2-d array with 2 elements(arrays) having 3 elements each.
 
 <h3><b>Array</b></h3>
 
@@ -86,7 +93,7 @@ The array itself, containig the data.
 
 <h3><b>Dimension(dim)</b></h3>
 
-The Dimension of the array. For the above case : <code> dim = 2</code>
+The Dimension of the array. For the above case : ```js dim = 2 ```
 
 <h3><b>Size</b></h3>
 
@@ -108,25 +115,30 @@ It's the 1-d version of the n-dimensional array.
 <h4>From An Array</h4>
 
 If you have an array of data that you want to turn into a Vector Object, you can either use the
-constructor for passing in the array or the static method <code>Vector.array(array)</code>.
+constructor for passing in the array or the static method
+```js
+Vector.array(array)
+```
 
 This will return a new Vector object with the array property equal to the array you passed in.
 
 example : 
-<code>
+```js
 var array = [[2,3,4],[1,5,7]];
 var v = Vector.array(array);
-</code>
+```
 
 <h4>Zeroes</h4>
 
 You can create a placeholder n-dimensional array for vector filled with zeroes by calling
-<code>Vector.zeroes(shape)</code>
+```js
+Vector.zeroes(shape)
+```
 
 example :
-<code>
+```js
 var v = Vector.zeroes([2,3]);
-</code>
+```
 
 v has the array property as : [[0,0,0],[0,0,0]]
 <h4>the <b>fill</b> method</h4>
@@ -139,45 +151,48 @@ The fill methods recieves two arguments : 1. Length of the array to be filled.
 
 example :
 
-<code>
+```js
 var v = new Vector([2,3]);
 var array = Vector.fill(6);
-</code>
+```
 
 <i>if fill is called without passing the second parameter, it will return an array of length = passed length of random numbers   </i>
 
-<code>
+```js
 var v = new Vector([2,3]);
 var array = Vector.fill(6,[2,12,323,12,11,0]);
-</code>
+```
+
 <i> Returns the array of passed array</i>
 
-<code>
+```js
 var array = Vector.fill(6,1);
-</code>
+```
 
 <i>Returns an array of length 6 with all elements = 1;</i>
 
-<code>
+```js
 var array = Vector.fill(6,2,10);
-</code>
-
+```
 <i>Returns an array of length 6 with elements in range 2 to 10.</i>
 
 <h4>add</h4>
 
 Used to add two Vector objects,returns a new Vector object.
 
-<code>
+
+```js
 Vector.add(v1,v2);
-</code>
+```
 
 <h4>Flatten</h4>
 
 Turns ndarray into 1d array. Pass in the ndarray as the first argument, and an empty array as the second argument,
 the flattened array is stored in the second argument.
 
-<code>Vector.flatten(ndarr,emptArr);</code>
+```js
+Vector.flatten(ndarr,emptArr);
+```
 
 
 <h2>Other Methods</h2>
