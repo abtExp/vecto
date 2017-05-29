@@ -29,7 +29,7 @@ Although it's not that advanced yet, but soon it will be...
 <p> When you import the script with - </p>
 
 ```js
-var vector = require('vector_js');
+var vector = require('vecto');
 ```
 
 it returns an object with three elements : 

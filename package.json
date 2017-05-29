@@ -4,7 +4,8 @@
   "description": "A JS mini library to deal with ndarrays and vectors",
   "main": "vecto.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/abt10/vecto/issues"
   },
-  "homepage": "https://abt10.github.io/vecto"
+  "homepage": "https://abt10.github.io/vecto",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
 }
