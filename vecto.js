@@ -21,20 +21,15 @@ class Vector{
 
     /* make a new zero Vector */
 	static zeroes(shape){
-		var arr;
-		if(shape.length === 1){
-			arr = Vector.fill(shape[0],0);
-		}
-		else{
-			var base_arr = Vector.fill(shape[shape.length-1],0);
-			for(var i=shape.length-2; i>=0; i--){
+		let base_arr = Vector.fill(shape[shape.length-1],0);
+		let arr = shape.length < 2 ? base_arr : [];
+			for(let i=shape.length-2; i>=0; i--){
 				arr = [];
-				for(var j=0; j<shape[i]; j++){
+				for(let j=0; j<shape[i]; j++){
 					arr.push(base_arr);
 				}
 				base_arr = arr;
 			}
-		}
 		return new Vector(shape,arr);
 	}
 
@@ -42,11 +37,11 @@ class Vector{
    /* sum of 2 vectors */
    static add(v1,v2){
 	   if(v1.size === v2.size){
-		   var sum = [];
-		   for(var i=0; i<v1.flat.length; i++){
+		   let sum = [];
+		   for(let i=0; i<v1.flat.length; i++){
 			   sum[i] = v1.flat[i] + v2.flat[i];
 		   }
-		   var v = new Vector(v1.shape);
+		   let v = new Vector(v1.shape);
 		   v.arrange(sum);
 		   return v;
 	   }
@@ -58,7 +53,7 @@ class Vector{
    /* function to convert n-dimension array into 1-D array */
 
 	static flatten(arr,tarr){
-		for(var i of arr){
+		for(let i of arr){
 			if(Array.isArray(i)){
 				this.flatten(i,tarr);
 			}
@@ -71,8 +66,8 @@ class Vector{
 
    /* fills the vector acc to passed args */
    static fill(len, ...args){
-		var arr = [];
-	  	var i;
+		const arr = [];
+	  	let i;
 		if(!args || args.length === 0){
 			for(i=0; i<len; i++){
 				arr[i] = Math.random();
@@ -81,7 +76,7 @@ class Vector{
 		else{
 			if(args.length === 1){
 				if(Array.isArray(args[0])){
-					var j=0;
+					let j=0;
 					for(i=0; i<len; i++){
 						arr[i] = args[0][j++];
 						if(j>=args[0].length){
@@ -92,7 +87,7 @@ class Vector{
 				else{
 					for(i=0; i<len; i++){
 						arr[i] = args[0];
-					}
+						}
 				}
 			}
 			else{
@@ -122,9 +117,9 @@ class Vector{
 	}
 	
 	calc_shape(arr){
-		var shape = [];
+		const shape = [];
 		shape.push(arr.length);
-		var a = arr[0];
+		let a = arr[0];
 		while(Array.isArray(a)){
 			shape.push(a.length);
 			a = a[0];
@@ -134,8 +129,8 @@ class Vector{
 
 	/* find the size of the array */
 	calc_size(shape){
-		var size = 1;
-		for(var i of shape){
+		let size = 1;
+		for(let i of shape){
 			size *= i;
 		}
 		return size;
@@ -144,17 +139,17 @@ class Vector{
   
 	/* a method to arrange or create a Vector from the given elements */
 	arrange(elems_arr){
-		var dim = this.dim;
-		var base_arr_size = this.shape[dim-1];
-		var final_arr = [];
-		var base_elems = 1, j=0;
+		const dim = this.dim,
+		base_arr_size = this.shape[dim-1],
+		final_arr = [];
+		let base_elems = 1, j=0;
 		if(dim >= 2){
 			base_elems = this.shape[dim-2]; 
 		}
-		for(var i=0; i<base_elems; i++){
+		for(let i=0; i<base_elems; i++){
 			if(elems_arr){
-				var part = [];
-				for(var k=0; k<base_arr_size; k++){
+				let part = [];
+				for(let k=0; k<base_arr_size; k++){
 					part[k] = elems_arr[j++];
 					if(j>=elems_arr.length){
 					j=0;
@@ -175,7 +170,7 @@ class Vector{
 	reshape(new_shape){
 		if(this.calc_size(new_shape) === this.size){
 			/* reshape */
-			var temp_arr = this.flat;
+			const temp_arr = this.flat;
 			this.shape = new_shape;
 			this.dim = this.find_dim();
 			this.flat = [];
@@ -188,7 +183,7 @@ class Vector{
 	
 	/* changes the shape and size of the vector in place */
 	resize(new_shape){
-		var temp_arr = this.flat;
+		const temp_arr = this.flat;
 		this.shape = new_shape;
 		this.size = this.calc_size(this.shape);
 		this.dim = this.find_dim();
@@ -217,7 +212,7 @@ class Vector{
 ^ *6 a * x || [a] * [x]  // return a*x
 */
 function product(arr1,arr2){
-	var prod = [];
+	const prod = [];
 	if(!Array.isArray(arr1) && !Array.isArray(arr2)){  
 		return arr1*arr2;
 	}
@@ -244,7 +239,7 @@ function product(arr1,arr2){
 				}
 				else{
 					if(arr1.length === arr2.length){
-						var i = 0;
+						let i = 0;
 						arr1.forEach((j)=>{
 							prod.push(product(j,arr2[i++]));
 						})
@@ -257,7 +252,7 @@ function product(arr1,arr2){
 			else{
 				if(Array.isArray(arr1[0] && Array.isArray(arr2[0]))){
 					if(arr1.length === arr2.length){
-						for(var i=0; i<arr1.length; i++){
+						for(let i=0; i<arr1.length; i++){
 							prod.push(product(arr1[i],arr2[i]));
 						}
 					}
@@ -267,7 +262,7 @@ function product(arr1,arr2){
 				}
 				else{
 					if(arr1.length === arr2.length){
-						for(var i=0; i<arr1.length; i++){
+						for(let i=0; i<arr1.length; i++){
 							prod.push(arr1[i]*arr2[i]);
 						}
 					}
@@ -282,7 +277,7 @@ function product(arr1,arr2){
 }
 
 function sum(arr1,arr2){
-	var summ;
+	let summ;
 	if(!Array.isArray(arr1) && !Array.isArray(arr2)){
 		return arr1+arr2;
 	}
