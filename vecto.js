@@ -91,9 +91,9 @@ class Vector{
 				}
 			}
 			else{
-				var min;
-				var num = min = args[0];
-				var max = args[1];
+				let min,
+				num = min = args[0],
+				max = args[1];
 				for(i=0; i<len; i++){
 					arr[i] = num++;
 					if(num>max){
