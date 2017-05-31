@@ -1,5 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto) | [![Build Status](https://travis-ci.org/AbT10/vecto.svg?branch=master)](https://travis-ci.org/AbT10/vecto)
 
+[![NPM](https://nodei.co/npm/vecto.png)](https://npmjs.org/package/vecto)
+
 # vecto 
 Dealing with N-dimensional Arrays and Vectors....<br />
 <h6>Note : It's still a work in progress...</h6>
