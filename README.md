@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto) | [![Build Status](https://travis-ci.org/AbT10/vecto.svg?branch=master)](https://travis-ci.org/AbT10/vecto)
+[![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto) | [![Build Status](https://travis-ci.org/AbT10/vecto.svg?branch=master)](https://travis-ci.org/AbT10/vecto) | [![npm](https://img.vecto.io/npm/v/npm.svg)]()
 
 [![NPM](https://nodei.co/npm/vecto.png)](https://npmjs.org/package/vecto)
 
