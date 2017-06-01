@@ -5,7 +5,8 @@
   "main": "vecto.js",
   "scripts": {
     "test": "node test",
-    "build": "webpack"
+    "build": "webpack",
+    "cover": "istanbul cover ./test.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://abt10.github.io/vecto",
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "webpack": "^2.6.1"
   }
 }
