@@ -1,6 +1,6 @@
 {
   "name": "vecto",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A JS mini library to deal with ndarrays and vectors",
   "main": "vecto.js",
   "scripts": {
