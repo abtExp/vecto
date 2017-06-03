@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node build/build",
     "build": "webpack",
-    "cover": "istanbul cover ./build/build.js"
+    "cover": "istanbul cover ./build/build.js",
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
     "webpack": "^2.6.1"
   }
