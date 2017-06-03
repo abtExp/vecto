@@ -2,101 +2,99 @@
  * Referenced from numpy.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
-
-class Vector{
-	constructor(shape=[],arr=[]){
+class Vector {
+	constructor(shape = [], arr = []) {
 		this.array = arr;
-		this.shape = ((shape.length)>0) ? shape : (this.calc_shape(this.array));
+		this.shape = ((shape.length) > 0) ? shape : (this.calc_shape(this.array));
 		this.size = this.calc_size(this.shape);
 		this.dim = this.find_dim();
 		this.flat = [];
-		Vector.flatten(this.array,this.flat);
+		Vector.flatten(this.array, this.flat);
 	}
-	
+
 	/* class specific (static) methods */
-    /* form a new vector for the given array */
-	static array(arr){
-		return new Vector([],arr);
+	/* form a new vector for the given array */
+	static array(arr) {
+		return new Vector([], arr);
 	}
 
-    /* make a new zero Vector */
-	static zeroes(shape){
-		let base_arr = Vector.fill(shape[shape.length-1],0);
+	/* make a new zero Vector */
+	static zeroes(shape) {
+		let base_arr = Vector.fill(shape[shape.length - 1], 0);
 		let arr = shape.length < 2 ? base_arr : [];
-			for(let i=shape.length-2; i>=0; i--){
-				arr = [];
-				for(let j=0; j<shape[i]; j++){
-					arr.push(base_arr);
-				}
-				base_arr = arr;
+		for (let i = shape.length - 2; i >= 0; i--) {
+			arr = [];
+			for (let j = 0; j < shape[i]; j++) {
+				arr.push(base_arr);
 			}
-		return new Vector(shape,arr);
+			base_arr = arr;
+		}
+		return new Vector(shape, arr);
 	}
 
-   	
-   /* sum of 2 vectors */
-   static add(v1,v2){
-	   if(v1.size === v2.size){
-		   let sum = [];
-		   for(let i=0; i<v1.flat.length; i++){
-			   sum[i] = v1.flat[i] + v2.flat[i];
-		   }
-		   let v = new Vector(v1.shape);
-		   v.arrange(sum);
-		   return v;
-	   }
-	   else{
-		   return new Error("Unequal Size");
-	   }
-   }
 
-   /* function to convert n-dimension array into 1-D array */
-
-	static flatten(arr,tarr){
-		for(let i of arr){
-			if(Array.isArray(i)){
-				this.flatten(i,tarr);
+	/* sum of 2 vectors */
+	static add(v1, v2) {
+		if (v1.size === v2.size) {
+			let sum = [];
+			for (let i = 0; i < v1.flat.length; i++) {
+				sum[i] = v1.flat[i] + v2.flat[i];
 			}
-			else{
+			let v = new Vector(v1.shape);
+			v.arrange(sum);
+			return v;
+		}
+		else {
+			return new Error("Unequal Size");
+		}
+	}
+
+	/* function to convert n-dimension array into 1-D array */
+
+	static flatten(arr, tarr) {
+		for (let i of arr) {
+			if (Array.isArray(i)) {
+				this.flatten(i, tarr);
+			}
+			else {
 				tarr.push(i);
 			}
-	    }
+		}
 	}
 
 
-   /* fills the vector acc to passed args */
-   static fill(len, ...args){
+	/* fills the vector acc to passed args */
+	static fill(len, ...args) {
 		const arr = [];
-	  	let i;
-		if(!args || args.length === 0){
-			for(i=0; i<len; i++){
+		let i;
+		if (!args || args.length === 0) {
+			for (i = 0; i < len; i++) {
 				arr[i] = Math.random();
 			}
 		}
-		else{
-			if(args.length === 1){
-				if(Array.isArray(args[0])){
-					let j=0;
-					for(i=0; i<len; i++){
+		else {
+			if (args.length === 1) {
+				if (Array.isArray(args[0])) {
+					let j = 0;
+					for (i = 0; i < len; i++) {
 						arr[i] = args[0][j++];
-						if(j>=args[0].length){
-							j=0;
+						if (j >= args[0].length) {
+							j = 0;
 						}
 					}
 				}
-				else{
-					for(i=0; i<len; i++){
+				else {
+					for (i = 0; i < len; i++) {
 						arr[i] = args[0];
-						}
+					}
 				}
 			}
-			else{
-				let min,
-				num = min = args[0],
-				max = args[1];
-				for(i=0; i<len; i++){
+			else {
+				let min, num = min = args[0],
+					max = args[1];
+				for (i = 0; i < len; i++) {
 					arr[i] = num++;
-					if(num>max){
+					if (num > max) {
 						num = min;
 					}
 				}
@@ -106,21 +104,21 @@ class Vector{
 	}
 
 
- /* -------------------------------------------------------------------------------------------------------------------------------------------- */   
-	
+	/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
 	/* object specific (property) methods */
 
 	/* find the shape of the given array */
-	
-	find_dim(){
+
+	find_dim() {
 		return this.shape.length;
 	}
-	
-	calc_shape(arr){
+
+	calc_shape(arr) {
 		const shape = [];
 		shape.push(arr.length);
 		let a = arr[0];
-		while(Array.isArray(a)){
+		while (Array.isArray(a)) {
 			shape.push(a.length);
 			a = a[0];
 		}
@@ -128,47 +126,48 @@ class Vector{
 	}
 
 	/* find the size of the array */
-	calc_size(shape){
+	calc_size(shape) {
 		let size = 1;
-		for(let i of shape){
+		for (let i of shape) {
 			size *= i;
 		}
 		return size;
 	}
 
-  
+
 	/* a method to arrange or create a Vector from the given elements */
-	arrange(elems_arr){
+	arrange(elems_arr) {
 		const dim = this.dim,
-		base_arr_size = this.shape[dim-1],
-		final_arr = [];
-		let base_elems = 1, j=0;
-		if(dim >= 2){
-			base_elems = this.shape[dim-2]; 
+			base_arr_size = this.shape[dim - 1],
+			final_arr = [];
+		let base_elems = 1,
+			j = 0;
+		if (dim >= 2) {
+			base_elems = this.shape[dim - 2];
 		}
-		for(let i=0; i<base_elems; i++){
-			if(elems_arr){
+		for (let i = 0; i < base_elems; i++) {
+			if (elems_arr) {
 				let part = [];
-				for(let k=0; k<base_arr_size; k++){
+				for (let k = 0; k < base_arr_size; k++) {
 					part[k] = elems_arr[j++];
-					if(j>=elems_arr.length){
-					j=0;
+					if (j >= elems_arr.length) {
+						j = 0;
 					}
 				}
-				final_arr.push(Vector.fill(base_arr_size,part));
+				final_arr.push(Vector.fill(base_arr_size, part));
 			}
-			else{
+			else {
 				final_arr.push(Vector.fill(base_arr_size));
-			}		
+			}
 		}
 		this.array = final_arr;
 		this.flat = [];
-		Vector.flatten(this.array,this.flat);
+		Vector.flatten(this.array, this.flat);
 	}
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
-	reshape(new_shape){
-		if(this.calc_size(new_shape) === this.size){
+	reshape(new_shape) {
+		if (this.calc_size(new_shape) === this.size) {
 			/* reshape */
 			const temp_arr = this.flat;
 			this.shape = new_shape;
@@ -176,13 +175,13 @@ class Vector{
 			this.flat = [];
 			this.arrange(temp_arr);
 		}
-		else{
+		else {
 			return new Error("Resizing error : can't change the size");
 		}
 	}
-	
+
 	/* changes the shape and size of the vector in place */
-	resize(new_shape){
+	resize(new_shape) {
 		const temp_arr = this.flat;
 		this.shape = new_shape;
 		this.size = this.calc_size(this.shape);
@@ -192,7 +191,7 @@ class Vector{
 	}
 
 	/* function to find the transpose */
-	transpose(){
+	transpose() {
 		/* converts row <-> columns */
 		/* not that useful to main project as of now */
 	}
@@ -211,62 +210,62 @@ class Vector{
 ^ *5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
 ^ *6 a * x || [a] * [x]  // return a*x
 */
-function product(arr1,arr2){
+function product(arr1, arr2) {
 	const prod = [];
-	if(!Array.isArray(arr1) && !Array.isArray(arr2)){  
-		return arr1*arr2;
+	if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
+		return arr1 * arr2;
 	}
-	else{
-		if(Array.isArray(arr1) && !Array.isArray(arr2)){  
-			arr1.forEach((i)=>{
-				if(Array.isArray(i)){  
-					prod.push(product(i,arr2));   
+	else {
+		if (Array.isArray(arr1) && !Array.isArray(arr2)) {
+			arr1.forEach((i) => {
+				if (Array.isArray(i)) {
+					prod.push(product(i, arr2));
 				}
-				else{
-					prod.push(i*arr2);
+				else {
+					prod.push(i * arr2);
 				}
 			});
 		}
-		else if(!Array.isArray(arr1) && Array.isArray(arr2)){
-			return product(arr2,arr1);
+		else if (!Array.isArray(arr1) && Array.isArray(arr2)) {
+			return product(arr2, arr1);
 		}
-		else{
-			if(Array.isArray(arr1[0]) && !Array.isArray(arr2[0])){  //checking if arg1 is n-d and arg2 is 1-d
-				if(arr1[0].length === arr2.length){
-					arr1.forEach((j)=>{
-						prod.push(product(j,arr2));
+		else {
+			if (Array.isArray(arr1[0]) && !Array.isArray(arr2[0])) { //checking if arg1 is n-d and arg2 is 1-d
+				if (arr1[0].length === arr2.length) {
+					arr1.forEach((j) => {
+						prod.push(product(j, arr2));
 					})
 				}
-				else{
-					if(arr1.length === arr2.length){
+				else {
+					if (arr1.length === arr2.length) {
 						let i = 0;
-						arr1.forEach((j)=>{
-							prod.push(product(j,arr2[i++]));
+						arr1.forEach((j) => {
+							prod.push(product(j, arr2[i++]));
 						})
 					}
-					else{
+					else {
 						throw new Error("Uneven size!");
 					}
 				}
 			}
-			else{
-				if(Array.isArray(arr1[0] && Array.isArray(arr2[0]))){
-					if(arr1.length === arr2.length){
-						for(let i=0; i<arr1.length; i++){
-							prod.push(product(arr1[i],arr2[i]));
+			else {
+				if (Array.isArray(arr1[0] && Array.isArray(arr2[0]))) {
+					if (arr1.length === arr2.length) {
+						for (let i = 0; i < arr1.length; i++) {
+							prod.push(product(arr1[i], arr2[i]));
 						}
 					}
-					else{
+					else {
 						throw new Error("Uneven Size");
 					}
 				}
-				else{
-					if(arr1.length === arr2.length){
-						for(let i=0; i<arr1.length; i++){
-							prod.push(arr1[i]*arr2[i]);
+				else {
+					if (arr1.length === arr2.length) {
+						for (let i = 0; i < arr1.length; i++) {
+							prod.push(arr1[i] * arr2[i]);
 						}
 					}
-					else{
+					else {
 						throw new Error("Uneven Size");
 					}
 				}
@@ -276,59 +275,59 @@ function product(arr1,arr2){
 	return prod;
 }
 
-function sum(arr1,arr2){
+function sum(arr1, arr2) {
 	let summ;
-	if(!Array.isArray(arr1) && !Array.isArray(arr2)){
-		return arr1+arr2;
+	if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
+		return arr1 + arr2;
 	}
-	else{
-		if(!arr2){
-			if(Array.isArray(arr1[0])){
-				summ = arr1.map((i)=>{
+	else {
+		if (!arr2) {
+			if (Array.isArray(arr1[0])) {
+				summ = arr1.map((i) => {
 					return sum(i);
 				})
 				return summ;
 			}
-			else{
+			else {
 				summ = 0;
-				arr1.forEach((i)=>{
+				arr1.forEach((i) => {
 					summ += i;
 				})
 				return summ;
 			}
 		}
-		if(Array.isArray(arr1) && !Array.isArray(arr2)){
+		if (Array.isArray(arr1) && !Array.isArray(arr2)) {
 			summ = [];
-			arr1.forEach((i)=>{
-				summ.push(i+arr2);
+			arr1.forEach((i) => {
+				summ.push(i + arr2);
 			});
-		} 
-		else if(Array.isArray(arr2) && !Array.isArray(arr1)){
-			sum(arr2,arr1);
 		}
-		else{
-			if(arr1.length === arr2.length){
+		else if (Array.isArray(arr2) && !Array.isArray(arr1)) {
+			sum(arr2, arr1);
+		}
+		else {
+			if (arr1.length === arr2.length) {
 				summ = [];
-				if(Array.isArray(arr1[0]) && Array.isArray(arr2[0])){
-					for(let i=0; i<arr1.length; i++){
-						summ.push(sum(arr1[i],arr2[i]));
+				if (Array.isArray(arr1[0]) && Array.isArray(arr2[0])) {
+					for (let i = 0; i < arr1.length; i++) {
+						summ.push(sum(arr1[i], arr2[i]));
 					}
 				}
-				else{
-					for(let i=0; i<arr1.length; i++){
+				else {
+					for (let i = 0; i < arr1.length; i++) {
 						summ.push(arr1[i] + arr2[i]);
 					}
 				}
 			}
 		}
 	}
-	return summ;	
+	return summ;
 }
 
 
 // export {sum,product,Vector};
 module.exports = {
-	sum : sum,
-	product : product,
-	Vector : Vector
+	sum: sum,
+	product: product,
+	Vector: Vector
 }
