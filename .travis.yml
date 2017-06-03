@@ -3,6 +3,7 @@ node_js:
 - "node"
 script:
 - "npm run build"
+- "npm run cover"
 settings: 
     build_pushes: true
 addons:
@@ -10,4 +11,4 @@ addons:
     repo_token: 5d911e7c70b84a87eac0b3565e017bf29e352ed619808cc2a16ba2350a3434b2
 after_success:
   - npm install -g codeclimate-test-reporter
-  - codeclimate-test-reporter < lcov.info
+  - codeclimate-test-reporter < ./coverage/lcov.info
