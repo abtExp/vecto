@@ -4,7 +4,7 @@
   "description": "A JS mini library to deal with ndarrays and vectors",
   "main": "vecto.js",
   "scripts": {
-    "test": "node test",
+    "test": "node build/build",
     "build": "webpack",
     "cover": "istanbul cover ./build/build.js"
   },
