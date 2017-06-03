@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - "node"
+script:
+- "npm run build"
 settings: 
     build_pushes: true
 addons:
