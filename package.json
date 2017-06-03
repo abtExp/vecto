@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node test",
     "build": "webpack",
-    "cover": "istanbul cover ./test.js"
+    "cover": "istanbul cover ./build/build.js"
   },
   "repository": {
     "type": "git",
