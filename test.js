@@ -1,4 +1,4 @@
-const { Vector,sum,product } = require("./vecto");
+import { Vector,sum,product } from "./vecto";
 
 let v = Vector.zeroes([2]);
 console.log(v);

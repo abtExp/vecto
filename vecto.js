@@ -326,8 +326,4 @@ function sum(arr1,arr2){
 }
 
 
-module.exports =  {
-	sum : sum,
-	product : product,
-	Vector : Vector
-};
+export {sum,product,Vector};

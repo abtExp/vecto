@@ -23,6 +23,9 @@
   },
   "homepage": "https://abt10.github.io/vecto",
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
     "istanbul": "^0.4.5",
     "webpack": "^2.6.1"
   }
