@@ -21,7 +21,7 @@ class Vector{
 
     /* make a new zero Vector */
 	static zeroes(shape){
-		let base_arr = Vector.fill(shape[shape.length-1],0);
+		let base_arr = Vector.fill(shape[shape.length-1],"linear",0);
 		let arr = shape.length < 2 ? base_arr : [];
 			for(let i=shape.length-2; i>=0; i--){
 				arr = [];
@@ -41,7 +41,6 @@ class Vector{
 		   for(let i=0; i<v1.flat.length; i++){
 			   sum[i] = v1.flat[i] + v2.flat[i];
 		   }
-		   console.log(sum);
 		   let v = new Vector(v1.shape);
 		   v.arrange(sum); // Messed up arrange method.
 		   return v;
@@ -144,7 +143,7 @@ class Vector{
 
   
 	/* a method to arrange or create a Vector from the given elements */
-	arrange(elems_arr,fill_style="linear"){
+	arrange(elems_arr,fill_style="array"){
 		const dim = this.dim;
 		let base_arr = elems_arr,
 		curr_arr;
@@ -165,7 +164,7 @@ class Vector{
 			this.shape = new_shape;
 			this.dim = this.find_dim();
 			this.flat = [];
-			this.arrange(temp_arr);
+			this.arrange(temp_arr,"linear");
 		}
 		else{
 			return new Error("Resizing error : can't change the size");
@@ -176,10 +175,10 @@ class Vector{
 	resize(new_shape){
 		const temp_arr = this.flat;
 		this.shape = new_shape;
-		this.size = this.calc_size(this.shape);
+		this.size = this.calc_size(new_shape);
 		this.dim = this.find_dim();
 		this.flat = [];
-		this.arrange(temp_arr);
+		this.arrange(temp_arr,"array");
 	}
 
 	/* function to find the transpose */
