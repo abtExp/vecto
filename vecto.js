@@ -65,7 +65,7 @@ class Vector{
 
 
    /* fills the vector acc to passed args */
-   static fill(len, ...args){
+   static fill(len, fill_style="array", ...args){
 		const arr = [];
 	  	let i;
 		if(!args || args.length === 0){
@@ -75,35 +75,40 @@ class Vector{
 		}
 		else{
 			if(args.length === 1){
-				if(Array.isArray(args[0])){
+				if(Array.isArray(args[0]) && fill_style === "array"){
+					for(i=0; i<len; i++){
+						arr[i] = args[0];
+					}
+				}
+				else if(Array.isArray(args[0]) && fill_style !== "array"){
 					let j=0;
 					for(i=0; i<len; i++){
 						arr[i] = args[0][j++];
 						if(j>=args[0].length){
 							j=0;
 						}
-					}
+					} 
 				}
 				else{
 					for(i=0; i<len; i++){
 						arr[i] = args[0];
-						}
-				}
-			}
-			else{
-				let min,
-				num = min = args[0],
-				max = args[1];
-				for(i=0; i<len; i++){
-					arr[i] = num++;
-					if(num>max){
-						num = min;
 					}
 				}
 			}
+			else{
+					let min = args[0],
+					max = args[1],
+					num = min;
+					for(i=0; i<len; i++){
+						arr[i] = num++;
+						if(num > max){
+							num = min;
+						}
+					}
+			}
 		}
 		return arr;
-	}
+   }
 
 
  /* -------------------------------------------------------------------------------------------------------------------------------------------- */   
@@ -138,30 +143,15 @@ class Vector{
 
   
 	/* a method to arrange or create a Vector from the given elements */
-	arrange(elems_arr){
-		const dim = this.dim,
-		base_arr_size = this.shape[dim-1],
-		final_arr = [];
-		let base_elems = 1, j=0;
-		if(dim >= 2){
-			base_elems = this.shape[dim-2]; 
+	arrange(elems_arr,fill_style="linear"){
+		const dim = this.dim;
+		let base_arr = elems_arr,
+		curr_arr;
+		for(let i=dim-2; i>=0; i--){
+			curr_arr = Vector.fill(this.shape[i+1],fill_style,base_arr);
+			base_arr = curr_arr;
 		}
-		for(let i=0; i<base_elems; i++){
-			if(elems_arr){
-				let part = [];
-				for(let k=0; k<base_arr_size; k++){
-					part[k] = elems_arr[j++];
-					if(j>=elems_arr.length){
-					j=0;
-					}
-				}
-				final_arr.push(Vector.fill(base_arr_size,part));
-			}
-			else{
-				final_arr.push(Vector.fill(base_arr_size));
-			}		
-		}
-		this.array = final_arr;
+		this.array = base_arr;
 		this.flat = [];
 		Vector.flatten(this.array,this.flat);
 	}
@@ -326,4 +316,8 @@ function sum(arr1,arr2){
 }
 
 
-export {sum,product,Vector};
+module.exports =  {
+	sum : sum,
+	product : product,
+	Vector : Vector
+};
