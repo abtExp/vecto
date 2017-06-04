@@ -21,7 +21,7 @@ const { Vector,sum,product } = require("./vecto");
 // nv.resize([5,5]);
 // console.log(nv);
 
-let v = new Vector([2,2,2,3]);
+let v = new Vector([6,2]);
 v.arrange(2,"array");
 console.log(v.array);
 let v2 = new Vector([6,2]);

@@ -36,13 +36,14 @@ class Vector{
    	
    /* sum of 2 vectors */
    static add(v1,v2){
-	   if(v1.size === v2.size){
+	   if(v1.shape.toString() === v2.shape.toString()){
 		   let sum = [];
 		   for(let i=0; i<v1.flat.length; i++){
 			   sum[i] = v1.flat[i] + v2.flat[i];
 		   }
+		   console.log(sum);
 		   let v = new Vector(v1.shape);
-		   v.arrange(sum);
+		   v.arrange(sum); // Messed up arrange method.
 		   return v;
 	   }
 	   else{
