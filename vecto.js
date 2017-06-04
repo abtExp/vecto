@@ -147,7 +147,7 @@ class Vector{
 		const dim = this.dim;
 		let base_arr = elems_arr,
 		curr_arr;
-		for(let i=dim-2; i>=0; i--){
+		for(let i=dim-2; i>=-1; i--){
 			curr_arr = Vector.fill(this.shape[i+1],fill_style,base_arr);
 			base_arr = curr_arr;
 		}
