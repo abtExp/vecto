@@ -12,9 +12,9 @@ let sm = Vector.add(v2,v3);
 console.log(sm);
 
 let n2v = Vector.array([[4,2,1],[7,8,9]]);
-// console.log(nv.calc_shape(nv.array));
-// console.log(nv.calc_size(nv.shape));
-// console.log(nv);
+console.log(n2v.calc_shape(n2v.array));
+console.log(n2v.calc_size(n2v.shape));
+console.log(n2v);
 
 let tnv = new Vector([2,2,3,4]);
 tnv.arrange(4);
