@@ -18,15 +18,9 @@ class Vector {
 		return new Vector([], arr);
 	}
 
-<<<<<<< HEAD
-	/* make a new zero Vector */
-	static zeroes(shape) {
-		let base_arr = Vector.fill(shape[shape.length - 1], 0);
-=======
     /* make a new zero Vector */
 	static zeroes(shape){
 		let base_arr = Vector.fill(shape[shape.length-1],"linear",0);
->>>>>>> dev
 		let arr = shape.length < 2 ? base_arr : [];
 		for (let i = shape.length - 2; i >= 0; i--) {
 			arr = [];
@@ -37,28 +31,7 @@ class Vector {
 		}
 		return new Vector(shape, arr);
 	}
-
-<<<<<<< HEAD
-
-	/* sum of 2 vectors */
-	static add(v1, v2) {
-		if (v1.size === v2.size) {
-			let sum = [];
-			for (let i = 0; i < v1.flat.length; i++) {
-				sum[i] = v1.flat[i] + v2.flat[i];
-			}
-			let v = new Vector(v1.shape);
-			v.arrange(sum);
-			return v;
-		}
-		else {
-			return new Error("Unequal Size");
-		}
-	}
-
-	/* function to convert n-dimension array into 1-D array */
-=======
-   	
+  	
    /* sum of 2 vectors */
    static add(v1,v2){
 	   if(v1.shape.toString() === v2.shape.toString()){
@@ -80,7 +53,6 @@ class Vector {
 //    }
 
    /* function to convert n-dimension array into 1-D array */
->>>>>>> dev
 
 	static flatten(arr, tarr) {
 		for (let i of arr) {
@@ -93,14 +65,8 @@ class Vector {
 		}
 	}
 
-
-<<<<<<< HEAD
-	/* fills the vector acc to passed args */
-	static fill(len, ...args) {
-=======
    /* fills the vector acc to passed args */
    static fill(len, fill_style="array", ...args){
->>>>>>> dev
 		const arr = [];
 		let i;
 		if (!args || args.length === 0) {
@@ -108,13 +74,6 @@ class Vector {
 				arr[i] = Math.random();
 			}
 		}
-<<<<<<< HEAD
-		else {
-			if (args.length === 1) {
-				if (Array.isArray(args[0])) {
-					let j = 0;
-					for (i = 0; i < len; i++) {
-=======
 		else{
 			if(args.length === 1){
 				if(Array.isArray(args[0]) && fill_style === "array"){
@@ -125,7 +84,6 @@ class Vector {
 				else if(Array.isArray(args[0]) && fill_style !== "array"){
 					let j=0;
 					for(i=0; i<len; i++){
->>>>>>> dev
 						arr[i] = args[0][j++];
 						if (j >= args[0].length) {
 							j = 0;
@@ -138,15 +96,6 @@ class Vector {
 					}
 				}
 			}
-<<<<<<< HEAD
-			else {
-				let min, num = min = args[0],
-					max = args[1];
-				for (i = 0; i < len; i++) {
-					arr[i] = num++;
-					if (num > max) {
-						num = min;
-=======
 			else{
 					let min = args[0],
 					max = args[1],
@@ -156,7 +105,6 @@ class Vector {
 						if(num > max){
 							num = min;
 						}
->>>>>>> dev
 					}
 			}
 		}
@@ -196,31 +144,6 @@ class Vector {
 
 
 	/* a method to arrange or create a Vector from the given elements */
-<<<<<<< HEAD
-	arrange(elems_arr) {
-		const dim = this.dim,
-			base_arr_size = this.shape[dim - 1],
-			final_arr = [];
-		let base_elems = 1,
-			j = 0;
-		if (dim >= 2) {
-			base_elems = this.shape[dim - 2];
-		}
-		for (let i = 0; i < base_elems; i++) {
-			if (elems_arr) {
-				let part = [];
-				for (let k = 0; k < base_arr_size; k++) {
-					part[k] = elems_arr[j++];
-					if (j >= elems_arr.length) {
-						j = 0;
-					}
-				}
-				final_arr.push(Vector.fill(base_arr_size, part));
-			}
-			else {
-				final_arr.push(Vector.fill(base_arr_size));
-			}
-=======
 	arrange(elems_arr,fill_style="array"){
 		const dim = this.dim;
 		let base_arr = elems_arr,
@@ -229,7 +152,6 @@ class Vector {
 			curr_arr = Vector.fill(this.shape[i+1],fill_style,base_arr);
 			base_arr = curr_arr;
 			fill_style="array";
->>>>>>> dev
 		}
 		this.array = base_arr;
 		this.flat = [];
@@ -319,19 +241,11 @@ function product(arr1, arr2) {
 					}
 				}
 			}
-<<<<<<< HEAD
-			else {
-				if (Array.isArray(arr1[0] && Array.isArray(arr2[0]))) {
-					if (arr1.length === arr2.length) {
-						for (let i = 0; i < arr1.length; i++) {
-							prod.push(product(arr1[i], arr2[i]));
-=======
 			else{
 				if(Array.isArray(arr1[0]) && Array.isArray(arr2[0])){
 					if(arr1.length === arr2.length){
 						for(let i=0; i<arr1.length; i++){
 							prod.push(product(arr1[i],arr2[i]));
->>>>>>> dev
 						}
 					}
 					else {
@@ -403,18 +317,8 @@ function sum(arr1, arr2) {
 	return summ;
 }
 
-
-<<<<<<< HEAD
-// export {sum,product,Vector};
-module.exports = {
-	sum: sum,
-	product: product,
-	Vector: Vector
-}
-=======
 module.exports =  {
 	sum : sum,
 	product : product,
 	Vector : Vector
 };
->>>>>>> dev
