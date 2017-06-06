@@ -8,7 +8,7 @@ console.log(v2);
 console.log(v2.size);
 let v3 = new Vector([6]);
 v3.arrange();
-let sm = Vector.add(v2,v3);
+let sm = Vector.add(v2,v3); // Produces an uneven size error
 console.log(sm);
 
 let n2v = Vector.array([[4,2,1],[7,8,9]]);
