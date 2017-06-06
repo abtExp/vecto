@@ -42,13 +42,17 @@ class Vector{
 			   sum[i] = v1.flat[i] + v2.flat[i];
 		   }
 		   let v = new Vector(v1.shape);
-		   v.arrange(sum); // Messed up arrange method.
+		   v.arrange(sum,"linear");
 		   return v;
 	   }
 	   else{
 		   return new Error("Unequal Size");
 	   }
    }
+
+//    static dot(v2){
+
+//    }
 
    /* function to convert n-dimension array into 1-D array */
 
@@ -150,6 +154,7 @@ class Vector{
 		for(let i=dim-2; i>=-1; i--){
 			curr_arr = Vector.fill(this.shape[i+1],fill_style,base_arr);
 			base_arr = curr_arr;
+			fill_style="array";
 		}
 		this.array = base_arr;
 		this.flat = [];
@@ -178,7 +183,7 @@ class Vector{
 		this.size = this.calc_size(new_shape);
 		this.dim = this.find_dim();
 		this.flat = [];
-		this.arrange(temp_arr,"array");
+		this.arrange(temp_arr,"linear");
 	}
 
 	/* function to find the transpose */
@@ -240,7 +245,7 @@ function product(arr1,arr2){
 				}
 			}
 			else{
-				if(Array.isArray(arr1[0] && Array.isArray(arr2[0]))){
+				if(Array.isArray(arr1[0]) && Array.isArray(arr2[0])){
 					if(arr1.length === arr2.length){
 						for(let i=0; i<arr1.length; i++){
 							prod.push(product(arr1[i],arr2[i]));
