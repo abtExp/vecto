@@ -1,7 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/AbT10/vecto/badges/gpa.svg)](https://codeclimate.com/github/AbT10/vecto)  [![Build Status](https://travis-ci.org/AbT10/vecto.svg?branch=master)](https://travis-ci.org/AbT10/vecto)  [![npm](https://badge.fury.io/js/vecto.svg)](https://badge.fury.io/js/vecto)
 [![Coverage Status](https://coveralls.io/repos/github/AbT10/vecto/badge.svg?branch=master)](https://coveralls.io/github/AbT10/vecto?branch=master)
 
-# vecto :construction:  :help:
+# vecto :construction: :sparkles: :art:
 Dealing with N-dimensional Arrays and Vectors....<br />
 <h6>Note : It's still a work in progress...</h6>
 
@@ -195,19 +195,78 @@ the flattened array is stored in the second argument.
 Vector.flatten(ndarr,emptArr);
 ```
 
+<h4>calc_shape(arr)</h4>
+
+Calculates the shape(structure) of the passed in array.
+
+```js
+const arr = [[[1,2,3],[4,5,6]],
+             [[2,4,2],[1,2,1]]]
+
+console.log(Vector.calc_shape(arr)); // [2,2,3]
+```
+
+<h4>calc_size</h4>
+
+Calculates the size (total elements) of the array.
+
+```js
+
+const arr = [[3,4,1,2],
+             [3,1,4,4],
+             [5,6,2,1]]
+
+console.log(Vector.calc_size(arr)); // 12
+```
+
 
 <h2>Other Methods</h2>
 
 * find_dim(); // Returns the dimension of the Vector/ndarray.
-* calc_shape(array); // Returns the shape of the ndarray.
-* calc_size(shape); // Returns the size of the ndarray(Number of elements in it).
-* arrange(new_array); // Pass in a 1d array and it arranges it in the ndarray.
-* reshape(new_shape); // Change the shape of the array iff size for new_shape == size for old_shhape.
-* resize(new_shape); // Change the shape irrespective of size.
+* arrange(new_array,fill_style?); // Pass in a 1d array and it arranges it in the ndarray.
+* reshape(new_shape,fill_style?); // Change the shape of the array iff size for new_shape == size for old_shhape.
+* resize(new_shape,fill_style?); // Change the shape irrespective of size.
+
+--- Note : The fill_style arg is currently experimental and is used for different array arrangements. For use, see the test.js file.
 
 
 .............................................................................................
 
+
+<h1><b>Product</b></h1>
+:construction::hammer::hankey:
+A function to perform any type of product operations on arrays of any dimension.
+
+```js
+
+const ar1 = [[2,3,4],
+             [1,2,3]],
+      ar2 = [5,5,5];
+
+console.log(product(ar1,ar2));
+```
+product : test cases : 
+*1 [a,b,c] * [x,y,z]  // equal length 1-d arrays
+*2 [a,b,c] * [x,y]  // unequal length, must result in an uneven size error
+*3 [a,b,c] * [x] || [a,b,c] * x  // if length of arg2 is 1 or if arg2 is scalar
+*4 [[a,b,c],[d,e,f],[g,h,i]] * [a,b]  //arg1 is n-d but len(arg1) !== len(arg2), uneven size err
+*5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
+*6 a * x || [a] * [x]  // return a*x
+
+:construction::hammer:
+
+
+<h1><b>Sum</b></h1>
+:construction::hammer::hankey:
+A function to perform addition operations on arrays of any dimension.
+:construction::hammer:
+
+More To come :
+* Matrix operations. :construction:
+* Dtypes. :exclamation:
+* Direct array access. :exclamation:
+
+*** Any help or suggestion is welcome. Write to me atworkstudios@gmail.com or @_thennable on twitter.
 
 
 
