@@ -57,7 +57,7 @@ function product(arr1, arr2) {
 			}
 			else if(arr1[0].length === arr2.length){
 				arr1.forEach(i=>{
-					prod.push(i*arr2);
+					prod.push(product(i,arr2));
 				})
 			}
 			else{

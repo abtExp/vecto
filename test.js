@@ -56,3 +56,14 @@ let c = [[2,3,4],[5,6,7]];
 let d = [[2,4,5],[8,9,10]];
 
 console.log(product(c,d));
+
+
+let vd = new Vector([2,4]);
+vd.arrange(4);
+
+let ta = new Vector([4]);
+ta.arrange(5);
+
+console.log(vd,ta);
+
+console.log(product(vd.array,ta.array));
