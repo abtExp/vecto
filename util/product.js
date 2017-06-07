@@ -6,8 +6,7 @@
 ^ *5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
 ^ *6 a * x || [a] * [x]  // return a*x
 */
-const matrix_prod = require('./matrix_prod');
-const { Vector } = require('../vecto');
+const Matrix = require('./Matrix');
 
 function product(arr1, arr2) {
 	let prod = [];
@@ -30,13 +29,23 @@ function product(arr1, arr2) {
 
 	else{
 		if(Array.isArray(arr1[0]) && Array.isArray(arr2[0])){
+			const { Vector } = require('../vecto');
 			let ar1_shape = Vector.calc_shape(arr1);
 			let ar2_shape = Vector.calc_shape(arr2);
-			if((ar1_shape.length === ar2_shape.length === 2) && (ar1_shape[0] === ar2_shape[1])){
-				return matrix_prod(arr1,arr2);
-			}
-			else{
-				throw new Error("Uneven Size");
+			if(ar1_shape.length === ar2_shape.length === 2){
+				if(ar1_shape[1] === ar2_shape[0]){
+					return Matrix.matrix_prod(arr1,arr2);
+				}
+				else{
+					if(ar1_shape.toString() === ar2_shape.toString()){
+						for(let i=0; i<ar1.length; i++){
+							prod.push(product(ar1[i],ar2[i]));
+						}
+					}
+					else{
+						throw new Error("Uneven Size");
+					}
+				}
 			}
 		}
 		else if(Array.isArray(arr1[0]) && !Array.isArray(arr2[0])){
@@ -48,7 +57,7 @@ function product(arr1, arr2) {
 			}
 			else if(arr1[0].length === arr2.length){
 				arr1.forEach(i=>{
-					prod.push(i,arr2);
+					prod.push(i*arr2);
 				})
 			}
 			else{
@@ -64,7 +73,7 @@ function product(arr1, arr2) {
 			if(arr1.length === arr2.length){
 				let k=0;
 				arr1.forEach(i=>{
-					prod.push(i,arr2[k++]);
+					prod.push(i*arr2[k++]);
 				})
 			}
 			else{

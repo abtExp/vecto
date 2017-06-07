@@ -40,14 +40,19 @@ const { Vector,sum,product } = require("./vecto");
 
 // console.log(product(nnv.array,n2v.array));
 
-let nvvn = new Vector([5,5]);
-nvvn.arrange(6);
+// let nvvn = new Vector([5,5]);
+// nvvn.arrange(6);
 
-let nv22 = new Vector(nvvn.shape);
-nv22.arrange(5);
+// let nv22 = new Vector(nvvn.shape);
+// nv22.arrange(5);
 
-console.log(product(nvvn.array,nv22.array));
-console.log(sum(nvvn.array,nv22.array));
-console.log(sum(nvvn.array));
-console.log(product(nvvn.array,[2,2,2,2,2]));
-console.log(product(nvvn.array,2));
+// console.log(product(nvvn.array,nv22.array));
+// console.log(sum(nvvn.array,nv22.array));
+// console.log(sum(nvvn.array));
+// console.log(product(nvvn.array,[2,2,2,2,2]));
+// console.log(product(nvvn.array,2));
+
+let c = [[2,3,4],[5,6,7]];
+let d = [[2,4,5],[8,9,10]];
+
+console.log(product(c,d));
