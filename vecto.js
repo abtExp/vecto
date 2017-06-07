@@ -2,16 +2,21 @@
  * Referenced from numpy.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
+<<<<<<< HEAD
 
 const sum = require("./sum");
 const product = require("./product");
+=======
+const sum = require("./util/sum");
+const product = require("./util/product");
+>>>>>>> dev
 
 
 class Vector {
 	constructor(shape = [], arr = []) {
 		this.array = arr;
-		this.shape = ((shape.length) > 0) ? shape : (this.calc_shape(this.array));
-		this.size = this.calc_size(this.shape);
+		this.shape = ((shape.length) > 0) ? shape : (Vector.calc_shape(this.array));
+		this.size = Vector.calc_size(this.shape);
 		this.dim = this.find_dim();
 		this.flat = [];
 		Vector.flatten(this.array, this.flat);
@@ -117,18 +122,8 @@ class Vector {
 		return arr;
 	}
 
-
-	/* -------------------------------------------------------------------------------------------------------------------------------------------- */
-
-	/* object specific (property) methods */
-
-	/* find the shape of the given array */
-
-	find_dim() {
-		return this.shape.length;
-	}
-
-	calc_shape(arr) {
+	/* find the shape of array */
+	static calc_shape(arr) {
 		const shape = [];
 		shape.push(arr.length);
 		let a = arr[0];
@@ -140,7 +135,7 @@ class Vector {
 	}
 
 	/* find the size of the array */
-	calc_size(shape) {
+	static calc_size(shape) {
 		let size = 1;
 		for (let i of shape) {
 			size *= i;
@@ -148,6 +143,17 @@ class Vector {
 		return size;
 	}
 
+
+
+	/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+	/* object specific (property) methods */
+
+	/* find the shape of the given array */
+
+	find_dim() {
+		return this.shape.length;
+	}
 
 	/* a method to arrange or create a Vector from the given elements */
 	arrange(elems_arr, fill_style = "array") {
@@ -166,7 +172,7 @@ class Vector {
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
 	reshape(new_shape) {
-		if (this.calc_size(new_shape) === this.size) {
+		if (Vector.calc_size(new_shape) === this.size) {
 			/* reshape */
 			const temp_arr = this.flat;
 			this.shape = new_shape;
@@ -183,7 +189,7 @@ class Vector {
 	resize(new_shape) {
 		const temp_arr = this.flat;
 		this.shape = new_shape;
-		this.size = this.calc_size(new_shape);
+		this.size = Vector.calc_size(new_shape);
 		this.dim = this.find_dim();
 		this.flat = [];
 		this.arrange(temp_arr, "linear");
