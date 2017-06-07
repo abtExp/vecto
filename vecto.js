@@ -2,14 +2,8 @@
  * Referenced from numpy.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
-<<<<<<< HEAD
-
-const sum = require("./sum");
-const product = require("./product");
-=======
 const sum = require("./util/sum");
 const product = require("./util/product");
->>>>>>> dev
 
 
 class Vector {
