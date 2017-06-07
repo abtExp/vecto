@@ -246,12 +246,11 @@ const ar1 = [[2,3,4],
 console.log(product(ar1,ar2));
 ```
 product : test cases : 
-*1 [a,b,c] * [x,y,z]  // equal length 1-d arrays
-*2 [a,b,c] * [x,y]  // unequal length, must result in an uneven size error
-*3 [a,b,c] * [x] || [a,b,c] * x  // if length of arg2 is 1 or if arg2 is scalar
-*4 [[a,b,c],[d,e,f],[g,h,i]] * [a,b]  //arg1 is n-d but len(arg1) !== len(arg2), uneven size err
-*5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
-*6 a * x || [a] * [x]  // return a*x
+* 1 [a,b,c] * [x,y,z]  // equal length 1-d arrays
+* 2 [a,b,c] * [x,y]  // unequal length, must result in an uneven size error
+* 3 [a,b,c] * [x] || [a,b,c] * x  // if length of arg2 is 1 or if arg2 is scalar
+* 4 [[a,b,c],[d,e,f],[g,h,i]] * [a,b]  //arg1 is n-d but len(arg1) !== len(arg2), uneven size err
+* 5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
 
 :construction::hammer:
 
