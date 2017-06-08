@@ -150,19 +150,50 @@ class Vector {
 	}
 
 	/* a method to arrange or create a Vector from the given elements */
-	arrange(elems_arr, fill_style = "array") {
-		const dim = this.dim;
-		let base_arr = elems_arr,
-			curr_arr;
-		for (let i = dim - 2; i >= -1; i--) {
-			curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
-			base_arr = curr_arr;
-			fill_style = "array";
-		}
-		this.array = base_arr;
-		this.flat = [];
-		Vector.flatten(this.array, this.flat);
-	}
+	// arrange(elems_arr, fill_style = "array") {
+	// 	const dim = this.dim;
+	// 	let base_arr,
+	// 		curr_arr;
+	// 	for (let i = dim - 2; i >= -1; i--) {
+	// 		if(elems_arr){
+	// 			base_arr = elems_arr;
+	// 			curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
+	// 			base_arr = curr_arr;
+	// 			fill_style = "array";
+	// 		}
+	// 	}
+	// 	this.array = base_arr;
+	// 	this.flat = [];
+	// 	Vector.flatten(this.array, this.flat);
+	// } //----------------------------------------------------------------------------------------------fix it here...............................
+
+	// arrange(elems_arr){
+	// 	var dim = this.dim;
+	// 	var base_arr_size = this.shape[dim-1];
+	// 	var final_arr = [];
+	// 	var base_elems = 1, j=0;
+	// 	if(dim >= 2){
+	// 		base_elems = this.shape[dim-2]; 
+	// 	}
+	// 	for(var i=0; i<base_elems; i++){
+	// 		if(elems_arr){
+	// 			var part = [];
+	// 			for(var k=0; k<base_arr_size; k++){
+	// 				part[k] = elems_arr[j++];
+	// 				if(j>=elems_arr.length){
+	// 				j=0;
+	// 				}
+	// 			}
+	// 			final_arr.push(Vector.fill(base_arr_size,part));
+	// 		}
+	// 		else{
+	// 			final_arr.push(Vector.fill(base_arr_size));
+	// 		}		
+	// 	}
+	// 	this.array = final_arr;
+	// 	this.flat = [];
+	// 	Vector.flatten(this.array,this.flat);
+	// }
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
 	reshape(new_shape) {
