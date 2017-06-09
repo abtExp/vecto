@@ -150,22 +150,21 @@ class Vector {
 	}
 
 	/* a method to arrange or create a Vector from the given elements */
-	// arrange(elems_arr, fill_style = "array") {
-	// 	const dim = this.dim;
-	// 	let base_arr,
-	// 		curr_arr;
-	// 	for (let i = dim - 2; i >= -1; i--) {
-	// 		if(elems_arr){
-	// 			base_arr = elems_arr;
-	// 			curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
-	// 			base_arr = curr_arr;
-	// 			fill_style = "array";
-	// 		}
-	// 	}
-	// 	this.array = base_arr;
-	// 	this.flat = [];
-	// 	Vector.flatten(this.array, this.flat);
-	// } //----------------------------------------------------------------------------------------------fix it here...............................
+	arrange(elems_arr, fill_style = "array") {
+		const dim = this.dim;
+		let base_arr = elems_arr ? elems_arr : null,
+			curr_arr;
+		fill_style = "linear";
+		for (let i = dim - 2; i >= -1; i--) {
+				if(base_arr) curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
+				else curr_arr = Vector.fill(this.shape[i + 1], fill_style);
+				base_arr = curr_arr;
+				fill_style = "array";
+		}
+		this.array = base_arr;
+		this.flat = [];
+		Vector.flatten(this.array, this.flat);
+	} //----------------------------------------------------------------------------------------------fix it here...............................
 
 	// arrange(elems_arr){
 	// 	var dim = this.dim;
