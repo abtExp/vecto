@@ -68,8 +68,8 @@ const { Vector,sum,product } = require("./vecto");
 
 // console.log(product(vd.array,ta.array));
 
-let b = new Vector([2,2,3]);
-b.arrange([1,2,4,5,6,78,9]);
+let b = new Vector([2,3]);
+b.arrange();
 console.log(b.array);
 b.resize([6,2]);
 console.log(b.array);
