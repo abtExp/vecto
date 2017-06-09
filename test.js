@@ -68,10 +68,21 @@ const { Vector,sum,product } = require("./vecto");
 
 // console.log(product(vd.array,ta.array));
 
-let b = new Vector([2,2,3]);
-b.arrange();
-console.log(b.array);
-b.resize([6,2]);
-console.log(b.array);
-b.reshape([3,4]);
-console.log(b.array);
+// let b = new Vector([2,2,3]);
+// b.arrange();
+// console.log(b.array);
+// console.log(sum(b.array));
+// b.resize([6,2]);
+// console.log(b.array);
+// b.reshape([3,4]);
+// console.log(b.array);
+
+let ta = Vector.fill(8);
+console.log(ta);
+ta = Vector.fill(8,"linear",1);
+console.log(ta);
+ta = Vector.fill(8,"linear",0.1,0.9,0.1);
+console.log(ta);
+ta = Vector.fill(8,"linear",10,20);
+console.log(ta);
+ta = Vector.fill(8)

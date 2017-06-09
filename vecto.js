@@ -104,9 +104,11 @@ class Vector {
 			else {
 				let min = args[0],
 					max = args[1],
+					step = (args.length === 3) ? args[2] : 1,
 					num = min;
 				for (i = 0; i < len; i++) {
-					arr[i] = num++;
+					arr[i] = parseFloat((num+step).toPrecision(2));
+					num += step;
 					if (num > max) {
 						num = min;
 					}
