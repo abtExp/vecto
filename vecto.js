@@ -155,19 +155,19 @@ class Vector {
 		let base_arr = elems_arr ? elems_arr : null,
 			curr_arr,k=0,final_arr = [];
 		for (let i = dim - 2; i >= -1; i--) {
-				if(base_arr) curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
-				else curr_arr = Vector.fill(this.shape[i + 1], fill_style);
-				if(elems_arr && (elems_arr.length > this.shape[dim-1])){
-					let part = [];
-					for(let j=0; j<this.shape[dim-1]; j++){
-						part[j] = elems_arr[k++];
-						if(k>=elems_arr.length) k = 0;
-					}
-					base_arr = part;
+			if(base_arr) curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
+			else curr_arr = Vector.fill(this.shape[i + 1], fill_style);
+			if(elems_arr && (elems_arr.length > this.shape[dim-1])){
+				let part = [];
+				for(let j=0; j<this.shape[dim-1]; j++){
+					part[j] = elems_arr[k++];
+					if(k>=elems_arr.length) k = 0;
 				}
-				else base_arr = curr_arr;
-				final_arr = curr_arr;
-				fill_style = "array";
+				base_arr = part;
+			}
+			else base_arr = curr_arr;
+			final_arr = curr_arr;
+			fill_style = "array";
 		}
 		this.array = final_arr;
 		this.flat = [];
