@@ -43,7 +43,7 @@ console.log(v6);
 
 /* Tests for Vector.flatten(ndarr,target_arr) */
 let v7 = [[[1,2,3],[4,5,6],[8,9,10]],[[2,3,4],[6,9,1],[4,5,2]],[[4,5,6],[1,4,1],[4,6,8]]];
-let tar1 = [];0
+let tar1 = [];
 Vector.flatten(v7,tar1);
 console.log(tar1);
 //Expected output : [1,2,3,4,5,6,8,9,10,2,3,4,6,9,1,4,5,2,4,5,6,1,4,1,4,6,8]
