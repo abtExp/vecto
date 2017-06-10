@@ -107,7 +107,7 @@ class Vector {
 					step = (args.length === 3) ? args[2] : 1,
 					num = min;
 				for (i = 0; i < len; i++) {
-					arr[i] = parseFloat((num+step).toPrecision(2));
+					arr[i] = parseFloat((num).toPrecision(2));
 					num += step;
 					if (num > max) {
 						num = min;
