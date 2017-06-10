@@ -48,9 +48,18 @@ Vector.flatten(v7,tar1);
 console.log(tar1);
 //Expected output : [1,2,3,4,5,6,8,9,10,2,3,4,6,9,1,4,5,2,4,5,6,1,4,1,4,6,8]
 
+
 /* Tests for Vector_object.arrange(?elems_arr,?fill_style) */
 
+let v8 = new Vector([2,2,3]);
+v8.arrange([1,2,3,4,5,6,7]);
+console.log(v8.array);
 
+v8.arrange();
+console.log(v8.array);
+
+v8.arrange([2]);
+console.log(v8.array);
 
 /* Tests for product(arr1,arr2)*/
 
