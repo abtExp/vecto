@@ -69,6 +69,19 @@ class Vector {
 		}
 	}
 
+	/* form chunks */
+	static form_chunks(size,no,arr){
+		let chunk = [],final = [], k = 0;
+		for(let i=0; i<no; i++){
+			chunk = [];
+			for(let j=0; j<size; j++){
+				chunk[j] = arr[k++];
+				if(k>=arr.length) k =0;
+			}
+			final.push(chunk);
+		}
+		return final;
+	}
 
 	/* fills the vector acc to passed args */
 	static fill(len, fill_style = "array", ...args) {
@@ -104,9 +117,11 @@ class Vector {
 			else {
 				let min = args[0],
 					max = args[1],
+					step = (args.length === 3) ? args[2] : 1,
 					num = min;
 				for (i = 0; i < len; i++) {
-					arr[i] = num++;
+					arr[i] = parseFloat((num).toPrecision(2));
+					num += step;
 					if (num > max) {
 						num = min;
 					}
@@ -150,14 +165,13 @@ class Vector {
 	}
 
 	/* a method to arrange or create a Vector from the given elements */
-	arrange(elems_arr, fill_style = "array") {
-		const dim = this.dim;
-		let base_arr = elems_arr,
-			curr_arr;
-		for (let i = dim - 2; i >= -1; i--) {
-			curr_arr = Vector.fill(this.shape[i + 1], fill_style, base_arr);
+	arrange(elems_arr, fill_style = "linear") {
+		let base_arr = elems_arr ? elems_arr : Vector.fill(Math.floor(this.size),"linear"),
+		curr_arr = [];
+		for(let i=this.dim - 1; i > 0; i--){
+			let size = this.shape[i],no=i>1 ? this.shape[i-1]*this.shape[i-2] : this.shape[i-1];
+			curr_arr = Vector.form_chunks(size,no,base_arr);
 			base_arr = curr_arr;
-			fill_style = "array";
 		}
 		this.array = base_arr;
 		this.flat = [];
