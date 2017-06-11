@@ -4,11 +4,11 @@
  */
 const sum = require("./util/sum");
 const product = require("./util/product");
-
+const {} = require('./core');
 
 class Vector {
-	constructor(shape = [], arr = []) {
-		this.array = arr;
+	constructor({ shape = [], arr = [], dtype = 'uint8' }) {
+		this.array = arr ? form_arr(arr,size,dtype) : []; //have to find the number of arrays to be formed.
 		this.shape = ((shape.length) > 0) ? shape : (Vector.calc_shape(this.array));
 		this.size = Vector.calc_size(this.shape);
 		this.dim = this.find_dim();
@@ -61,7 +61,7 @@ class Vector {
 	static flatten(arr, tarr) {
 		for (let i of arr) {
 			if (Array.isArray(i)) {
-				this.flatten(i, tarr);
+				Vector.flatten(i, tarr);
 			}
 			else {
 				tarr.push(i);
