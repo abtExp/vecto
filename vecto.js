@@ -4,7 +4,7 @@
  */
 const sum = require("./util/sum");
 const product = require("./util/product");
-const {} = require('./core');
+const {form_arr} = require('./core');
 
 class Vector {
 	constructor({ shape = [], arr = [], dtype = 'uint8' }) {
