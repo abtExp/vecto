@@ -1,18 +1,19 @@
-/* A JS library for dealing with n-dimensional vectors. 
+/* A JS library for dealing with n-dimensional arrays. 
  * Referenced from numpy.
  * Author : Anubhav Tiwari <atworkstudios@gmail.com>
  */
 const sum = require("./util/sum");
 const product = require("./util/product");
-const {form_arr} = require('./core');
+const {form_arr} = require('./lib/core');
 
 class Vector {
-	constructor({ shape = [], arr = [], dtype = 'uint8' }) {
-		this.array = arr ? form_arr(arr,size,dtype) : []; //have to find the number of arrays to be formed.
+	constructor(shape=[],arr=[], dtype='uint8') {
+		this.array = arr;
 		this.shape = ((shape.length) > 0) ? shape : (Vector.calc_shape(this.array));
 		this.size = Vector.calc_size(this.shape);
 		this.dim = this.find_dim();
 		this.flat = [];
+		this.dtype = dtype;
 		Vector.flatten(this.array, this.flat);
 	}
 
@@ -84,7 +85,7 @@ class Vector {
 	}
 
 	/* fills the vector acc to passed args */
-	static fill(len, fill_style = "array", ...args) {
+	static fill(len, fill_style = "linear", ...args) {
 		const arr = [];
 		let i;
 		if (!args || args.length === 0) {

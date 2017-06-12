@@ -113,7 +113,6 @@ let v17 = [[1,2],[4,5]];
 console.log(product(v12,v17));
 
 console.log(product(v12,4));
-console.log(product(v12,v17));
 
 
 /* Tests for sum(arr1,?arr2) */
