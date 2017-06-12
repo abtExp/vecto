@@ -12,9 +12,10 @@ class Vector {
 		this.shape = ((shape.length) > 0) ? shape : (Vector.calc_shape(this.array));
 		this.size = Vector.calc_size(this.shape);
 		this.dim = this.find_dim();
-		this.flat = [];
+		let temp = []
 		this.dtype = dtype;
-		Vector.flatten(this.array, this.flat);
+		Vector.flatten(this.array, temp);
+		this.flat = form_arr(temp,dtype);
 	}
 
 	/* class specific (static) methods */
@@ -175,8 +176,9 @@ class Vector {
 			base_arr = curr_arr;
 		}
 		this.array = base_arr;
-		this.flat = [];
-		Vector.flatten(this.array, this.flat);
+		let temp = [];
+		Vector.flatten(this.array, temp);
+		this.flat = form_arr(temp,this.dtype);
 	}
 
 	/* reshapes the vector only if for the new shape the number of elements remain same */
@@ -186,7 +188,6 @@ class Vector {
 			const temp_arr = this.flat;
 			this.shape = new_shape;
 			this.dim = this.find_dim();
-			this.flat = [];
 			this.arrange(temp_arr, "linear");
 		}
 		else {
@@ -200,7 +201,6 @@ class Vector {
 		this.shape = new_shape;
 		this.size = Vector.calc_size(new_shape);
 		this.dim = this.find_dim();
-		this.flat = [];
 		this.arrange(temp_arr, "linear");
 	}
 
