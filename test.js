@@ -44,7 +44,7 @@ console.log(v6);
 /* Tests for Vector.flatten(ndarr,target_arr) */
 let v7 = [[[1,2,3],[4,5,6],[8,9,10]],[[2,3,4],[6,9,1],[4,5,2]],[[4,5,6],[1,4,1],[4,6,8]]];
 let tar1 = [];
-Vector.flatten(v7,tar1);
+core.flatten(v7,tar1);
 console.log(tar1);
 //Expected output : [1,2,3,4,5,6,8,9,10,2,3,4,6,9,1,4,5,2,4,5,6,1,4,1,4,6,8]
 
@@ -52,25 +52,26 @@ console.log(tar1);
 /* Tests for Vector_object.arrange(?elems_arr,?fill_style) */
 
 let v8 = new Vector([2,2,3]);
-v8.arrange([1,2,3,4,5,6,7]);
+console.log(v8.shape);
+v8.array = core.arrange(v8.shape,[1,2,3,4,5,6,7]);
 console.log(v8.array);
 
-v8.arrange();
+v8.array = core.arrange(v8.shape);
 console.log(v8.array);
 
-v8.arrange([2]);
+v8.array = core.arrange(v8.shape,[2]);
 console.log(v8.array);
 
 /* Tests for Vector_object.resize(new_shape[]) */
 let v9 = new Vector([2,2,3]);
-v9.arrange([4]);
+v9.array = core.arrange(v9.shape,[4]);
 console.log(v9.array);
 v9.resize([2,9,5]);
 console.log(v9.array);
 
 /* Tests for Vector_object.reshape(new_shape[]) */
 let v10 = new Vector([2,3]);
-v10.arrange();
+v10.array = core.arrange(v10.shape);
 console.log(v10.array);
 v10.reshape([6,2]);
 console.log(v10.array);
@@ -78,19 +79,19 @@ console.log(v10.array);
 
 /* Tests for Vector.fill(len,fill_style,...args) */
 
-let v11 = Vector.fill(8);
+let v11 = core.fill(8);
 console.log(v11);
 //Expected output : [random array of length 8];
 
-v11 = Vector.fill(8,"linear",1);
+v11 = core.fill(8,"linear",1);
 console.log(v11);
 //Expected output : [1,1,1,1,1,1,1,1]
 
-v11 = Vector.fill(8,"linear",0.1,0.9,0.1);
+v11 = core.fill(8,"linear",0.1,0.9,0.1);
 console.log(v11);
 //Expected output : [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] 
 
-v11 = Vector.fill(8,"linear",10,20);
+v11 = core.fill(8,"linear",10,20);
 console.log(v11);
 //Expected output : [10,11,12,13,14,15,16,17]
 

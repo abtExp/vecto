@@ -6,9 +6,9 @@
 *5 [[a,b,c],[d,e,f]] * [x,y,z]  // len(arg1) !== len(arg2) but len(arg1[i]) == len(arg2), must multiply arg2 with each arg[i]
 */
 const Matrix = require('./Matrix');
-const calc_shape = require('./calc_shape');
-const form_arr = require('./form_arr');
-const flatten = require('./flatten');
+const calc_shape = require('../lib/calc_shape');
+const form_arr = require('../lib/form_arr');
+const flatten = require('../lib/flatten');
 
 function product(arr1, arr2, mode="dot") {
 	let prod = [];
