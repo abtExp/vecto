@@ -1,4 +1,4 @@
-const { Vector,sum,product } = require("./vecto");
+const { Vector,sum,product,core } = require("./vecto");
 
 /* Tests for creation of Vector */
 
@@ -120,5 +120,3 @@ console.log(product(v12,4));
 
 
 /* Tests for Vector.add(v2) */
-
-
