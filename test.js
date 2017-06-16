@@ -102,7 +102,7 @@ v13 = [10,10,10];
 console.log(product(v12,v13,'dot'));
 
 let v14 = [[2,1,5],[6,7,8]];
-console.log(product(v12,v14));
+console.log(product(v12,v14,'dot'));
 
 let v15 = [2,3,4];
 console.log(product(v13,v15));
@@ -123,3 +123,4 @@ console.log(product(v12,4));
 
 
 /* Tests for ndarray.add(v2) */
+
