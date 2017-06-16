@@ -120,7 +120,14 @@ console.log(product(v12,4));
 
 /* Tests for sum(arr1,?arr2) */
 
-
+let v16 = [1,2,3],
+v17 = [4,5,6];
+console.log(sum(v16));
+console.log(sum(v16,v17));
+let v18 = [[2,3,4],[4,5,7]];
+console.log(sum(v18));
+let v19 = [[1,2,2],[2,3,4]];
+console.log(sum(v18,v19));
 
 /* Tests for ndarray.add(v2) */
 
