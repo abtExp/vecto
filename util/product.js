@@ -21,7 +21,8 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 			}
 			else if(mode==='dot'){
 				if(s1.toString() === s2.toString()){
-					return product(ta1,ta2);
+					prod = product(ta1,ta2);
+					return arrange(s1,prod);
 				}
 				else{
 					throw new Error("Uneven shape");
@@ -36,6 +37,7 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 						if((i%t2.length)===0 && i!==0) ++k;
 						prod.push(t1[i]*t2[k]);
 					}
+					return arrange(s1,prod);
 				}
 				else{
 					throw new Error("Uneven Size");
@@ -48,6 +50,7 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 						if(k>=t2.length)k=0;
 						prod.push(t1[i]*t2[k++]);
 					}
+					return arrange(s1,prod);
 				}
 				else{
 					throw new Error("Uneven Size");
@@ -69,7 +72,8 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 		}
 		else{
 			if(s1.toString() === s2.toString()){
-				return product(ta1,ta2);
+				prod = product(ta1,ta2);
+				return arrange(s1,prod);
 			}
 			else{
 				throw new Error("Uneven size");
@@ -80,7 +84,11 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 		let ta1 = [];
 		flatten(arr1,ta1);
 		let t1 = form_arr(ta1);
-		for(let i=0; i<t1.length; i++) prod.push(t1[i]*arr2);
+		let s1 = calc_shape(arr1);
+		for(let i=0; i<t1.length; i++){
+			prod.push(t1[i]*arr2);
+		}
+		return arrange(s1,prod);
 	}
 	else if(!Array.isArray(arr1) && Array.isArray(arr2)){
 		return product(arr2,arr1);
