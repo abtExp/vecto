@@ -134,6 +134,10 @@ console.log(sum(v18,v19));
 
 let a = [[1,2,3],[4,5,6],[7,8,9]];
 console.log(core.transpose(a));
+let b = [1,2,3];
+console.log(core.transpose(b));
+console.log(core.calc_shape(b));
+console.log(core.calc_shape(core.transpose(b)));
 
 
 /* Test for form_arr */
@@ -141,3 +145,7 @@ let ta = [[[1,2,3,4],[5,6,7,8]],[[2,4,5,6],[24,51,61,16]]];
 let tb = [];
 core.flatten(ta,tb);
 console.log(core.form_arr(tb));
+
+/* Tests for form_chunks */
+let ab = [1,2,3,4,5,6,7,8,9];
+console.log(core.form_chunks(3,3,ab));
