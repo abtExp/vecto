@@ -1,6 +1,5 @@
 module.exports = function product(arr1, arr2,mode="matrix") {
 	let prod = [];
-	const Matrix = require('./Matrix');
 	const calc_shape = require('../lib/calc_shape');
 	const form_arr = require('../lib/form_arr');
 	const flatten = require('../lib/flatten');
@@ -17,7 +16,7 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 		
 		if(s1.length === 2 && s2.length === 2){
 			if(s1[1] === s2[0] && mode === 'matrix'){
-				prod = Matrix.matrix_prod(t1,t2,s1,s2);
+				prod //=;
 			}
 			else if(mode==='dot'){
 				if(s1.toString() === s2.toString()){
