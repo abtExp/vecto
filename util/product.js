@@ -16,7 +16,7 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 		
 		if(s1.length === 2 && s2.length === 2){
 			if(s1[1] === s2[0] && mode === 'matrix'){
-				prod //=;
+				// prod = matrix_product(a,b);
 			}
 			else if(mode==='dot'){
 				if(s1.toString() === s2.toString()){
