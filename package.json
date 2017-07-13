@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abt10/vecto.git"
+    "url": "git+https://github.com/abtexp/vecto.git"
   },
   "keywords": [
     "ndarray",
     "vectors"
   ],
-  "author": "abt10 <atworkstudios@gmail.com>",
+  "author": "abtExp <atworkstudios@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abt10/vecto/issues"
+    "url": "https://github.com/abtexp/vecto/issues"
   },
-  "homepage": "https://abt10.github.io/vecto",
+  "homepage": "https://abtexp.github.io/vecto",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
