@@ -4,7 +4,7 @@ const { ndarray,sum,product,core } = require("./vecto");
 
 //: constructor(?shape[],?array[])
 
-//case 1 : constructor(shape,arr)
+// case 1 : constructor(shape,arr)
 let v1 = new ndarray([2,3],[[1,2,3],[4,5,6]]);
 console.log(v1);
 //Expected output : v1 = { array:[[1,2,3],[4,5,6]], dim:2, shape:[2,3], size:6, flat:[1,2,3,4,5,6] };

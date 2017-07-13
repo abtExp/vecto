@@ -13,10 +13,10 @@ module.exports = function product(arr1, arr2,mode="matrix") {
 		t2 = form_arr(ta2),
 		s1 = calc_shape(arr1),
 		s2 = calc_shape(arr2);
-		
+
 		if(s1.length === 2 && s2.length === 2){
 			if(s1[1] === s2[0] && mode === 'matrix'){
-				// prod = matrix_product(a,b);
+							
 			}
 			else if(mode==='dot'){
 				if(s1.toString() === s2.toString()){
