@@ -156,3 +156,16 @@ console.log(core.form_chunks(3,3,ab));
 let cc = new ndarray([2,3],[],'float32');
 cc.arrange();
 console.log(cc.transpose());
+
+
+/* Test for core.clip() */
+
+let cl = [[-2,2,41,22],[-1,-12,0,12]];
+console.log(core.clip(cl,0,20));
+
+/* Test for ndarray_obect.clip() */
+
+let ncl = new ndarray([2,3]);
+ncl.arrange([2]);
+ncl.clip(2,1);
+console.log(ncl.array);
