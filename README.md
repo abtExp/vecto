@@ -5,6 +5,27 @@
 
 # A JavaScript Mini Library to deal with N-dimensional arrays.
 
+
+## <b> What's new </b>
+* <a href='#clip'>clip</a> method
+: Clip the values of the ndarray according to the passed max and min values.
+
+* Fixing the product method
+: Fixes to the product, every build till now had a logical error.
+
+* Matrix Multiplication
+
+* Fixed the flatten method (see the <a href='#flatten'>new docs</a>)
+
+
+## <b>Upcoming</b>
+* choose method for selective ndarray formation.
+
+<br />
+<br />
+<br />
+<br />
+
 ## Installation
 
 ```shell
@@ -16,6 +37,24 @@ npm install vecto
 ```js
 const vecto = require('vecto');
 ```
+
+
+### Function List : 
+
+* <a href='#arrange'>arrange</a> : Form ndarray of given array in provided shape
+* <a href='#calc_shape'>calc_shape</a> : Find the shape of an array
+* <a href='#calc_size'>calc_size</a> : Calculate the size of the ndarray
+* <a href='#choose'>choose</a> : Form new ndarray of given ndarray by choosing some dimensions only
+* <a href='#clip'>clip</a> : Clip the array elements into a given range
+* <a href='#fill'>fill</a> : fill in arrays by providing a range of elements or an element or by random numbers.
+* <a href='#find_dim'>find_dim</a> : find the dimension of the array.
+* <a href='#flatten'>flatten</a> : convert ndarray into 1d array.
+* <a href='#form_chunks'>form_chunks</a> : form chunks by providing the number and size of chunks to be formed.
+* <a href='#transpose'>transpose</a> : transpose of arrays.
+
+
+<br />
+<br />
 
 The vecto exports:
 * ndarray
@@ -160,7 +199,7 @@ console.log(nv.transpose())
 ```
 
 
-### Product
+### <p id='product'>Product</p>
 
 Method to perform different multiplication operations on different ndarrays.
 
@@ -206,7 +245,7 @@ See test file for all test cases.
 Performs Matrix multiplication
 
 
-### Sum
+### <p id='sum'>Sum</p>
 
 Performs addition on two ndarrays.
 
@@ -217,7 +256,9 @@ The core object exports all the methods to normal arrays instead of just ndarray
 
 Methods provided by the core are : 
 
-* ##### core.arrange([shape],[array])
+<p id='arrange'></p>
+
+* ### core.arrange([shape],[array])
 
 Takes in the shape of the ndarray in which the passed elements are to be arranged.
 
@@ -228,7 +269,9 @@ let nd = core.arrange([2,5],elems_arr);
 //nd = [[1,2,3,4,5],[6,7,8,9,10]]
 ```
 
-* ##### core.calc_shape([array])
+<p id='calc_shape'></p>
+
+* ### core.calc_shape([array])
 
 Takes in an array and outputs the shape(configuration) of that array.
 
@@ -239,7 +282,10 @@ shape = core.calc_shape(ar);
 //shape = [3,2,2];
 ```
 
-* ##### core.calc_size([shape])
+
+<p id='calc_size'></p>
+
+* ### core.calc_size([shape])
 
 Takes in a shape and calculates the size of the ndarray.
 
@@ -250,17 +296,62 @@ console.log(core.calc_size(shape));
 //20
 ```
 
-* ##### core.find_dim([shape])
+<p id='clip'></p>
+
+* ### clip([array],^min_val/[min_val],^max_val/[max_val])
+
+Makes the array elements contained in a limit provided as 
+min_val and max_val.
+
+[array] : the array to be clipped.
+min_val/[min_val] : the minimum limit for the data in the array.
+if provided as array, it's shape should match the shape of the provided array, with every element of the [min_val]describing the min val for the respective element of the provided array. 
+
+max_val/[max_val] : the maximum limit for the data in the array.
+if provided as array, it's shape should match the shape of the provided array, with every element of the [max_val]describing the max val for the respective element of the provided array. 
+
+( ^ = only one of min_val or max_val could be null.)
+
+example : 
+```js
+
+let a = [[10,24,12,3],[7,1,20,9]];
+clip(a,10,12);
+// returns [[10,12,12,10],[10,10,12,10]]
+
+clip(a,[[10,12,14,4],[8,0,10,10]],[[12,20,20,31],[10,1,10,10]]);
+//returns [ [ 10, 20, 14, 4 ], [ 8, 1, 10, 10 ] ]
+
+clip(a,[[10,12,14,4],[8,0,10,10]],2);
+//returns [ [ 2, 2, 14, 4 ], [ 8, 1, 2, 10 ] ]
+```
+
+<p id='find_dim'></p>
+
+* ### core.find_dim([shape])
 
 Return the dimension of the array
 
 
-* ##### core.flatten([array],[target_array])
+<p id='flatten'></p>
 
-Takes in an ndarray and an empty array.
-Return the flattened version(1d) version of ndarray in the target array.
+* ### core.flatten([array])
 
-* ##### core.form_chunks(size,number,[array])
+Takes in an ndarray.
+Return the flattened version(1d) version of ndarray.
+
+example : 
+```js
+
+let a = [[[1,2],[3,4]],[[5,6],[7,8]]];
+core.flatten(a);
+//returns [1,2,3,4,5,6,7,8];
+
+```
+
+<p id='form_chunks'></p>
+
+* ### core.form_chunks(size,number,[array])
 
 size : The Size of a chunk.
 number : the number of chunks to be formed
@@ -277,12 +368,14 @@ console.log(core.form_chunks(2,2,br));
 //[[[1,2,3],[4,5,6]],[[7,8,9],[1,2,3]]]
 ```
 
-* ##### core.transpose([arr],dtype='string')
+<p id='transpose'></p>
+
+* ### core.transpose([arr],dtype='string')
 
 Performs transpose operation on passed array.
 
 
 
 
-@abt10
+<a href='https://github.com/abtExp'>@abtExp</a>
 
