@@ -12,7 +12,6 @@ module.exports =
                 t2 = flatten(arr2),
                 s1 = calc_shape(arr1),
                 s2 = calc_shape(arr2);
-            console.log(t1, t2);
 
             if (s1.length === 2 && s2.length === 2) {
                 if (s1[1] === s2[0] && mode === 'matrix') {
