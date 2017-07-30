@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/abtExp/vecto/badges/gpa.svg)](https://codeclimate.com/github/abtExp/vecto)  [![Build Status](https://travis-ci.org/abtExp/vecto.svg?branch=master)](https://travis-ci.org/abtExp/vecto)  [![npm](https://badge.fury.io/js/vecto.svg)](https://badge.fury.io/js/vecto)
 [![Coverage Status](https://coveralls.io/repos/github/abtExp/vecto/badge.svg?branch=master)](https://coveralls.io/github/abtExp/vecto?branch=master)
+[![codecov](https://codecov.io/gh/abtExp/vecto/branch/master/graph/badge.svg)](https://codecov.io/gh/abtExp/vecto)
 
 # vecto :construction: :sparkles: :art:
 
