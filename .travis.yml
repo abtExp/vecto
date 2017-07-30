@@ -1,15 +1,17 @@
 language: node_js
 node_js:
 - "node"
+install:
+- npm install codecov webpack jest codeclimate-test-reporter -g
 script:
 - "npm run build"
-- "npm run cover"
+- "npm test"
 settings: 
     build_pushes: true
 addons:
   code_climate:
     repo_token: 827b26a2931ef3d1e64630b91f395509685d097519f9385d55f2f8ba6800839a
 after_success:
-  - npm install -g codeclimate-test-reporter
   - codeclimate-test-reporter < ./coverage/lcov.info
   - npm run coverage
+  - codecov
