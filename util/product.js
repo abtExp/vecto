@@ -1,20 +1,22 @@
 module.exports =
     function product(arr1, arr2, mode = "matrix") {
         let prod = [];
-        const calc_shape = require('../lib/calc_shape');
-        const form_arr = require('../lib/form_arr');
-        const flatten = require('../lib/flatten');
-        const arrange = require('../lib/arrange');
+        const calc_shape = require('../lib/calc_shape'),
+            form_arr = require('../lib/form_arr'),
+            flatten = require('../lib/flatten'),
+            matrix_mult = require('../lib/matmul'),
+            arrange = require('../lib/arrange');
+
         if (Array.isArray(arr1) && Array.isArray(arr2)) {
-            let t1 = form_arr(flatten(arr1)),
-                t2 = form_arr(flatten(arr2)),
+            let t1 = flatten(arr1),
+                t2 = flatten(arr2),
                 s1 = calc_shape(arr1),
                 s2 = calc_shape(arr2);
+            console.log(t1, t2);
 
             if (s1.length === 2 && s2.length === 2) {
                 if (s1[1] === s2[0] && mode === 'matrix') {
-                    console.log('Working');
-                    return;
+                    return arrange([s1[0], s2[1]], matrix_mult(s1, s2, t1, t2));
                 } else if (mode === 'dot') {
                     if (s1.toString() === s2.toString()) {
                         prod = product(ta1, ta2);
