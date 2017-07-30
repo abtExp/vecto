@@ -286,9 +286,9 @@ shape = core.calc_shape(ar);
 
 <p id='calc_size'></p>
 
-* ### core.calc_size([shape])
+* ### core.calc_size([array])
 
-Takes in a shape and calculates the size of the ndarray.
+Takes in a array and calculates the size of the ndarray.
 
 ex :
 ```js
@@ -329,7 +329,7 @@ clip(a,[[10,12,14,4],[8,0,10,10]],2);
 
 <p id='find_dim'></p>
 
-* ### core.find_dim([shape])
+* ### core.find_dim([array])
 
 Return the dimension of the array
 
