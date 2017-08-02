@@ -8,8 +8,7 @@ module.exports = function sum(arr1, arr2) {
         ta2 = [],
         t1, t2, s1, s2;
     if (!arr2) {
-        flatten(arr1, ta1);
-        t1 = form_arr(ta1);
+        t1 = form_arr(flatten(arr1));
         s1 = calc_shape(arr1);
         if (s1.length > 1) {
             summ = [];
