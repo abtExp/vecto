@@ -3,10 +3,7 @@ module.exports = function sum(arr1, arr2) {
     const arrange = require('../lib/arrange');
     const form_arr = require('../lib/form_arr');
     const flatten = require('../lib/flatten');
-    let summ,
-        ta1 = [],
-        ta2 = [],
-        t1, t2, s1, s2;
+    let summ, t1, t2, s1, s2;
     if (!arr2) {
         t1 = form_arr(flatten(arr1));
         s1 = calc_shape(arr1);
@@ -38,8 +35,12 @@ module.exports = function sum(arr1, arr2) {
             for (let i = 0; i < t1.length; i++) {
                 summ[i] = t1[i] + t2[i];
             }
-            let si = s1.length > 1 ? s1.slice(s1.length - 2) : s1;
-            return arrange(si, summ);
+            return arrange(s1, summ);
+        } else if (s1.length > 1 && s2.length === 1) {
+            for (let i = 0; i < t1.length; i++) {
+                t1[i] += t2;
+            }
+            return arrange(s1, t1);
         } else {
             throw new Error("Uneven Size");
         }
