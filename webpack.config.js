@@ -1,15 +1,15 @@
 const path = require('path');
 module.exports = {
-    entry : path.resolve(__dirname,'vecto.js'),
-    output :{
-        path : path.resolve(__dirname,'build'),
-        filename : 'build.js'
+    entry: path.resolve(__dirname, 'vecto.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'build.js'
     },
     module: {
-        loaders: [{ 
-            test: /\.js$/, 
-            exclude: [/node_modules/,/build/], 
-            loader: "babel-loader" 
+        loaders: [{
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            loader: "babel-loader"
         }]
     }
 };
