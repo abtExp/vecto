@@ -9,12 +9,12 @@ const core = require('./lib/core');
         window.core = core;
         window.sum = sum;
         window.product = product;
-    } else {
-        module.exports = {
-            ndarray: ndarray,
-            sum: sum,
-            product: product,
-            core: core
-        }
     }
 })();
+
+module.exports = {
+    ndarray: ndarray,
+    sum: sum,
+    product: product,
+    core: core
+}
