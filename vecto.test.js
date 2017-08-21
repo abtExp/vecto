@@ -1,4 +1,4 @@
-const { ndarray, core, product, sum } = require('./vecto');
+const { ndarray, core, math } = require('./vecto');
 
 // ndarray tests
 test('ndarray construction method:1 (constructor)', () => {
@@ -311,32 +311,32 @@ test('product tests', () => {
             [10],
             [10]
         ];
-    expect(product(a, b)).toEqual([
+    expect(math.product(a, b)).toEqual([
             [2, 4, 6],
             [16, 20, 24]
         ]) &&
-        expect(product(a, c, 'dot')).toEqual([
+        expect(math.product(a, c, 'dot')).toEqual([
             [10, 24, 42],
             [40, 60, 84]
         ]) &&
-        expect(product(a, a, 'dot')).toEqual([
+        expect(math.product(a, a, 'dot')).toEqual([
             [1, 4, 9],
             [16, 25, 36]
         ]) &&
-        expect(product(c, [2, 4, 5])).toEqual([20, 48, 70]) &&
-        expect(product(a, 5)).toEqual([
+        expect(math.product(c, [2, 4, 5])).toEqual([20, 48, 70]) &&
+        expect(math.product(a, 5)).toEqual([
             [5, 10, 15],
             [20, 25, 30]
         ]) &&
-        expect(product(5, a)).toEqual([
+        expect(math.product(5, a)).toEqual([
             [5, 10, 15],
             [20, 25, 30]
         ]) &&
-        expect(a, d).toEqual([
+        expect(math.product(a, d)).toEqual([
             [60, 60, 60],
             [150, 150, 150]
         ]) &&
-        expect(a, e).toEqual([
+        expect(math.product(a, e)).toEqual([
             [60],
             [150]
         ]);
@@ -352,9 +352,9 @@ test('sum test', () => {
             [6, 2, 1]
         ];
 
-    expect(sum(a, b)).toEqual([
+    expect(math.sum(a, b)).toEqual([
             [3, 6, 9],
             [11, 8, 8]
         ]) &&
-        expect(sum(a)).toEqual([7, 18]);
+        expect(math.sum(a)).toEqual([7, 18]);
 })

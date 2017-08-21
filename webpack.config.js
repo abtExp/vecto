@@ -1,4 +1,5 @@
 const path = require('path');
+const webpackDashboard = require('webpack-dashboard/plugin');
 module.exports = {
     entry: path.resolve(__dirname, 'vecto.js'),
     output: {
@@ -11,5 +12,8 @@ module.exports = {
             exclude: [/node_modules/],
             loader: "babel-loader"
         }]
-    }
+    },
+    plugins: [
+        new webpackDashboard()
+    ]
 };

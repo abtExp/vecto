@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function sum(arr1, arr2) {
     const calc_shape = require('../lib/calc_shape');
     const arrange = require('../lib/arrange');

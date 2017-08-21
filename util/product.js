@@ -1,10 +1,12 @@
+"use strict";
+
 module.exports =
     function product(arr1, arr2, mode = "matrix") {
         let prod = [];
         const calc_shape = require('../lib/calc_shape'),
             form_arr = require('../lib/form_arr'),
             flatten = require('../lib/flatten'),
-            matrix_mult = require('../lib/matmul'),
+            matrix_mult = require('./matmul'),
             arrange = require('../lib/arrange');
 
         if (Array.isArray(arr1) && Array.isArray(arr2)) {

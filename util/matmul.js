@@ -1,3 +1,5 @@
+"use strict";
+// Matrix multiplication
 module.exports = (s1, s2, ar1, ar2) => {
     let r1 = s1[0],
         c1 = s1[1],

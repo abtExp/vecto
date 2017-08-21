@@ -1,20 +1,18 @@
 "use strict";
-const ndarray = require('./lib/ndarray');
-const sum = require('./util/sum');
-const product = require('./util/product');
-const core = require('./lib/core');
+const ndarray = require('./lib/ndarray'),
+    core = require('./lib/core'),
+    math = require('./util/math');
+
 (() => {
     if (typeof window !== 'undefined') {
         window.ndarray = ndarray;
         window.core = core;
-        window.sum = sum;
-        window.product = product;
+        window.math = math
     }
 })();
 
 module.exports = {
     ndarray: ndarray,
-    sum: sum,
-    product: product,
+    math: math,
     core: core
 }
