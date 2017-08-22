@@ -358,3 +358,20 @@ test('sum test', () => {
         ]) &&
         expect(math.sum(a)).toEqual([7, 18]);
 })
+
+test('log test', () => {
+    let a = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+    expect(math.log(a)[0][0]).toEqual(Math.log(a[0][0]));
+})
+
+test('exp test', () => {
+    let a = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+    let b = Math.exp(a[0][0]);
+    expect(math.exp(a)[0][0]).toBe(b);
+})
