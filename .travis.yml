@@ -5,6 +5,7 @@ node_js:
 install:
 - npm install codecov webpack jest codeclimate-test-reporter -g
 script:
+- "npm run build"
 - "npm test"
 settings: 
     build_pushes: true
