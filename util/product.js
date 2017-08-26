@@ -19,7 +19,7 @@ module.exports =
                     return arrange([s1[0], s2[1]], matrix_mult(s1, s2, t1, t2));
                 } else if (mode === 'dot') {
                     if (s1.toString() === s2.toString()) {
-                        prod = product(ta1, ta2);
+                        prod = product(t1, t2);
                         return arrange(s1, prod);
                     } else {
                         throw new Error("Uneven shape");
@@ -61,7 +61,7 @@ module.exports =
                 }
             } else {
                 if (s1.toString() === s2.toString()) {
-                    prod = product(ta1, ta2);
+                    prod = product(t1, t2);
                     return arrange(s1, prod);
                 } else {
                     throw new Error("Uneven size");
