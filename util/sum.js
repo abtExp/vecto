@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function sum(arr1, arr2) {
     const calc_shape = require('../lib/calc_shape');
     const arrange = require('../lib/arrange');
@@ -26,23 +28,27 @@ module.exports = function sum(arr1, arr2) {
             return summ;
         }
     } else {
-        t1 = form_arr(flatten(arr1));
-        t2 = form_arr(flatten(arr2));
-        s1 = calc_shape(arr1);
-        s2 = calc_shape(arr2);
-        if (s1.toString() === s2.toString()) {
-            summ = [];
-            for (let i = 0; i < t1.length; i++) {
-                summ[i] = t1[i] + t2[i];
+        if (Array.isArray(arr1) && Array.isArray(arr2)) {
+            t1 = form_arr(flatten(arr1));
+            t2 = form_arr(flatten(arr2));
+            s1 = calc_shape(arr1);
+            s2 = calc_shape(arr2);
+            if (s1.toString() === s2.toString()) {
+                summ = [];
+                for (let i = 0; i < t1.length; i++) {
+                    summ[i] = t1[i] + t2[i];
+                }
+                return arrange(s1, summ);
+            } else {
+                throw new Error("Uneven Size");
             }
-            return arrange(s1, summ);
-        } else if (s1.length > 1 && s2.length === 1) {
+        } else if (Array.isArray(arr1) && !Array.isArray(arr2)) {
+            t1 = form_arr(flatten(arr1));
+            s1 = calc_shape(arr1);
             for (let i = 0; i < t1.length; i++) {
-                t1[i] += t2;
+                t1[i] += arr2;
             }
             return arrange(s1, t1);
-        } else {
-            throw new Error("Uneven Size");
         }
     }
 }
