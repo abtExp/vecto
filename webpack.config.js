@@ -5,6 +5,9 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         filename: 'build.js'
     },
+    resolveLoader: {
+        root: path.join(__dirname, 'node_modules')
+    },
     module: {
         loaders: [{
             test: /\.js$/,
