@@ -5,6 +5,8 @@ const matmul = require('./matmul'),
     sum = require('./sum'),
     divide = require('./divide'),
     log = require('./log'),
+    max = require('./max'),
+    min = require('./min'),
     exp = require('./exp');
 
 module.exports = {
@@ -13,5 +15,7 @@ module.exports = {
     sum,
     divide,
     log,
+    max,
+    min,
     exp
 }

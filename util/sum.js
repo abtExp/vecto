@@ -39,6 +39,18 @@ module.exports = function sum(arr1, arr2) {
                     summ[i] = t1[i] + t2[i];
                 }
                 return arrange(s1, summ);
+            } else if (s1.length > 1 && (s2.length === 1 || (s2.length === 2 && s2[s2.length - 1] === 1))) {
+                if (s1[0] === s2[0]) {
+                    let j = 0;
+                    summ = []
+                    for (let i = 0; i < t1.length; i++) {
+                        summ[i] = t1[i] + t2[j];
+                        if ((i + 1) % s1[s1.length - 1] === 0 && i !== 0) j++;
+                    }
+                    return arrange(s1, summ);
+                } else {
+                    throw new Error('Uneven Size');
+                }
             } else {
                 throw new Error("Uneven Size");
             }

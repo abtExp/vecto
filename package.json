@@ -37,6 +37,8 @@
         "coveralls": "^2.13.1",
         "istanbul": "^0.4.5",
         "jest": "^20.0.4",
+        "uglify-js": "^3.0.28",
+        "uglifyjs-webpack-plugin": "^0.4.6",
         "webpack": "^3.5.5"
     }
 }
