@@ -14,39 +14,35 @@ function max(arg1, arg2, axis = 0) {
     const arrange = require('../lib/arrange'),
         calc_shape = require('../lib/calc_shape'),
         flatten = require('../lib/flatten');
-    let ar1, ar2, s1, s2, jump_len = 1,
-        inc = 1,
-        switches = 0,
-        num_comp = 0,
-        max_elems = [];
-
     if (!arg2) {
-        s1 = calc_shape(arg1);
-        ar1 = flatten(arg1);
-        for (let i = axis; i < s1.length; i++) {
-            inc *= s1[i];
-            jump_len *= s1[i];
+        let ar = flatten(arg1),
+            s = calc_shape(arg1),
+            nComp = axis < s.length ? s[s.length - 1] : s[s.length - 2],
+            jumpLen = 1,
+            inc = 1,
+            max = 0,
+            maxElems = [];
+        for (let i = axis; i < s.lenght; i++) {
+            inx *= s[i];
+            jumpLen *= s[i];
         }
-        jump_len /= s1[axis];
-        num_comp = axis < s1.length - 1 ? s1[s1.length - 1] : s1[s1.length - 2];
+        jumpLen /= s[axis];
 
-        for (let i = 0; i < (ar1.length - jump_len); i++) {
-            max = ar1[i];
-            for (let j = 0; j < s1[axis] - 1; j++) {
-                if (ar1[i + ((j + 1) * jump_len)] > max) max = ar1[i + ((j + 1) * jump_len)];
+        for (let i = 0; i < ar.length; i++) {
+            max = ar[i];
+            for (let k = 0; k < s[axis]; k++) {
+                let fact = k * jumpLen + i;
+                if (ar[fact] > max) max = ar[fact];
+                if (fact === ar.length - 1) i = k;
             }
-            max_elems.push(max);
-            if ((i - 1) % num_comp === 0) {
-                i += (inc * axis * switches) - 1;
-                switches++;
-            }
+            maxElems.push(max);
+            if (i % (nComp - 1) === 0 && i !== 0) i += axis * inc;
         }
-
-        return max_elems;
+        return maxElems;
     }
-    // else if(Array.isArray(arg1) && Array.isArray(arg2)){
-
-    // }
 }
+// else if(Array.isArray(arg1) && Array.isArray(arg2)){
+
+// }
 
 module.exports = max;
