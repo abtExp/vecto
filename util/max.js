@@ -21,24 +21,30 @@ function max(arg1, arg2, axis = 0) {
             jumpLen = 1,
             inc = 1,
             max = 0,
+            switches = 1,
             maxElems = [];
-        for (let i = axis; i < s.lenght; i++) {
-            inx *= s[i];
+        for (let i = axis; i < s.length; i++) {
+            inc *= s[i];
             jumpLen *= s[i];
         }
         jumpLen /= s[axis];
+        console.log(`inc : ${inc}, axis : ${axis}, jumpLen : ${jumpLen}, nComp : ${nComp}`);
 
         for (let i = 0; i < ar.length; i++) {
             max = ar[i];
+            console.log(`i : ${i}`);
             for (let k = 0; k < s[axis]; k++) {
                 let fact = k * jumpLen + i;
+                console.log(`Comparing ${max} & ${ar[fact]}`);
                 if (ar[fact] > max) max = ar[fact];
-                if (fact === ar.length - 1) i = k;
+                if (fact >= ar.length - 1) {
+                    maxElems.push(max);
+                    return maxElems;
+                }
             }
             maxElems.push(max);
-            if (i % (nComp - 1) === 0 && i !== 0) i += axis * inc;
+            if (i % (nComp - 1) === 0 && i !== 0) i = (axis * inc * switches);
         }
-        return maxElems;
     }
 }
 // else if(Array.isArray(arg1) && Array.isArray(arg2)){
