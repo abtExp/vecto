@@ -1,7 +1,7 @@
 engines:
   # ... CONFIG CONTENT ...
   eslint:
-    enabled: false
+    enabled: true
     # ... CONFIG CONTENT ...
     checks:
       no-unused-expressions:
