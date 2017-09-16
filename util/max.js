@@ -17,35 +17,16 @@ function max(arg1, arg2 = null, axis = 0) {
         flatten = require('../lib/flatten');
     let elems = axisOps(calc_shape(arg1), axis);
     if (arg2 === null) {
-        let ar = flatten(arg1),
+        let max = 0,
             s = calc_shape(arg1),
-            nComp = axis < s.length ? s[s.length - 1] : s[s.length - 2],
-            jumpLen = 1,
-            inc = 1,
-            max = 0,
-            switches = 1,
+            elems = axisOps(s, axis),
             maxElems = [];
-        for (let i = axis; i < s.length; i++) {
-            inc *= s[i];
-            jumpLen *= s[i];
-        }
-        jumpLen /= s[axis];
-        console.log(`inc : ${inc}, axis : ${axis}, jumpLen : ${jumpLen}, nComp : ${nComp}`);
-
-        for (let i = 0; i < ar.length; i++) {
-            max = ar[i];
-            console.log(`i : ${i}`);
-            for (let k = 0; k < s[axis]; k++) {
-                let fact = k * jumpLen + i;
-                console.log(`Comparing ${max} & ${ar[fact]}`);
-                if (ar[fact] > max) max = ar[fact];
-                if (fact >= ar.length - 1) {
-                    maxElems.push(max);
-                    return maxElems;
-                }
+        for (let i = 0; i < elems.length; i++) {
+            max = arg1[elems[i][0]];
+            for (k = 0; k < elems[i].length; k++) {
+                if (arg1[elems[i][k] > max]) max = arg1[elems[i][k]];
             }
             maxElems.push(max);
-            if (i % (nComp - 1) === 0 && i !== 0) i = (axis * inc * switches);
         }
     } else {
         if (Array.isArray(arg2) && Array.isArray(arg1)) {
