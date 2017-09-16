@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - "node"
 install:
+- npm install
 - npm install codecov webpack jest codeclimate-test-reporter -g
 script:
 - "npm run build"
