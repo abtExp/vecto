@@ -10,11 +10,13 @@
 
 // :construction: Under Construction :construction: \\
 
-function max(arg1, arg2, axis = 0) {
+function max(arg1, arg2 = null, axis = 0) {
     const arrange = require('../lib/arrange'),
         calc_shape = require('../lib/calc_shape'),
+        axisOps = require('./axisOps'),
         flatten = require('../lib/flatten');
-    if (!arg2) {
+    let elems = axisOps(calc_shape(arg1), axis);
+    if (arg2 === null) {
         let ar = flatten(arg1),
             s = calc_shape(arg1),
             nComp = axis < s.length ? s[s.length - 1] : s[s.length - 2],
@@ -45,10 +47,27 @@ function max(arg1, arg2, axis = 0) {
             maxElems.push(max);
             if (i % (nComp - 1) === 0 && i !== 0) i = (axis * inc * switches);
         }
+    } else {
+        if (Array.isArray(arg2) && Array.isArray(arg1)) {
+            let s1 = calc_shape(arg1),
+                s2 = calc_shape(arg2);
+            if (s1.toString() !== s2.toString()) throw new Error(`Shapes ${s1} & ${s2} can't be compared`);
+            else {
+                elems = axisOps(s1);
+            }
+        } else if (!Array.isArray(arg2) && Array.isArray(arg1)) {
+            console.log('comparing');
+            ar1 = flatten(arg1);
+            s1 = calc_shape(arg1);
+            return arrange(s1, ar1.map(i => Math.max(i, arg2)));
+        } else if (Array.isArray(arg2) && !Array.isArray(arg1)) {
+            ar2 = flatten(arg2);
+            s2 = calc_shape(arg2);
+            return arrange(s2, ar2.map(i => Math.max(i, arg1)));
+        } else {
+            return Math.max(arg1, arg2);
+        }
     }
 }
-// else if(Array.isArray(arg1) && Array.isArray(arg2)){
-
-// }
 
 module.exports = max;
