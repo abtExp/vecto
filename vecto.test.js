@@ -1,5 +1,24 @@
 const { ndarray, core, math } = require('./vecto');
 
+function regMatMul(s1, s2, ar1, ar2) {
+    let c = [];
+    for (let i = 0; i < s1[0]; i++) {
+        let ar = [];
+        for (let j = 0; j < s2[1]; j++) {
+            ar.push(0);
+        }
+        c.push(ar);
+    }
+    for (let i = 0; i < s1[0]; i++) {
+        for (let j = 0; j < s2[1]; j++) {
+            for (let k = 0; k < s2[0]; k++) {
+                c[i][j] += ar1[i][k] * ar2[k][j];
+            }
+        }
+    }
+    return c;
+}
+
 // ndarray tests
 test('ndarray construction method:1 (constructor)', () => {
     let n1 = new ndarray([2, 3]);
@@ -295,51 +314,24 @@ test('core.form_arr', () => {
 // test for product method
 
 test('product tests', () => {
-    let a = [
-            [1, 2, 3],
-            [4, 5, 6]
-        ],
-        b = [2, 4],
-        c = [10, 12, 14],
-        d = [
-            [10, 10, 10],
-            [10, 10, 10],
-            [10, 10, 10]
-        ],
-        e = [
-            [10],
-            [10],
-            [10]
-        ];
-    expect(math.product(a, b)).toEqual([
-            [2, 4, 6],
-            [16, 20, 24]
-        ]) &&
-        expect(math.product(a, c, 'dot')).toEqual([
-            [10, 24, 42],
-            [40, 60, 84]
-        ]) &&
-        expect(math.product(a, a, 'dot')).toEqual([
-            [1, 4, 9],
-            [16, 25, 36]
-        ]) &&
-        expect(math.product(c, [2, 4, 5])).toEqual([20, 48, 70]) &&
-        expect(math.product(a, 5)).toEqual([
-            [5, 10, 15],
-            [20, 25, 30]
-        ]) &&
-        expect(math.product(5, a)).toEqual([
-            [5, 10, 15],
-            [20, 25, 30]
-        ]) &&
-        expect(math.product(a, d)).toEqual([
-            [60, 60, 60],
-            [150, 150, 150]
-        ]) &&
-        expect(math.product(a, e)).toEqual([
-            [60],
-            [150]
-        ]);
+    let shape11 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape12 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape21 = shape12,
+        shape22 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape1 = [shape11, shape12],
+        shape2 = [shape21, shape22],
+        ar1 = new ndarray(shape1),
+        ar2 = new ndarray(shape2),
+        prearr1 = ar1.array,
+        prearr2 = ar2.array;
+    console.log(shape1);
+    console.log(shape2);
+    console.log(prearr1);
+    console.log(prearr2);
+    console.log(math.product(prearr1, prearr2, 'matrix'));
+    console.log(regMatMul(shape1, shape2, prearr1, prearr2));
+    expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
+
 })
 
 test('sum test', () => {

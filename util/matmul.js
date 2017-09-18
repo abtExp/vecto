@@ -27,5 +27,6 @@ module.exports = (s1, s2, ar1, ar2) => {
             }
         }
     }
+    console.log(prod);
     return prod;
 }
