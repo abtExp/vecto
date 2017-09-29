@@ -7,10 +7,11 @@ module.exports = (s1, s2, ar1, ar2) => {
         c2 = s2[1],
         k = 0,
         l = 0,
+        m = 0,
         cnt = 0,
         sum = 0,
         prod = [];
-    for (let i = 0; i < ar1.length; i++, k++) {
+    for (let i = 0; m < r1; i++, k++) {
         let j = c2 * k + cnt;
         sum += ar1[i] * ar2[j];
         if ((i + 1) % (c1) === 0 && i != 0) {
@@ -23,10 +24,10 @@ module.exports = (s1, s2, ar1, ar2) => {
                 i--;
             } else {
                 cnt = 0;
-                l += c1 * (r1 - 1);
+                m++;
+                l = c1 * m;
             }
         }
     }
-    console.log(prod);
     return prod;
 }
