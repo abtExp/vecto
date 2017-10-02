@@ -17,13 +17,13 @@ module.exports =
             if (s1.length === 2 && s2.length === 2) {
                 if (s1[1] === s2[0] && mode === 'matrix') {
                     console.log('producting matrix');
-                    return arrange([s1[0], s2[1]], matrix_mult(s1, s2, t1, t2));
+                    return arrange([s1[0], s2[1]], matmul(s1, s2, t1, t2, ));
                 } else if (mode === 'dot') {
                     if (s1.toString() === s2.toString()) {
                         prod = product(t1, t2);
                         return arrange(s1, prod);
                     } else {
-                        throw new Error("Uneven shape");
+                        throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                     }
                 }
             } else if (s1.length > 1 && s2.length === 1) {
@@ -36,7 +36,7 @@ module.exports =
                         }
                         return arrange(s1, prod);
                     } else {
-                        throw new Error("Uneven Size");
+                        throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                     }
                 } else {
                     if (s1[s1.length - 1] === s2[0]) {
@@ -47,7 +47,7 @@ module.exports =
                         }
                         return arrange(s1, prod);
                     } else {
-                        throw new Error("Uneven Size");
+                        throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                     }
                 }
             } else if (s1.length === 1 && s2.length > 1) {
@@ -58,14 +58,14 @@ module.exports =
                         prod.push(t1[i] * t2[i]);
                     }
                 } else {
-                    throw new Error("Uneven Size");
+                    throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                 }
             } else {
                 if (s1.toString() === s2.toString()) {
                     prod = product(t1, t2);
                     return arrange(s1, prod);
                 } else {
-                    throw new Error("Uneven size");
+                    throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                 }
             }
         } else if (Array.isArray(arr1) && !Array.isArray(arr2)) {

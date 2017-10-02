@@ -324,12 +324,6 @@ test('product tests', () => {
         ar2 = new ndarray(shape2),
         prearr1 = ar1.array,
         prearr2 = ar2.array;
-    console.log(shape1);
-    console.log(shape2);
-    console.log(prearr1);
-    console.log(prearr2);
-    console.log(math.product(prearr1, prearr2, 'matrix'));
-    console.log(regMatMul(shape1, shape2, prearr1, prearr2));
     expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
 
 })

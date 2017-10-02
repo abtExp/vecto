@@ -1,3 +1,4 @@
+//@ts-check;
 /* Finds the maximum between the given args
  *  
  *   function prototype :

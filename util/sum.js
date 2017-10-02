@@ -49,10 +49,10 @@ module.exports = function sum(arr1, arr2) {
                     }
                     return arrange(s1, summ);
                 } else {
-                    throw new Error('Uneven Size');
+                    throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
                 }
             } else {
-                throw new Error("Uneven Size");
+                throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
             }
         } else if (Array.isArray(arr1) && !Array.isArray(arr2)) {
             t1 = form_arr(flatten(arr1));
