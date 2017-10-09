@@ -4,7 +4,6 @@ module.exports = (s1, s2, ar1, ar2, dtype = 'float32') => {
     const form_arr = require('../lib/form_arr');
     ar1 = form_arr(ar1, dtype);
     ar2 = form_arr(ar2, dtype);
-    console.log(ar1.constructor.name);
     let r1 = s1[0],
         c1 = s1[1],
         r2 = s2[0],

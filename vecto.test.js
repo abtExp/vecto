@@ -331,11 +331,13 @@ test('product tests', () => {
         shape2 = [shape21, shape22],
         ar1 = new ndarray(shape1),
         ar2 = new ndarray(shape2),
+        ar3 = new ndarray(shape2),
         prearr1 = ar1.array,
-        prearr2 = ar2.array;
+        prearr2 = ar2.array,
+        prearr3 = ar3.array;
     console.log(shape1, shape2);
     expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
-
+    // expect(math.product(prearr2, prearr3, 'dot')).toEqual(regMatMul(shape2, shape2, prearr2, prearr3));
 })
 
 test('sum test', () => {
