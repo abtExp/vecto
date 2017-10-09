@@ -6,7 +6,7 @@ module.exports =
         const calc_shape = require('../lib/calc_shape'),
             form_arr = require('../lib/form_arr'),
             flatten = require('../lib/flatten'),
-            matrix_mult = require('./matmul'),
+            matmul = require('./matmul'),
             arrange = require('../lib/arrange');
 
         if (Array.isArray(arr1) && Array.isArray(arr2)) {

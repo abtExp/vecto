@@ -9,6 +9,14 @@ function regMatMul(s1, s2, ar1, ar2) {
         }
         c.push(ar);
     }
+
+    ar1 = core.flatten(ar1);
+    ar1 = core.form_arr(ar1, 'float32');
+    ar1 = core.arrange(s1, ar1);
+    ar2 = core.flatten(ar2);
+    ar2 = core.form_arr(ar2, 'float32');
+    ar2 = core.arrange(s2, ar2);
+
     for (let i = 0; i < s1[0]; i++) {
         for (let j = 0; j < s2[1]; j++) {
             for (let k = 0; k < s2[0]; k++) {
@@ -16,6 +24,7 @@ function regMatMul(s1, s2, ar1, ar2) {
             }
         }
     }
+
     return c;
 }
 
@@ -324,6 +333,7 @@ test('product tests', () => {
         ar2 = new ndarray(shape2),
         prearr1 = ar1.array,
         prearr2 = ar2.array;
+    console.log(shape1, shape2);
     expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
 
 })
