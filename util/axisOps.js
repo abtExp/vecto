@@ -1,3 +1,7 @@
+"use strict";
+
+// Have to put more brain power on it;
+
 module.exports = (shape, axis) => {
     const calc_size = require('../lib/calc_size');
     let nComp = axis < shape.length - 1 ? shape[shape.length - 1] : 1,

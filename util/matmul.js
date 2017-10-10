@@ -1,4 +1,6 @@
 "use strict";
+// Broken for inner dimension = 1;
+
 // Matrix multiplication
 module.exports = (s1, s2, ar1, ar2, dtype = 'float32') => {
     const form_arr = require('../lib/form_arr');
