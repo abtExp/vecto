@@ -1,18 +1,18 @@
 "use strict";
-const ndarray = require('./lib/ndarray'),
+const Ndarray = require('./lib/ndarray'),
     core = require('./lib/core'),
     math = require('./util/math');
 
 (() => {
     if (typeof window !== 'undefined') {
-        window.ndarray = ndarray;
+        window.Ndarray = Ndarray;
         window.core = core;
         window.math = math
     }
 })();
 
 module.exports = {
-    ndarray: ndarray,
+    Ndarray: Ndarray,
     math: math,
     core: core
 }
