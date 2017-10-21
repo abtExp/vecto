@@ -1,16 +1,22 @@
 "use strict";
+// Broken for inner dimension = 1;
+
 // Matrix multiplication
-module.exports = (s1, s2, ar1, ar2) => {
+module.exports = (s1, s2, ar1, ar2, dtype = 'float32') => {
+    const form_arr = require('../lib/form_arr');
+    ar1 = form_arr(ar1, dtype);
+    ar2 = form_arr(ar2, dtype);
     let r1 = s1[0],
         c1 = s1[1],
         r2 = s2[0],
         c2 = s2[1],
         k = 0,
         l = 0,
+        m = 0,
         cnt = 0,
         sum = 0,
         prod = [];
-    for (let i = 0; i < ar1.length; i++, k++) {
+    for (let i = 0; m < r1; i++, k++) {
         let j = c2 * k + cnt;
         sum += ar1[i] * ar2[j];
         if ((i + 1) % (c1) === 0 && i != 0) {
@@ -23,7 +29,8 @@ module.exports = (s1, s2, ar1, ar2) => {
                 i--;
             } else {
                 cnt = 0;
-                l += c1 * (r1 - 1);
+                m++;
+                l = c1 * m;
             }
         }
     }

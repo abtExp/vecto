@@ -1,9 +1,37 @@
-const { ndarray, core, math } = require('./vecto');
+const { Ndarray, core, math } = require('./vecto');
 
-// ndarray tests
-test('ndarray construction method:1 (constructor)', () => {
-    let n1 = new ndarray([2, 3]);
-    expect(n1).toBeInstanceOf(ndarray) &&
+function regMatMul(s1, s2, ar1, ar2) {
+    let c = [];
+    for (let i = 0; i < s1[0]; i++) {
+        let ar = [];
+        for (let j = 0; j < s2[1]; j++) {
+            ar.push(0);
+        }
+        c.push(ar);
+    }
+
+    ar1 = core.flatten(ar1);
+    ar1 = core.form_arr(ar1, 'float32');
+    ar1 = core.arrange(s1, ar1);
+    ar2 = core.flatten(ar2);
+    ar2 = core.form_arr(ar2, 'float32');
+    ar2 = core.arrange(s2, ar2);
+
+    for (let i = 0; i < s1[0]; i++) {
+        for (let j = 0; j < s2[1]; j++) {
+            for (let k = 0; k < s2[0]; k++) {
+                c[i][j] += ar1[i][k] * ar2[k][j];
+            }
+        }
+    }
+
+    return c;
+}
+
+// Ndarray tests
+test('Ndarray construction method:1 (constructor)', () => {
+    let n1 = new Ndarray([2, 3]);
+    expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
             array: [],
             shape: [2, 3],
@@ -14,9 +42,9 @@ test('ndarray construction method:1 (constructor)', () => {
         });
 });
 
-test('ndarray construction method:2 (zeroes)', () => {
-    let n1 = ndarray.zeroes([2, 3]);
-    expect(n1).toBeInstanceOf(ndarray) &&
+test('Ndarray construction method:2 (zeroes)', () => {
+    let n1 = Ndarray.zeroes([2, 3]);
+    expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
             array: [
                 [0, 0, 0],
@@ -30,8 +58,8 @@ test('ndarray construction method:2 (zeroes)', () => {
         });
 })
 
-test('ndarray construction method:3 (array)', () => {
-    let n1 = ndarray.array([
+test('Ndarray construction method:3 (array)', () => {
+    let n1 = Ndarray.array([
         [
             [1, 2, 3],
             [4, 5, 6]
@@ -42,7 +70,7 @@ test('ndarray construction method:3 (array)', () => {
         ]
     ]);
 
-    expect(n1).toBeInstanceOf(ndarray) &&
+    expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
             array: [
                 [
@@ -63,8 +91,8 @@ test('ndarray construction method:3 (array)', () => {
 
 })
 
-test('ndarrayObject.arrange method', () => {
-    let n1 = ndarray.zeroes([2, 3]);
+test('NdarrayObject.arrange method', () => {
+    let n1 = Ndarray.zeroes([2, 3]);
     n1.arrange([2]);
     expect(n1.array).toEqual([
         [2, 2, 2],
@@ -72,8 +100,8 @@ test('ndarrayObject.arrange method', () => {
     ]);
 })
 
-test('ndarrayObject.resize method', () => {
-    let n1 = new ndarray([2, 3, 4]);
+test('NdarrayObject.resize method', () => {
+    let n1 = new Ndarray([2, 3, 4]);
     n1.arrange([1]);
     let oldval = n1.array;
     n1.resize([4, 4]);
@@ -98,8 +126,8 @@ test('ndarrayObject.resize method', () => {
         ]);
 })
 
-test('ndarrayObject.reshape method', () => {
-    let n1 = new ndarray([2, 3, 4]);
+test('NdarrayObject.reshape method', () => {
+    let n1 = new Ndarray([2, 3, 4]);
     n1.arrange([2]);
     let oldval = n1.array;
     n1.reshape([4, 6]);
@@ -126,8 +154,8 @@ test('ndarrayObject.reshape method', () => {
 })
 
 
-test('ndarrayObject.clip method', () => {
-    let n1 = new ndarray([2, 3]);
+test('NdarrayObject.clip method', () => {
+    let n1 = new Ndarray([2, 3]);
     n1.arrange([12, 31, 11, 24, 2, 20]);
     expect(n1.array).toEqual([
         [12, 31, 11],
@@ -141,14 +169,14 @@ test('ndarrayObject.clip method', () => {
 })
 
 
-test('ndarrayObject.flatten method', () => {
-    let n1 = new ndarray([2, 3, 4]);
+test('NdarrayObject.flatten method', () => {
+    let n1 = new Ndarray([2, 3, 4]);
     n1.arrange([2]);
     expect(n1.flat.toString()).toEqual([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].toString());
 })
 
-test('ndarrayObject.transpose method', () => {
-    let n1 = new ndarray([2, 3]);
+test('NdarrayObject.transpose method', () => {
+    let n1 = new Ndarray([2, 3]);
     n1.arrange([1, 2, 3, 4, 5, 6])
     let nt = n1.transpose();
     expect(nt).toEqual([
@@ -295,51 +323,21 @@ test('core.form_arr', () => {
 // test for product method
 
 test('product tests', () => {
-    let a = [
-            [1, 2, 3],
-            [4, 5, 6]
-        ],
-        b = [2, 4],
-        c = [10, 12, 14],
-        d = [
-            [10, 10, 10],
-            [10, 10, 10],
-            [10, 10, 10]
-        ],
-        e = [
-            [10],
-            [10],
-            [10]
-        ];
-    expect(math.product(a, b)).toEqual([
-            [2, 4, 6],
-            [16, 20, 24]
-        ]) &&
-        expect(math.product(a, c, 'dot')).toEqual([
-            [10, 24, 42],
-            [40, 60, 84]
-        ]) &&
-        expect(math.product(a, a, 'dot')).toEqual([
-            [1, 4, 9],
-            [16, 25, 36]
-        ]) &&
-        expect(math.product(c, [2, 4, 5])).toEqual([20, 48, 70]) &&
-        expect(math.product(a, 5)).toEqual([
-            [5, 10, 15],
-            [20, 25, 30]
-        ]) &&
-        expect(math.product(5, a)).toEqual([
-            [5, 10, 15],
-            [20, 25, 30]
-        ]) &&
-        expect(math.product(a, d)).toEqual([
-            [60, 60, 60],
-            [150, 150, 150]
-        ]) &&
-        expect(math.product(a, e)).toEqual([
-            [60],
-            [150]
-        ]);
+    let shape11 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape12 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape21 = shape12,
+        shape22 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape1 = [shape11, shape12],
+        shape2 = [shape21, shape22],
+        ar1 = new Ndarray(shape1),
+        ar2 = new Ndarray(shape2),
+        ar3 = new Ndarray(shape2),
+        prearr1 = ar1.array,
+        prearr2 = ar2.array,
+        prearr3 = ar3.array;
+    console.log(shape1, shape2);
+    expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
+    // expect(math.product(prearr2, prearr3, 'dot')).toEqual(regMatMul(shape2, shape2, prearr2, prearr3));
 })
 
 test('sum test', () => {
@@ -374,4 +372,43 @@ test('exp test', () => {
     ];
     let b = Math.exp(a[0][0]);
     expect(math.exp(a)[0][0]).toBe(b);
+})
+
+test('divide test', () => {
+    let a = new Ndarray([2, 3]);
+    let b = a.flat.map(i => (i / 2));
+    let c = math.divide(Array.from(a.flat), 2);
+    let d = new Ndarray([2, 3]);
+    let e = Array.from(d.flat);
+    let f = [];
+    for (let i = 0; i < a.flat.length; i++) {
+        f.push(a.flat[i] / e[i]);
+    }
+    let g = math.divide(Array.from(a.flat), e);
+    // expect(b).toEqual(core.flatten(c));
+    // expect(g).toEqual(core.flatten(f));
+})
+
+test('form_arr', () => {
+    let arr = [1, 2, 3];
+    let a = core.form_arr(arr, 'uint8');
+    let b = core.form_arr(arr, 'uint16');
+    let c = core.form_arr(arr, 'uint32');
+    let d = core.form_arr(arr, 'int8');
+    let e = core.form_arr(arr, 'int16');
+    let f = core.form_arr(arr, 'int32');
+    let g = core.form_arr(arr, 'float32');
+    let h = core.form_arr(arr, 'float64');
+    let i = core.form_arr(arr, 'uint8clamped');
+
+
+    expect(a.constructor.name).toBe('Uint8Array') &&
+        expect(b.constructor.name).toBe('Uint16Array') &&
+        expect(c.constructor.name).toBe('Uint32Array') &&
+        expect(d.constructor.name).toBe('Int8Array') &&
+        expect(e.constructor.name).toBe('Int16Array') &&
+        expect(f.constructor.name).toBe('Int32Array') &&
+        expect(g.constructor.name).toBe('Float32Array') &&
+        expect(h.constructor.name).toBe('Float64Array') &&
+        expect(i.constructor.name).toBe('Uint8ClampedArray');
 })
