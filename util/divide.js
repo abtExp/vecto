@@ -9,7 +9,6 @@ module.exports = function divide(arr1, arr2) {
         if (calc_shape(arr1).toString() === calc_shape(arr2).toString()) {
             let t1 = form_arr(flatten(arr1), 'float32'),
                 t2 = form_arr(flatten(arr2), 'float32');
-            console.log(t1);
             for (let i = 0; i < t1.length; i++) {
                 t1[i] /= t2[i];
             }

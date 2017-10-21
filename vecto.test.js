@@ -374,4 +374,41 @@ test('exp test', () => {
     expect(math.exp(a)[0][0]).toBe(b);
 })
 
-//have to write more tests
+test('divide test', () => {
+    let a = new Ndarray([2, 3]);
+    let b = a.flat.map(i => (i / 2));
+    let c = math.divide(Array.from(a.flat), 2);
+    let d = new Ndarray([2, 3]);
+    let e = Array.from(d.flat);
+    let f = [];
+    for (let i = 0; i < a.flat.length; i++) {
+        f.push(a.flat[i] / e[i]);
+    }
+    let g = math.divide(Array.from(a.flat), e);
+    expect(b).toEqual(core.flatten(c));
+    expect(g).toEqual(core.flatten(f));
+})
+
+test('form_arr', () => {
+    let arr = [1, 2, 3];
+    let a = core.form_arr(arr, 'uint8');
+    let b = core.form_arr(arr, 'uint16');
+    let c = core.form_arr(arr, 'uint32');
+    let d = core.form_arr(arr, 'int8');
+    let e = core.form_arr(arr, 'int16');
+    let f = core.form_arr(arr, 'int32');
+    let g = core.form_arr(arr, 'float32');
+    let h = core.form_arr(arr, 'float64');
+    let i = core.form_arr(arr, 'uint8clamped');
+
+
+    expect(a.constructor.name).toBe('Uint8Array') &&
+        expect(b.constructor.name).toBe('Uint16Array') &&
+        expect(c.constructor.name).toBe('Uint32Array') &&
+        expect(d.constructor.name).toBe('Int8Array') &&
+        expect(e.constructor.name).toBe('Int16Array') &&
+        expect(f.constructor.name).toBe('Int32Array') &&
+        expect(g.constructor.name).toBe('Float32Array') &&
+        expect(h.constructor.name).toBe('Float64Array') &&
+        expect(i.constructor.name).toBe('Uint8ClampedArray');
+})
