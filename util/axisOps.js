@@ -26,7 +26,7 @@ module.exports = (shape, axis) => {
             let fact = k * jumpLen + i;
             console.log(`comparing : ${i} & ${fact}`);
             inElems.push(fact);
-            if (k >= size) {
+            if (fact >= size) {
                 return elems;
             }
         }
@@ -34,7 +34,7 @@ module.exports = (shape, axis) => {
         j++;
         if (j % nComp === 0 && axis !== 0) {
             j = 0;
-            i = (axis * inc * switches) - 1;
+            i = (inc * switches) - 1;
             switches++;
         }
         console.log(`i = ${i}`);
