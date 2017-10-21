@@ -1,55 +1,53 @@
-//@ts-check;
-/* Finds the maximum between the given args
- *  
- *   function prototype :
- *          max(arg1 = [number], arg2 = [number], axis = number)
- *          @arg1 : [number] : Required, The array in which the maximum along given axis are to be found
- *        ? @arg2 : [number] : The second array, if comparing between two arrays, must be of the same shape as arg1
- *        ? @axis : number   : Number lying between the dimension of the arrays provided, The axis along which to compare
- *   Returns : [number] : The array of maximums
+/** max : finds the max elements amongst the passed arrays or a single array
+ *        along an axis
+ * 
+ * @ar1 : [Number] , The array for finding max elems
+ * 
+ * @ar2 : [Number] , The second array (?Optional)
+ * 
+ * @axis : int , the axis along which to find the max elems
+ * 
+ * Returns : [Number] , the array of max elems along the given axis
+ * 
  */
 
-// :construction: Under Construction :construction: \\
-
-function max(arg1, arg2 = null, axis = 0) {
-    const arrange = require('../lib/arrange'),
-        calc_shape = require('../lib/calc_shape'),
-        axisOps = require('./axisOps'),
-        flatten = require('../lib/flatten');
-    let elems = axisOps(calc_shape(arg1), axis);
-    if (arg2 === null) {
-        let max = 0,
-            s = calc_shape(arg1),
-            elems = axisOps(s, axis),
-            maxElems = [];
+module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
+    const axisOps = require('./axisOps'),
+        { flatten, arrange, calc_shape, calc_size } = require('../lib/core');
+    let maxElems = [];
+    if (!ar2) {
+        let shape = calc_shape(ar1),
+            elems = axisOps(shape, axis);
+        ar1 = flatten(ar1);
         for (let i = 0; i < elems.length; i++) {
-            max = arg1[elems[i][0]];
-            for (k = 0; k < elems[i].length; k++) {
-                if (arg1[elems[i][k] > max]) max = arg1[elems[i][k]];
+            let max = ar1[elems[i][0]];
+            for (let j = 0; j < elems[i].length; j++) {
+                console.log(ar1[elems[i][j]]);
+                if (ar1[elems[i][j]] > max) {
+                    max = ar1[elems[i][j]];
+                    console.log('max is now :', max);
+                }
             }
             maxElems.push(max);
         }
+        return maxElems;
     } else {
-        if (Array.isArray(arg2) && Array.isArray(arg1)) {
-            let s1 = calc_shape(arg1),
-                s2 = calc_shape(arg2);
-            if (s1.toString() !== s2.toString()) throw new Error(`Shapes ${s1} & ${s2} can't be compared`);
-            else {
-                elems = axisOps(s1);
+        if (!Array.isArray(ar1) && Array.isArray(ar2)) {
+            ar2 = flatten(ar2);
+            maxElems = ar2.map(i => i > ar1 ? i : ar1);
+            return maxElems;
+        } else if (Array.isArray(ar1) && !Array.isArray(ar2)) return max({ ar1: ar2, ar2: ar1 });
+        else {
+            if (calc_shape(ar1).toString() === calc_shape(ar2).toString()) {
+                ar1 = flatten(ar1);
+                ar2 = flatten(ar2);
+                for (let i = 0; i < ar1.length; i++) {
+                    maxElems.push(Math.max(ar1[i], ar2[i]));
+                }
+                return maxElems;
+            } else {
+                throw new Error(`Can't compare shapes ${calc_shape(ar1)} & ${calc_shape(ar2)}`);
             }
-        } else if (!Array.isArray(arg2) && Array.isArray(arg1)) {
-            console.log('comparing');
-            ar1 = flatten(arg1);
-            s1 = calc_shape(arg1);
-            return arrange(s1, ar1.map(i => Math.max(i, arg2)));
-        } else if (Array.isArray(arg2) && !Array.isArray(arg1)) {
-            ar2 = flatten(arg2);
-            s2 = calc_shape(arg2);
-            return arrange(s2, ar2.map(i => Math.max(i, arg1)));
-        } else {
-            return Math.max(arg1, arg2);
         }
     }
 }
-
-module.exports = max;
