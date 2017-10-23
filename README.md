@@ -10,10 +10,13 @@
 
 ## <b> What's new </b>
 
-* Fixing the matrix multiplication method
+* ndarray -> Ndarray
+* <a href='#fill'>fill</a> method
+* <a href='#max'>max</a> & <a href='#min'>min</a> methods
+* <a href='#divide'>divide</a>, <a href='#exp'>exp</a>,<a href='#log'>log</a>,<a href='#pow'>pow</a> & <a href='#sqrt'>sqrt</a> in math
 
 ## <b>Upcoming</b>
-* max and min functions, choose function for axis operations
+* Choose function
 
 <br />
 <br />
@@ -33,93 +36,94 @@ npm install vecto
 const vecto = require('vecto');
 
 //selective 
-const { ndarray, core, math } = require('vecto');
+const { Ndarray, core, math } = require('vecto');
 ```
 
 
 ### Api List : 
-* ##### <a href='#ndarray'>ndarray</a>
+* ##### <a href='#Ndarray'>Ndarray</a>
 * ##### <a href='#core'>core</a>
 * ##### <a href='#math'>math</a>
 
 
 
-The ndarray provides a class to construct ndarrays and operate on them.
+The Ndarray provides a class to construct ndarrays and operate on them.
 
 
-### <p id='ndarray'>ndarray</a>
+### <p id='Ndarray'>Ndarray</a>
 ##### Constructor
 
 ```js
-let v1 = new ndarray(?[shape], ?[array], ?'dtype');
+let v1 = new Ndarray(?[shape], ?'dtype', ?'initializer', ?[array]);
 ```
 
-* Shape : Shape is the structure of the array, ex., shape of [2,3] means a 2x3 matrix having 2 array elements that have 3 elements each.
-: type = array,
-: value = optional,
-: default = []
+* Shape : [Number] , Shape is the structure of the array, ex., shape of [2,3] means a 2x3 matrix having 2 array elements that have 3 elements each.
 
-* Array : The Array that you want to create ndarray with.(if any).
-: type = array,
-: value = optional,
-: default = []
+* dtype : 'String', The data type for the elements of the array
+          Options : {
+              'uint8','uint16','uint32','int8','int16','int32','float32','float64','uint8clamped'
+          }
 
-* dtype : Defines the data type for the elements of the array. Possible values are : 'uint8','uint16','int8','int16','float32','float64' & 'uint8clamped'.
+* initializer : 'String', The initializer to initialize the data for the Ndarray
+                Options : {
+                    'zeros','linear','gaussian'
+                }
 
-: type = string,
-: value = optional,
-: default = 'uint8'
-
+* Array : [[Number]], The Array that you want to create ndarray with.(if any).
 
 ##### Other Methods For creation 
 
-* <b>ndarray.array([array])</b>
+* <b>Ndarray.array(array)</b>
 
-This Constructs an ndarray object for passed in array.
-
-: return type = ndarray_object
+/** Ndarray.array : This Constructs an ndarray object for passed in array.
+ **
+ ** @array : [[Number]]
+ **
+ ** Returns : { NdarrayObject }
+ **
+ **/
 
 ex : 
 ```js 
-let v = ndarray.array([[1,2,3],[4,5,6]]);
+let v = Ndarray.array([[1,2,3],[4,5,6]]);
 ```
 
 
-* <b>ndarray.zeroes([shape])</b>
+* <b>Ndarray.zeroes(shape)</b>
 
-Constructs an ndarray object of given shape filled with placeholder 0's.
+/** Ndarray.zeros : Constructs an ndarray object of given shape filled with placeholder 0's.
+ ** 
+ ** @shape : [Number], the shape of the ndarray
+ **
+ ** Returns : { NdarrayObject }
+ **
+ **/
 
 ex : 
 ```js
-let zv = ndarray.zeroes([2,2,3]);
+let zv = Ndarray.zeroes([2,2,3]);
 ```
 
-### ndarray properties and methods
+### Ndarray properties and methods
 
 #####  Properties
 
-* this.shape :  It defines the structure of the ndarray.
-: type = array.
+* this.shape : [Number], It defines the structure of the ndarray.
 
-* this.array :  Data of the ndarray.
-: type = array.
+* this.array :  [[Number]], Data of the ndarray.
 
-* this.size : The total number of elements in the ndarray.
-: type = int.
+* this.size : int, The total number of elements in the ndarray.
 
-* this.dim : The Dimensions of the ndarray ( number of dimensions ).
-: type = int.
+* this.dim : int, The Dimensions of the ndarray ( number of dimensions ).
 
-* this.dtype : The Data type of the elements of the array, currently only numbers are supported.
-: type = string.
+* this.dtype : 'String', The Data type of the elements of the array, currently only numbers are supported.
 
-* this.flat : 1-D version of the ndarray, stored as typed arrays, Faster operations can be performed on this.
-: type = dtype array.
+* this.flat : TypedArrayObject, 1-D version of the ndarray, stored as typed arrays, Faster operations can be performed on this.
 
 
 ##### Methods
 
-* <b> ndarray_object.resize([new_shape]) </b>
+* <b> NdarrayObject.resize([new_shape]) </b>
 
 This Method is used to alter the shape of an already existing ndarray, The new shape in form of array is provided and the current ndarray object is rearranged according to this new shape.
 
@@ -132,7 +136,7 @@ nv.resize([2,3]);
 //nv.array = [[5,5,5],[5,5,5]]
 ```
 
-* <b> ndarray_object.reshape([new_shape]) </b>
+* <b> NdarrayObject.reshape([new_shape]) </b>
 
 This method is used to rearrange an already existing ndarray object, The new shape in form of array is provided and the current ndarray object is rearranged only if the size for the new shape === the size for the old shape , i.e., the total number of elements in both configurations remain the same.
 
@@ -146,14 +150,14 @@ nv.reshape([6,2]);
 //nv.array = [[5,5],[5,5],[5,5],[5,5],[5,5],[5,5]]
 ```
 
-* <b> *ndarray_object.flatten() </b>
+* <b> *NdarrayObject.flatten() </b>
 
 Creates 1-D form of the ndarray. * = called implicitly (don't need to call explicitly).
 
 
-* <b> ndarray_object.arrange([array]) </b>
+* <b> NdarrayObject.arrange([array]) </b>
 
-Arranges The passed in 1-d array according to the shape of the ndarray_object
+Arranges The passed in 1-d array according to the shape of the NdarrayObject
 
 ex : 
 
@@ -167,7 +171,7 @@ nv.arrange([1,2,3,4,5,6,7]);
 //nv.array = [[1,2,3],[4,5,6]]
 ```
 
-* <b> ndarray_object.transpose() </b>
+* <b> NdarrayObject.transpose() </b>
 
 Performs transpose operation on 2d ndarrays (nd not supported yet) and returns the transposed array.<br />
 : return type = array.
@@ -181,6 +185,22 @@ nv.arrange([1,2,3,4,5,6]);
 console.log(nv.transpose())
 //[[1,4],[2,5],[3,6]]
 ```
+
+* <b>NdarrayObject.fill()</b>
+fill the Ndarray according to a distribution
+ex : 
+```js
+let nd = new Ndarray([2,3]);
+nd.fill('gaussian',0,1);
+//      initializer,mean,stdDev
+nd.fill('linear',2);
+// fills the array with 2s;
+nd.fill('linear',2,5);
+// provided a range [min-max], fills with steps of 1 or min;
+nd.fill('linear',2,25,2);
+// fills in the range of 2 and 25 with steps of 2;
+nd.fill('zeros');
+// fills with zeros;
 
 
 ### <p id='math'>math</p>
