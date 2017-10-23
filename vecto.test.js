@@ -308,8 +308,17 @@ test('core.transpose', () => {
 })
 
 test('core.fill', () => {
-    let a = core.fill(8, 'linear', 0.1, 1.0, 0.1);
-    expect(a).toEqual([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]);
+    let a = core.fill([8, 1], 'linear', 1, 10);
+    expect(a).toEqual([
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [6],
+        [7],
+        [8]
+    ]);
 })
 
 test('core.form_arr', () => {
