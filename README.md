@@ -201,7 +201,7 @@ nd.fill('linear',2,25,2);
 // fills in the range of 2 and 25 with steps of 2;
 nd.fill('zeros');
 // fills with zeros;
-
+```
 
 ### <p id='math'>math</p>
 
