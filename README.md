@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/abtExp/vecto/branch/master/graph/badge.svg)](https://codecov.io/gh/abtExp/vecto)
 
 # vecto :construction: :sparkles: :art:
-
+# @0.7.1
 # A JavaScript Mini Library to deal with N-dimensional arrays.
 
 
