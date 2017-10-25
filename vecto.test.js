@@ -308,7 +308,7 @@ test('core.transpose', () => {
 })
 
 test('core.fill', () => {
-    let a = core.fill([8, 1], 'linear', 1, 10);
+    let a = core.fill([8, 1], 'uint8', 'linear', 1, 10);
     expect(a).toEqual([
         [1],
         [2],
