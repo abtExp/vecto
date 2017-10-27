@@ -47,5 +47,5 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
             }
         }
     }
-    return maxElems; // arrange it in suitable shape
+    return maxElems;
 }
