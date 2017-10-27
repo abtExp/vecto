@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function sum(arr1, arr2 = null, axis = 0) {
+function sum(arr1, arr2 = null, axis = 0) {
     const { calc_shape, flatten, form_arr, arrange } = require('../lib/core'),
         axisOps = require('./axisOps');
     let summ, t1, t2, s1, s2;
@@ -51,6 +51,7 @@ module.exports = function sum(arr1, arr2 = null, axis = 0) {
                 t1[i] += arr2;
             }
             return arrange(s1, t1);
-        }
+        } else if (!Array.isArray(arr1) && Array.isArray(arr2)) return sum(arr2, arr1);
     }
 }
+module.exports = sum;

@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function divide(arr1, arr2) {
+function divide(arr1, arr2) {
     const calc_shape = require('../lib/calc_shape'),
         arrange = require('../lib/arrange'),
         flatten = require('../lib/flatten'),
@@ -17,6 +17,6 @@ module.exports = function divide(arr1, arr2) {
     } else if (Array.isArray(arr1) && !Array.isArray(arr2)) {
         let t1 = form_arr(flatten(arr1), 'float32');
         return arrange(calc_shape(arr1), Array.from(t1.map(i => i / arr2)));
-    }
-
+    } else if (!Array.isArray(arr1) && Array.isArray(arr2)) return divide(arr2, arr1);
 }
+module.exports = divide;
