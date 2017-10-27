@@ -33,7 +33,7 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
     } else {
         if (!Array.isArray(ar1) && Array.isArray(ar2)) {
             ar2 = flatten(ar2);
-            maxElems = ar2.map(i => i > ar1 ? i : ar1);
+            maxElems = ar2.map(i => Math.max(ar1, i));
         } else if (Array.isArray(ar1) && !Array.isArray(ar2)) return max({ ar1: ar2, ar2: ar1 });
         else {
             if (calc_shape(ar1).toString() === calc_shape(ar2).toString()) {

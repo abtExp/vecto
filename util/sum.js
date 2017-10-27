@@ -1,32 +1,22 @@
 "use strict";
 
-module.exports = function sum(arr1, arr2) {
-    const calc_shape = require('../lib/calc_shape');
-    const arrange = require('../lib/arrange');
-    const form_arr = require('../lib/form_arr');
-    const flatten = require('../lib/flatten');
+module.exports = function sum({ arr1, arr2 = null, axis = 0 }) {
+    const { calc_shape, flatten, form_arr, arrange } = require('../lib/core'),
+        axisOps = require('./axisOps');
     let summ, t1, t2, s1, s2;
     if (!arr2) {
         t1 = form_arr(flatten(arr1));
         s1 = calc_shape(arr1);
-        if (s1.length > 1) {
-            summ = [];
-            let s = 0;
-            for (let i = 0; i <= t1.length; i++) {
-                if ((i % s1[s1.length - 1]) === 0 && i !== 0) {
-                    summ.push(s);
-                    s = 0;
-                }
-                s += t1[i];
+        let elems = axisOps(s1, axis);
+        summ = [];
+        for (let i = 0; i < elems.length; i++) {
+            let sum = 0;
+            for (let j = 0; j < elems[i].length; j++) {
+                sum += t1[elems[i][j]];
             }
-            return summ;
-        } else {
-            summ = 0;
-            for (let i = 0; i < t1.length; i++) {
-                summ += t1[i];
-            }
-            return summ;
+            summ.push(sum);
         }
+        return summ;
     } else {
         if (Array.isArray(arr1) && Array.isArray(arr2)) {
             t1 = form_arr(flatten(arr1));
