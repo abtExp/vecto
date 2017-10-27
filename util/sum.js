@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function sum({ arr1, arr2 = null, axis = 0 }) {
+module.exports = function sum(arr1, arr2 = null, axis = 0) {
     const { calc_shape, flatten, form_arr, arrange } = require('../lib/core'),
         axisOps = require('./axisOps');
     let summ, t1, t2, s1, s2;
