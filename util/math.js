@@ -8,6 +8,7 @@ const product = require('./product'),
     min = require('./min'),
     sqrt = require('./sqrt'),
     pow = require('./pow'),
+    diff = require('./diff'),
     exp = require('./exp');
 
 module.exports = {
@@ -19,5 +20,6 @@ module.exports = {
     min,
     sqrt,
     pow,
+    diff,
     exp
 }
