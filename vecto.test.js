@@ -33,13 +33,16 @@ test('Ndarray construction method:1 (constructor)', () => {
     let n1 = new Ndarray([2, 3]);
     expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
-            array: [],
+            array: [
+                [0, 0, 0],
+                [0, 0, 0]
+            ],
             shape: [2, 3],
             size: 6,
             dim: 2,
-            dtype: 'uint8',
-            flat: Uint8Array
-        });
+            dtype: 'float32',
+            flat: Float32Array[0, 0, 0, 0, 0, 0]
+        })
 });
 
 test('Ndarray construction method:2 (zeroes)', () => {
