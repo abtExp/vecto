@@ -14,7 +14,8 @@
 module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
     const axisOps = require('./axisOps'),
         { flatten, arrange, calc_shape, calc_size } = require('../lib/core');
-    let maxElems = [];
+    let maxElems = [],
+        opShape = [];
     if (!ar2) {
         let shape = calc_shape(ar1),
             elems = axisOps(shape, axis);
@@ -22,15 +23,13 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
         for (let i = 0; i < elems.length; i++) {
             let max = ar1[elems[i][0]];
             for (let j = 0; j < elems[i].length; j++) {
-                console.log(ar1[elems[i][j]]);
-                if (ar1[elems[i][j]] > max) {
-                    max = ar1[elems[i][j]];
-                    console.log('max is now :', max);
-                }
+                max = Math.max(ar1[elems[i][j]], max);
             }
             maxElems.push(max);
         }
+        opShape = [];
     } else {
+        opShape = calc_shape(ar2);
         if (!Array.isArray(ar1) && Array.isArray(ar2)) {
             ar2 = flatten(ar2);
             maxElems = ar2.map(i => Math.max(ar1, i));
@@ -47,5 +46,5 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
             }
         }
     }
-    return maxElems;
+    return arrange(opShape, maxElems);
 }

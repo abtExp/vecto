@@ -16,7 +16,6 @@ module.exports =
                 s2 = calc_shape(arr2);
             if (s1.length === 2 && s2.length === 2) {
                 if (s1[1] === s2[0] && mode === 'matrix') {
-                    console.log('producting matrix');
                     return arrange([s1[0], s2[1]], matmul(s1, s2, t1, t2, ));
                 } else if (mode === 'dot') {
                     if (s1.toString() === s2.toString()) {

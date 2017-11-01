@@ -14,7 +14,7 @@ module.exports = (shape, axis) => {
         jumpLen *= shape[i];
     }
     jumpLen /= shape[axis];
-    for (let i = 0; i < (size - jumpLen); i++) {
+    for (let i = 0; i <= (size - jumpLen); i++) {
         let inElems = [];
         inElems.push(i);
         for (let k = 1; k < shape[axis]; k++) {
