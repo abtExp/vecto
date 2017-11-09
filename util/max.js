@@ -27,7 +27,9 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
             }
             maxElems.push(max);
         }
-        opShape = [];
+        let r = 2,
+            c = 2;
+        opShape = [r, c];
     } else {
         opShape = calc_shape(ar2);
         if (!Array.isArray(ar1) && Array.isArray(ar2)) {
