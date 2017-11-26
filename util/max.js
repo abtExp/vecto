@@ -11,12 +11,12 @@
  * 
  */
 
-module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
+function max({ ar1, ar2 = null, axis = 0 }) {
     const axisOps = require('./axisOps'),
         { flatten, arrange, calc_shape, calc_size } = require('../lib/core');
     let maxElems = [],
         opShape = [];
-    if (!ar2) {
+    if (ar2 === null) {
         let shape = calc_shape(ar1),
             elems = axisOps(shape, axis);
         ar1 = flatten(ar1);
@@ -27,14 +27,12 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
             }
             maxElems.push(max);
         }
-        let r = 2,
-            c = 2;
-        opShape = [r, c];
     } else {
-        opShape = calc_shape(ar2);
         if (!Array.isArray(ar1) && Array.isArray(ar2)) {
+            opShape = calc_shape(ar2);
             ar2 = flatten(ar2);
             maxElems = ar2.map(i => Math.max(ar1, i));
+            console.log(maxElems);
         } else if (Array.isArray(ar1) && !Array.isArray(ar2)) return max({ ar1: ar2, ar2: ar1 });
         else {
             if (calc_shape(ar1).toString() === calc_shape(ar2).toString()) {
@@ -43,6 +41,7 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
                 for (let i = 0; i < ar1.length; i++) {
                     maxElems.push(Math.max(ar1[i], ar2[i]));
                 }
+                opShape = calc_shape(ar2);
             } else {
                 throw new Error(`Can't compare shapes ${calc_shape(ar1)} & ${calc_shape(ar2)}`);
             }
@@ -50,3 +49,5 @@ module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
     }
     return arrange(opShape, maxElems);
 }
+
+module.exports = max;
