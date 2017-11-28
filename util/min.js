@@ -15,7 +15,7 @@ module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
     const axisOps = require('./axisOps'),
         { flatten, calc_shape } = require('../lib/core');
     let minElems = [];
-    if (!ar2) {
+    if (ar2 === null) {
         let shape = calc_shape(ar1),
             elems = axisOps(shape, axis);
         ar1 = flatten(ar1);
