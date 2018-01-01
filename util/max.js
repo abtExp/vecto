@@ -32,7 +32,6 @@ function max({ ar1, ar2 = null, axis = 0 }) {
             opShape = calcShape(ar2);
             ar2 = flatten(ar2);
             maxElems = ar2.map(i => Math.max(ar1, i));
-            console.log(maxElems);
         } else if (Array.isArray(ar1) && !Array.isArray(ar2)) return max({ ar1: ar2, ar2: ar1 });
         else {
             if (calcShape(ar1).toString() === calcShape(ar2).toString()) {
