@@ -22,10 +22,8 @@ module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
         for (let i = 0; i < elems.length; i++) {
             let min = ar1[elems[i][0]];
             for (let j = 0; j < elems[i].length; j++) {
-                console.log(ar1[elems[i][j]]);
                 if (ar1[elems[i][j]] < min) {
                     min = ar1[elems[i][j]];
-                    console.log('min is now :', min);
                 }
             }
             minElems.push(min);
