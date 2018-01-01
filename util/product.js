@@ -26,18 +26,18 @@ module.exports =
         } else if (mode === 'dot') {
             let s1 = calc_shape(arr1),
                 s2 = calc_shape(arr2);
-            if (s1[s1.length] === s2[s2.length]) {
+            if (s1.toString() === s2.toString()) {
                 let ar1 = flatten(arr1),
                     ar2 = flatten(arr2),
                     j = 0,
                     k = 0,
-                    idx = Math.max(ar1.length, ar2.length);
-                opShape = ar1.length >= ar2.length ? s1 : s2
+                    idx = ar1.length;
+                opShape = s1;
                 for (let i = 0; i < idx; i++) {
-                    prod.push(ar1[j++] * ar2[k++]);
-                    if (j >= ar1.length) j = 0;
-                    if (k >= ar2.length) k = 0;
+                    prod.push(ar1[i] * ar2[i]);
                 }
+            } else {
+                throw new Error(`Can't apply elementwise product operation to uneven shapes ${s1} & ${s2}`);
             }
         }
 
