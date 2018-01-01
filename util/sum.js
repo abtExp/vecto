@@ -1,12 +1,12 @@
 "use strict";
 
 function sum(arr1, arr2 = null, axis = 0) {
-    const { calc_shape, flatten, form_arr, arrange } = require('../lib/core'),
+    const { calcShape, flatten, formArr, arrange } = require('../lib/core'),
         axisOps = require('./axisOps');
     let summ, t1, t2, s1, s2;
     if (!arr2) {
-        t1 = form_arr(flatten(arr1));
-        s1 = calc_shape(arr1);
+        t1 = formArr(flatten(arr1));
+        s1 = calcShape(arr1);
         let elems = axisOps(s1, axis);
         summ = [];
         for (let i = 0; i < elems.length; i++) {
@@ -19,10 +19,10 @@ function sum(arr1, arr2 = null, axis = 0) {
         return summ;
     } else {
         if (Array.isArray(arr1) && Array.isArray(arr2)) {
-            t1 = form_arr(flatten(arr1));
-            t2 = form_arr(flatten(arr2));
-            s1 = calc_shape(arr1);
-            s2 = calc_shape(arr2);
+            t1 = formArr(flatten(arr1));
+            t2 = formArr(flatten(arr2));
+            s1 = calcShape(arr1);
+            s2 = calcShape(arr2);
             if (s1.toString() === s2.toString()) {
                 summ = [];
                 for (let i = 0; i < t1.length; i++) {
@@ -45,8 +45,8 @@ function sum(arr1, arr2 = null, axis = 0) {
                 throw new Error(`Uneven shapes: arg1 is ${s1} & arg2 is ${s2}`);
             }
         } else if (Array.isArray(arr1) && !Array.isArray(arr2)) {
-            t1 = form_arr(flatten(arr1));
-            s1 = calc_shape(arr1);
+            t1 = formArr(flatten(arr1));
+            s1 = calcShape(arr1);
             for (let i = 0; i < t1.length; i++) {
                 t1[i] += arr2;
             }

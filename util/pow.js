@@ -1,7 +1,7 @@
 module.exports = function pow(arr, p) {
     const flatten = require('../lib/flatten'),
         arrange = require('../lib/arrange'),
-        calc_shape = require('../lib/calc_shape');
+        calcShape = require('../lib/calcShape');
 
-    return arrange(calc_shape(arr), flatten(arr).map(i => Math.pow(i, p)));
+    return arrange(calcShape(arr), flatten(arr).map(i => Math.pow(i, p)));
 }

@@ -1,6 +1,6 @@
 module.exports = function sqrt(arr) {
     const flatten = require('../lib/flatten'),
-        calc_shape = require('../lib/calc_shape'),
+        calcShape = require('../lib/calcShape'),
         arrange = require('../lib/arrange');
-    return arrange(calc_shape(arr), flatten(arr).map(i => Math.sqrt(i)));
+    return arrange(calcShape(arr), flatten(arr).map(i => Math.sqrt(i)));
 }
