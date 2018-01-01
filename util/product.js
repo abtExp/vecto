@@ -4,16 +4,16 @@ module.exports =
     function product(arr1, arr2, mode = "matrix") {
         let prod = [],
             opShape;
-        const calc_shape = require('../lib/calc_shape'),
-            calc_size = require('../lib/calc_size'),
-            form_arr = require('../lib/form_arr'),
+        const calcShape = require('../lib/calcShape'),
+            calcSize = require('../lib/calcSize'),
+            formArr = require('../lib/formArr'),
             flatten = require('../lib/flatten'),
             matmul = require('./matmul'),
             arrange = require('../lib/arrange');
 
         if (mode === 'matrix') {
-            let s1 = calc_shape(arr1),
-                s2 = calc_shape(arr2),
+            let s1 = calcShape(arr1),
+                s2 = calcShape(arr2),
                 ar1 = flatten(arr1),
                 ar2 = flatten(arr2);
             console.log(s1, s2);
@@ -24,8 +24,8 @@ module.exports =
                 console.log(opShape);
             }
         } else if (mode === 'dot') {
-            let s1 = calc_shape(arr1),
-                s2 = calc_shape(arr2);
+            let s1 = calcShape(arr1),
+                s2 = calcShape(arr2);
             if (s1.toString() === s2.toString()) {
                 let ar1 = flatten(arr1),
                     ar2 = flatten(arr2),

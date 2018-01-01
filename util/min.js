@@ -13,10 +13,10 @@
 
 module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
     const axisOps = require('./axisOps'),
-        { flatten, calc_shape } = require('../lib/core');
+        { flatten, calcShape } = require('../lib/core');
     let minElems = [];
     if (ar2 === null) {
-        let shape = calc_shape(ar1),
+        let shape = calcShape(ar1),
             elems = axisOps(shape, axis);
         ar1 = flatten(ar1);
         for (let i = 0; i < elems.length; i++) {
@@ -36,7 +36,7 @@ module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
             return minElems;
         } else if (Array.isArray(ar1) && !Array.isArray(ar2)) return min({ ar1: ar2, ar2: ar1 });
         else {
-            if (calc_shape(ar1).toString() === calc_shape(ar2).toString()) {
+            if (calcShape(ar1).toString() === calcShape(ar2).toString()) {
                 ar1 = flatten(ar1);
                 ar2 = flatten(ar2);
                 for (let i = 0; i < ar1.length; i++) {
@@ -44,7 +44,7 @@ module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
                 }
                 return minElems;
             } else {
-                throw new Error(`Can't compare shapes ${calc_shape(ar1)} & ${calc_shape(ar2)}`);
+                throw new Error(`Can't compare shapes ${calcShape(ar1)} & ${calcShape(ar2)}`);
             }
         }
     }

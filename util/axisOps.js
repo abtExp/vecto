@@ -1,12 +1,12 @@
 "use strict";
 
 module.exports = (shape, axis) => {
-    const calc_size = require('../lib/calc_size');
+    const calcSize = require('../lib/calcSize');
     let nComp = axis < shape.length - 1 ? shape[shape.length - 1] : 1,
         jumpLen = 1,
         inc = 1,
         j = 0,
-        size = calc_size(shape, 'shape'),
+        size = calcSize(shape, 'shape'),
         switches = 1,
         elems = [];
     for (let i = axis; i < shape.length; i++) {
