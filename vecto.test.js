@@ -311,7 +311,7 @@ test('core.transpose', () => {
 })
 
 test('core.fill', () => {
-    let a = core.fill([8, 1], 'uint8', 'linear', 1, 10);
+    let a = core.fill([8, 1], 'linear', 1, 10);
     expect(a).toEqual([
         [1],
         [2],
@@ -423,4 +423,8 @@ test('formArr', () => {
         expect(g.constructor.name).toBe('Float32Array') &&
         expect(h.constructor.name).toBe('Float64Array') &&
         expect(i.constructor.name).toBe('Uint8ClampedArray');
+})
+
+test('pad test', () => {
+    // const a =   
 })
