@@ -49,7 +49,6 @@ module.exports = function pad(inputArray, padding, dtype = 'float32') {
         i += colSkip;
         if (k % ipImElems === 0) i += rowSkip;
     }
-    // arrange is broken
     return arrange(opShape, opArr);
 }
 
