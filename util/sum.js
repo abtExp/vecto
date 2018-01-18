@@ -1,5 +1,19 @@
 "use strict";
 
+/**
+ * 
+ * @function sum - adds two ndarrays
+ * 
+ * @param {Array} arr1 - The first array
+ * 
+ * @param {Array} arr2 - The second array
+ * 
+ * @param {int} axis - The axis along which to add.
+ * 
+ * @returns {Array} - The resultant
+ * 
+ */
+
 const { calcShape, flatten, formArr, arrange } = require('../lib/core'),
     broadcast = require('./broadcast'),
     axisOps = require('./axisOps');
