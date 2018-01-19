@@ -36,8 +36,8 @@ module.exports = function pad(inputArray, padding, dtype = 'float32') {
         colSkip = pw * c,
         k = 0, j = 0;
 
-    let ipArr = formArr(flatten(inputArray), dtype),
-        opArr = formArr(fill([opSize], 'zeros'), dtype);
+    let ipArr = flatten(inputArray),
+        opArr = fill([opSize], 'zeros');
 
     for (let i = 0; k < ipSize; i++) {
         if (i % opImElems === 0) i += rowSkip;

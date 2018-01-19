@@ -10,13 +10,6 @@ function regMatMul(s1, s2, ar1, ar2) {
         c.push(ar);
     }
 
-    ar1 = core.flatten(ar1);
-    ar1 = core.formArr(ar1, 'float32');
-    ar1 = core.arrange(s1, ar1);
-    ar2 = core.flatten(ar2);
-    ar2 = core.formArr(ar2, 'float32');
-    ar2 = core.arrange(s2, ar2);
-
     for (let i = 0; i < s1[0]; i++) {
         for (let j = 0; j < s2[1]; j++) {
             for (let k = 0; k < s2[0]; k++) {
@@ -33,15 +26,11 @@ test('Ndarray construction method:1 (constructor)', () => {
     let n1 = new Ndarray({ shape: [2, 3], dtype: 'float32', initializer: 'zeros' });
     expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
-            array: [
-                [0, 0, 0],
-                [0, 0, 0]
-            ],
             shape: [2, 3],
             size: 6,
             dim: 2,
             dtype: 'float32',
-            flat: Float32Array[0, 0, 0, 0, 0, 0]
+            data: Float32Array[0, 0, 0, 0, 0, 0]
         })
 });
 
@@ -49,15 +38,11 @@ test('Ndarray construction method:2 (zeroes)', () => {
     let n1 = Ndarray.zeroes([2, 3]);
     expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
-            array: [
-                [0, 0, 0],
-                [0, 0, 0]
-            ],
             shape: [2, 3],
             size: 6,
             dim: 2,
             dtype: 'uint8',
-            flat: Uint8Array
+            data: Uint8Array
         });
 })
 
@@ -75,21 +60,11 @@ test('Ndarray construction method:3 (array)', () => {
 
     expect(n1).toBeInstanceOf(Ndarray) &&
         expect(n1).toEqual({
-            array: [
-                [
-                    [Array],
-                    [Array]
-                ],
-                [
-                    [Array],
-                    [Array]
-                ]
-            ],
             shape: [2, 2, 3],
             size: 12,
             dim: 3,
             dtype: 'uint8',
-            flat: Uint8Array
+            data: Uint8Array
         })
 
 })
@@ -97,7 +72,7 @@ test('Ndarray construction method:3 (array)', () => {
 test('NdarrayObject.arrange method', () => {
     let n1 = Ndarray.zeroes([2, 3]);
     n1.arrange([2]);
-    expect(n1.array).toEqual([
+    expect(n1.val()).toEqual([
         [2, 2, 2],
         [2, 2, 2]
     ]);
@@ -106,35 +81,21 @@ test('NdarrayObject.arrange method', () => {
 test('NdarrayObject.resize method', () => {
     let n1 = new Ndarray({ shape: [2, 3, 4] });
     n1.arrange([1]);
-    let oldval = n1.array;
+    let oldval = n1.val();
     n1.resize([4, 4]);
-    let newval = n1.array;
-    expect(newval).toEqual([
-            [1, 1, 1, 1],
-            [1, 1, 1, 1],
-            [1, 1, 1, 1],
-            [1, 1, 1, 1]
-        ]) &&
-        expect(oldval).toEqual([
-            [
-                [1, 1, 1, 1],
-                [1, 1, 1, 1],
-                [1, 1, 1, 1]
-            ],
-            [
-                [1, 1, 1, 1],
-                [1, 1, 1, 1],
-                [1, 1, 1, 1]
-            ]
-        ]);
+    let newval = n1.val();
+    console.log(oldval);
+    console.log(newval);
+    expect(core.calcShape(newval)).toEqual([4, 4]) &&
+        expect(core.calcShape(oldval)).toEqual([2, 3, 4]);
 })
 
 test('NdarrayObject.reshape method', () => {
     let n1 = new Ndarray({ shape: [2, 3, 4] });
     n1.arrange([2]);
-    let oldval = n1.array;
+    let oldval = n1.val();
     n1.reshape([4, 6]);
-    let newval = n1.array;
+    let newval = n1.val();
 
     expect(oldval).toEqual([
             [
@@ -160,12 +121,12 @@ test('NdarrayObject.reshape method', () => {
 test('NdarrayObject.clip method', () => {
     let n1 = new Ndarray({ shape: [2, 3] });
     n1.arrange([12, 31, 11, 24, 2, 20]);
-    expect(n1.array).toEqual([
+    expect(n1.val()).toEqual([
         [12, 31, 11],
         [24, 2, 20]
     ]);
     n1.clip(10, 20);
-    expect(n1.array).toEqual([
+    expect(n1.val()).toEqual([
         [12, 20, 11],
         [20, 10, 20]
     ]);
@@ -175,7 +136,7 @@ test('NdarrayObject.clip method', () => {
 test('NdarrayObject.flatten method', () => {
     let n1 = new Ndarray({ shape: [2, 3, 4] });
     n1.arrange([2]);
-    expect(n1.flat.toString()).toEqual([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].toString());
+    expect(n1.data.toString()).toEqual([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].toString());
 })
 
 test('NdarrayObject.transpose method', () => {
@@ -341,15 +302,14 @@ test('product tests', () => {
         shape22 = parseInt(Math.floor(Math.random() * 10)) || 1,
         shape1 = [shape11, shape12],
         shape2 = [shape21, shape22],
-        ar1 = new Ndarray({ shape: shape1 }),
-        ar2 = new Ndarray({ shape: shape2 }),
-        ar3 = new Ndarray({ shape: shape2 }),
-        prearr1 = ar1.array,
-        prearr2 = ar2.array,
-        prearr3 = ar3.array;
+        ar1 = new Ndarray({ shape: shape1, initializer: 'linear' }),
+        ar2 = new Ndarray({ shape: shape2, initializer: 'linear' }),
+        ar3 = new Ndarray({ shape: shape2, initializer: 'linear' }),
+        prearr1 = ar1.val(),
+        prearr2 = ar2.val(),
+        prearr3 = ar3.val();
     console.log(shape1, shape2);
-    expect(math.product(prearr1, prearr2, 'matrix')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
-    // expect(math.product(prearr2, prearr3, 'dot')).toEqual(regMatMul(shape2, shape2, prearr2, prearr3));
+    expect(math.product(prearr1, prearr2, 'dot')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
 })
 
 test('sum test', () => {
@@ -387,18 +347,19 @@ test('exp test', () => {
 })
 
 test('divide test', () => {
-    let a = new Ndarray([2, 3]);
-    let b = a.flat.map(i => (i / 2));
-    let c = math.divide(Array.from(a.flat), 2);
-    let d = new Ndarray([2, 3]);
-    let e = Array.from(d.flat);
-    let f = [];
-    for (let i = 0; i < a.flat.length; i++) {
-        f.push(a.flat[i] / e[i]);
+    let a = new Ndarray({ shape: [2, 3], initializer: 'linear' });
+    let b = new Ndarray({ shape: [2, 3], initializer: 'linear' });
+
+    let c = math.divide(a.val(), b.val());
+    let d = [];
+    a = Array.from(a.data);
+    b = Array.from(b.data);
+
+    for (let i = 0; i < a.length; i++) {
+        d[i] = (a[i] / b[i]);
     }
-    let g = math.divide(Array.from(a.flat), e);
-    // expect(b).toEqual(core.flatten(c));
-    // expect(g).toEqual(core.flatten(f));
+
+    expect(core.flatten(c)).toEqual(d);
 })
 
 test('formArr', () => {
