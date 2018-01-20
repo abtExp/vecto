@@ -1,25 +1,27 @@
 "use strict";
 
-const product = require('./product'),
-    sum = require('./sum'),
+const diff = require('./diff'),
     divide = require('./divide'),
+    exp = require('./exp'),
     log = require('./log'),
     max = require('./max'),
     min = require('./min'),
-    sqrt = require('./sqrt'),
+    pad = require('./pad'),
     pow = require('./pow'),
-    diff = require('./diff'),
-    exp = require('./exp');
+    product = require('./product'),
+    sqrt = require('./sqrt'),
+    sum = require('./sum');
 
 module.exports = {
-    product,
-    sum,
+    diff,
     divide,
+    exp,
     log,
     max,
     min,
-    sqrt,
+    pad,
     pow,
-    diff,
-    exp
+    product,
+    sqrt,
+    sum,
 }
