@@ -1,5 +1,39 @@
 {
-    "source": "./vecto",
+    "source": "./lib",
     "destination": "./docs",
-    "plugins": [{ "name": "esdoc-standard-plugin" }]
+    "includes": ["\\.js$"],
+    "excludes": ["\\.config\\.js$"],
+    "plugins": [{
+        "name": "esdoc-standard-plugin",
+        "option": {
+            "lint": { "enable": true },
+            "coverage": { "enable": true },
+            "accessor": { "access": ["public", "protected", "private"], "autoPrivate": true },
+            "undocumentIdentifier": { "enable": true },
+            "unexportedIdentifier": { "enable": false },
+            "typeInference": { "enable": true },
+            "brand": {
+                "logo": "./logo.png",
+                "title": "vecto",
+                "description": "Mini JS Library to deal with Ndarrays",
+                "repository": "https://github.com/abtExp/vecto",
+                "site": "https://abtExp.github.io/vecto",
+                "author": "https://twitter.com/@_thennable",
+                "image": "http://my-library.org/logo.png"
+            },
+            "manual": {
+                "index": "./README.md",
+                "globalIndex": true,
+                "asset": "./manual/asset",
+                "files": [
+                    "./README.md"
+                ]
+            },
+            "test": {
+                "source": "./test/",
+                "interfaces": ["test", "expect"],
+                "includes": ["vecto.test.js"]
+            }
+        }
+    }]
 }
