@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Reference | vecto</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">lib/core.js | vecto</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -33,15 +33,32 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>References</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">lib/core.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const arrange = require(&apos;./arrange&apos;);
+const calcShape = require(&apos;./calcShape&apos;);
+const calcSize = require(&apos;./calcSize&apos;);
+const clip = require(&apos;./clip&apos;);
+const fill = require(&apos;./fill&apos;);
+const findDim = require(&apos;./findDim&apos;);
+const flatten = require(&apos;./flatten&apos;);
+const formArr = require(&apos;./formArr&apos;);
+const formChunks = require(&apos;./formChunks&apos;);
+const transpose = require(&apos;./transpose&apos;);
 
-<div class="identifiers-wrap">
-  <div>
-    
-  </div>
 
-  
-</div>
+module.exports = {
+    arrange,
+    calcShape,
+    calcSize,
+    clip,
+    fill,
+    findDim,
+    flatten,
+    formArr,
+    formChunks,
+    transpose
+}</code></pre>
+
 </div>
 
 <footer class="footer">

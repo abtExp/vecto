@@ -6,14 +6,14 @@
     "plugins": [{
         "name": "esdoc-standard-plugin",
         "option": {
-            "lint": { "enable": true },
+            "lint": { "enable": false },
             "coverage": { "enable": true },
             "accessor": { "access": ["public", "protected", "private"], "autoPrivate": true },
             "undocumentIdentifier": { "enable": true },
             "unexportedIdentifier": { "enable": false },
             "typeInference": { "enable": true },
             "brand": {
-                "logo": "./logo.png",
+                "logo": "",
                 "title": "vecto",
                 "description": "Mini JS Library to deal with Ndarrays",
                 "repository": "https://github.com/abtExp/vecto",
@@ -24,7 +24,7 @@
             "manual": {
                 "index": "./README.md",
                 "globalIndex": true,
-                "asset": "./manual/asset",
+                "asset": "",
                 "files": [
                     "./README.md"
                 ]

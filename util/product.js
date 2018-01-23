@@ -8,10 +8,10 @@ module.exports = function product(arr1, arr2, mode = "dot") {
     let prod = [],
         opShape,
         broadcastable,
-        s1 = calcShape(arr1),
-        s2 = calcShape(arr2),
-        ar1 = flatten(arr1),
-        ar2 = flatten(arr2);
+        s1 = arr1.shape || calcShape(arr1),
+        s2 = arr2.shape || calcShape(arr2),
+        ar1 = arr1.data || flatten(arr1),
+        ar2 = arr2.data || flatten(arr2);
 
     if (mode === 'dot' && s1[s1.length - 1] === s2[0]) {
         prod = matmul(s1, s2, ar1, ar2);
@@ -20,7 +20,7 @@ module.exports = function product(arr1, arr2, mode = "dot") {
         [broadcastable, opShape] = broadcast(s1, s2);
         if (broadcastable) {
             let [len, sarr, larr] = ar1.length > ar2.length ? [ar1.length, ar2, ar1] : [ar2.length, ar1, ar2],
-                k = 0;
+                k = 0, switchIdx;
             for (let i = 0; i < len; i++) {
                 if (k >= sarr.length) k = 0;
                 prod.push(larr[i] * sarr[k++]);

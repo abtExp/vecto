@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Reference | vecto</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">lib/formChunks.js | vecto</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -33,15 +33,24 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>References</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">lib/formChunks.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/* form chunks  */
+module.exports = function formChunks(size, no, arr) {
+    let chunk = [],
+        final = [],
+        k = 0;
+    for (let i = 0; i &lt; no; i++) {
+        chunk = [];
+        for (let j = 0; j &lt; size; j++) {
+            chunk[j] = arr[k++];
+            if (k &gt;= arr.length) k = 0;
+        }
+        final.push(chunk);
+    }
+    return final;
+}
+</code></pre>
 
-<div class="identifiers-wrap">
-  <div>
-    
-  </div>
-
-  
-</div>
 </div>
 
 <footer class="footer">

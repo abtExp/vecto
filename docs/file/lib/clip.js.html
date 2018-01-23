@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Reference | vecto</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">lib/clip.js | vecto</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -33,15 +33,67 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>References</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">lib/clip.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * @function clip : Clips the array ( converts elements according to max and min val passed )  
+ *
+ * @param {Array} arr : @requires
+ *   
+ * @param {Array|int} min_val - Optional if max_val is provided, if [number] is provided ,
+ *                              then ith val in [min_val] defines a min_val for 
+ *                              ith val in array.
+ * 
+ * @param {Array|int} max_val - Optional if min_val is provided,
+ *                              same as [min_val] but defines a max_val
+ * 
+ * @returns {Array} the clipped array
+ * 
+ */
 
-<div class="identifiers-wrap">
-  <div>
-    
-  </div>
 
-  
-</div>
+module.exports = function clip(arr, min_val, max_val) {
+    const flatten = require(&apos;./flatten&apos;);
+    const arrange = require(&apos;./arrange&apos;);
+    const calcShape = require(&apos;./calcShape&apos;);
+
+    let a = flatten(arr),
+        min = [],
+        max = [],
+        a_shape = calcShape(arr),
+        f1 = false,
+        f2 = false,
+        l = 0,
+        k = 0;
+
+    if (!min_val &amp;&amp; !max_val) throw new Error(&apos;Expected atleast one clipping parameter&apos;);
+
+    if (Array.isArray(min_val)) {
+        f1 = true;
+        if (toString(calcShape(min_val)) === toString(a_shape)) {
+            min = flatten(min_val);
+        } else throw new Error(`Uneven shape : arg1 is ${a_shape}, given shape ${calcShape(min_val)}`);
+    } else {
+        min[0] = min_val;
+    }
+
+    if (Array.isArray(max_val)) {
+        f2 = true;
+        if (toString(calcShape(max_val)) === toString(a_shape)) {
+            max = flatten(max_val);
+        } else throw new Error(`Uneven shape : arg1 is ${a_shape}, given shape ${calcShape(min_val)}`);
+    } else {
+        max[0] = max_val;
+    }
+
+    for (let i = 0; i &lt; a.length; i++) {
+        a[i] = Math.max(min[k], Math.min(a[i], max[l]));
+        if (f1) k++;
+        if (f2) l++;
+    }
+
+    return (arrange(a_shape, a));
+}</code></pre>
+
 </div>
 
 <footer class="footer">
