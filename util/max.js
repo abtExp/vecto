@@ -1,6 +1,15 @@
 const { flatten, arrange, calcShape, calcSize } = require('../lib/core'),
     axisOps = require('./axisOps');
 
+
+/* Return Shaped Outputs                             ************
+ *      _______   _____           _____     _____    ************
+ ****  |#######| /#####\          |####\   /#####\   ************
+ ****     |#|   |#|   |#|  _____  |#| |#| |#|   |#|  ************
+ ****     |#|   |#|   |#| |_____| |#|_|#| |#|   |#|  ************
+ ****     |#|    \#####/          |####/   \#####/   ************
+ ***************************************************************/
+
 /** 
  * 
  * @function max : finds the max elements amongst the passed arrays or a single array
