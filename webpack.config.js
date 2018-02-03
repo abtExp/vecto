@@ -1,6 +1,6 @@
 const path = require('path'),
-    uglify = require('uglifyjs-webpack-plugin'),
-    webpack = require('webpack');
+    uglify = require('uglifyjs-webpack-plugin');
+
 module.exports = {
     entry: path.resolve(__dirname, 'vecto.js'),
     output: {
@@ -17,7 +17,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new uglify(),
-        new webpack.optimize.CommonsChunkPlugin()
+        new uglify()
     ]
 };
