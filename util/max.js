@@ -19,6 +19,7 @@ const { flatten, arrange, calcShape, calcSize } = require('../lib/core'),
 module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
     let maxElems = [],
         opShape = [];
+
     if (ar2 === null) {
         let shape = calcShape(ar1),
             elems = axisOps(shape, axis);

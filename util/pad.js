@@ -9,12 +9,17 @@ const { arrange, calcShape, formArr, flatten, fill } = require('../lib/core');
  * @param {Array/int} padding - Either an Array giving the padding [h,w] or an integer
  *                              for h = w
  * 
+ * @param {String} dtype - The dtype of the output array
+ * 
+ * @param {int} padWith - The value with which the array is to be padded
+ *                        defaults to zero
+ * 
  * @returns {Array} the padded array 
  * 
  */
 
 
-module.exports = function pad(inputArray, padding, dtype = 'float32') {
+module.exports = function pad(inputArray, padding, dtype = 'float32', padWith = 0) {
     const ipShape = calcShape(inputArray);
     /**
      * 
@@ -36,8 +41,8 @@ module.exports = function pad(inputArray, padding, dtype = 'float32') {
         colSkip = pw * c,
         k = 0, j = 0;
 
-    let ipArr = flatten(inputArray),
-        opArr = fill([opSize], 'zeros');
+    let ipArr = inputArray.data || formArr(flatten(inputArray), dtype),
+        opArr = fill([opSize], 'linear', padWith);
 
     for (let i = 0; k < ipSize; i++) {
         if (i % opImElems === 0) i += rowSkip;

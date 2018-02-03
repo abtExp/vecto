@@ -1,6 +1,8 @@
 "use strict";
 
-const diff = require('./diff'),
+const argmax = require('./argmax'),
+    argmin = require('./argmin'),
+    diff = require('./diff'),
     divide = require('./divide'),
     exp = require('./exp'),
     log = require('./log'),
@@ -12,7 +14,10 @@ const diff = require('./diff'),
     sqrt = require('./sqrt'),
     sum = require('./sum');
 
+
 module.exports = {
+    argmax,
+    argmin,
     diff,
     divide,
     exp,

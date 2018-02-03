@@ -40,12 +40,7 @@ function sum(arr1, arr2 = null, axis = 0) {
     } else {
         [broadcastable, opShape] = broadcast(s1, s2)
         if (broadcastable) {
-            let [len, sarr, larr] = ar1.length > ar2.length ? [ar1.length, ar2, ar1] : [ar2.length, ar1, ar2],
-                k = 0;
-            for (let i = 0; i < len; i++) {
-                if (k >= sarr.length) k = 0;
-                summ.push(larr[i] + sarr[k++]);
-            }
+            // cases for sum
         } else {
             throw new Error(`Shapes [${s1}] and [${s2}] can't be broadcasted.`);
         }
