@@ -1,3 +1,6 @@
+const axisOps = require('./axisOps'),
+    { flatten, calcShape } = require('../lib/core');
+
 /** min : finds the min elements amongst the passed arrays or a single array
  *        along an axis
  * 
@@ -12,8 +15,6 @@
  */
 
 module.exports = function min({ ar1, ar2 = null, axis = 0 }) {
-    const axisOps = require('./axisOps'),
-        { flatten, calcShape } = require('../lib/core');
     let minElems = [];
     if (ar2 === null) {
         let shape = calcShape(ar1),

@@ -19,12 +19,12 @@ module.exports = function product(arr1, arr2, mode = "dot") {
     } else if (mode === 'elementwise') {
         [broadcastable, opShape] = broadcast(s1, s2);
         if (broadcastable) {
-            let [len, sarr, larr] = ar1.length > ar2.length ? [ar1.length, ar2, ar1] : [ar2.length, ar1, ar2],
-                k = 0, switchIdx;
-            for (let i = 0; i < len; i++) {
-                if (k >= sarr.length) k = 0;
-                prod.push(larr[i] * sarr[k++]);
-            }
+            // let [len, sarr, larr] = ar1.length > ar2.length ? [ar1.length, ar2, ar1] : [ar2.length, ar1, ar2],
+            //     k = 0, switchIdx;
+            // for (let i = 0; i < len; i++) {
+            //     if (k >= sarr.length) k = 0;
+            //     prod.push(larr[i] * sarr[k++]);
+            // }
         } else {
             throw new Error(`Shapes [${s1}] and [${s2}] can't be broadcasted.`);
         }

@@ -1,3 +1,6 @@
+const { flatten, arrange, calcShape, calcSize } = require('../lib/core'),
+    axisOps = require('./axisOps');
+
 /** 
  * 
  * @function max : finds the max elements amongst the passed arrays or a single array
@@ -14,8 +17,6 @@
  */
 
 module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
-    const { flatten, arrange, calcShape, calcSize } = require('../lib/core'),
-        axisOps = require('./axisOps');
     let maxElems = [],
         opShape = [];
     if (ar2 === null) {
