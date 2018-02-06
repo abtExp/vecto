@@ -1,22 +1,16 @@
 'use strict';
 
-/* Return shaped outputs                             ************
- *      _______   _____           _____     _____    ************
- ****  |#######| /#####\          |####\   /#####\   ************
- ****     |#|   |#|   |#|  _____  |#| |#| |#|   |#|  ************
- ****     |#|   |#|   |#| |_____| |#|_|#| |#|   |#|  ************
- ****     |#|    \#####/          |####/   \#####/   ************
- ***************************************************************/
-
-const axisOps = require('./axisOps');
-const { calcShape, flatten } = require('../lib/core');
+const axisOps = require('./axisOps'),
+    removeAxis = require('./removeAxis');
+const { calcShape, flatten, arrange } = require('../lib/core');
 
 module.exports = function(arr, axis = null) {
     const shape = arr.shape || calcShape(arr);
 
     arr = arr.data || flatten(arr);
 
-    let max = [];
+    let max = [],
+        opShape = [];
 
     if (axis === null) {
         let maxIdx = 0;
@@ -44,5 +38,6 @@ module.exports = function(arr, axis = null) {
         max.push(maxIdx);
     }
 
-    return max;
+    opShape = removeAxis(shape, axis);
+    return arrange(opShape, max);
 }
