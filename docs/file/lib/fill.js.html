@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">lib/fill.js | vecto</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Mini JS Library to deal with Ndarrays"><meta property="og:type" content="website"><meta property="og:url" content="https://abtExp.github.io/vecto"><meta property="og:site_name" content="vecto"><meta property="og:title" content="vecto"><meta property="og:image" content="http://my-library.org/logo.png"><meta property="og:description" content="Mini JS Library to deal with Ndarrays"><meta property="og:author" content="https://twitter.com/@_thennable"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="vecto"><meta property="twitter:description" content="Mini JS Library to deal with Ndarrays"><meta property="twitter:image" content="http://my-library.org/logo.png"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/abtExp/vecto"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/fill.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+/**
+ *
+ * @function fill - fills the vector according to passed args
+ *
+ * @param {Array} shape - The shape of the array to be filled (Required)
+ * 
+ * @param {String} initializer - The distribution of elements to be filled
+ *                                      { 
+ *                                          1. &apos;linear&apos; (random or uniform filling or single elem filling)
+ *                                          2. &apos;zeros&apos;  (filling with zeroes)
+ *                                          3. &apos;gaussian&apos; (gaussian distribution)
+ *                                          4. &apos;custom&apos; (fills the value acc to a passed function)
+ *                                      }
+ * 
+ * @param {rest} ...args -   {
+ *                               1. for linear, args.len === 0 =&gt; random filling
+ *                                              args.len === 1 =&gt; fill with that value
+ *                                              args.len === 2 =&gt; the max and min ranges with steps of min
+ *                                              args.len === 3 =&gt; the max, min and the step
+ *                               2. for gaussian, args[0] = mean (defaults to 0)
+ *                                              args[1] = variance (defaults to 1)
+ *                            }
+ * 
+ * @returns {Array} - The filled array
+ * 
+ */
+
+module.exports = function fill(shape, initializer = &apos;linear&apos;, ...args) {
+    const { calcSize, arrange } = require(&apos;./core&apos;);
+    initializer = initializer || &apos;zeros&apos;;
+    let arr = [],
+        size = calcSize(shape, &apos;shape&apos;);
+    if (initializer === &apos;zeros&apos;) {
+        arr = zeros(size);
+    } else if (initializer === &apos;linear&apos;) {
+        switch (args.length) {
+            case 0:
+                for (let i = 0; i &lt; size; i++) {
+                    arr[i] = Math.random();
+                }
+                break;
+            case 1:
+                for (let i = 0; i &lt; size; i++) {
+                    arr[i] = args[0];
+                }
+                break;
+            default:
+                let min = args[0],
+                    max = args[1],
+                    num = min,
+                    digs;
+                // calculating the step size
+                (() =&gt; {
+                    digs = 0;
+                    let nums = min;
+                    while (Math.floor(nums) !== nums) {
+                        digs++;
+                        nums *= 10;
+                    }
+                })();
+                let step = args[2] || (1 / Math.pow(10, digs));
+                for (let i = 0; i &lt; size; i++) {
+                    arr[i] = num;
+                    num += step;
+                    if (num &gt; max) num = min;
+                }
+                break;
+        }
+    } else if (initializer === &apos;gaussian&apos;) {
+        arr = gaussian(args[0], args[1], size);
+    } else if (initializer === &apos;custom&apos;) {
+        for (let i = 0; i &lt; size; i++) {
+            arr[i] = args[0]();
+        }
+    }
+    let retval = arrange(shape, arr);
+    return retval;
+}
+
+
+function zeros(size) {
+    let arr = [];
+    for (let i = 0; i &lt; size; i++) {
+        arr[i] = 0;
+    }
+    return arr;
+}
+
+function gaussian(mean = 0, stddev = 1, size) {
+    let v1, v2, s, arr = [];
+    for (let i = 0; i &lt; size; i++) {
+        do {
+            v1 = 2 * Math.random() - 1;
+            v2 = 2 * Math.random() - 1;
+            s = v1 * v1 + v2 * v2;
+        } while (s &gt; 1);
+
+        let res = Math.sqrt(-2 * Math.log(s) / s) * v1;
+        arr[i] = mean + (stddev * res);
+    }
+    return arr;
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

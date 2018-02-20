@@ -1,0 +1,2310 @@
+{
+    "name": "root",
+    "type": "dir",
+    "path": ".",
+    "files": {
+        "0": {
+            "id": 0,
+            "name": ".babelrc",
+            "type": "file",
+            "path": "./.babelrc",
+            "imports": [],
+            "exports": [],
+            "extension": "babelrc"
+        },
+        "1": {
+            "id": 1,
+            "name": ".codeclimate.yml",
+            "type": "file",
+            "path": "./.codeclimate.yml",
+            "imports": [],
+            "exports": [],
+            "extension": "yml"
+        },
+        "2": {
+            "id": 2,
+            "name": ".coveralls.yml",
+            "type": "file",
+            "path": "./.coveralls.yml",
+            "imports": [],
+            "exports": [],
+            "extension": "yml"
+        },
+        "3": {
+            "id": 3,
+            "name": ".esdoc.json",
+            "type": "file",
+            "path": "./.esdoc.json",
+            "imports": [],
+            "exports": [],
+            "extension": "json"
+        },
+        "4": {
+            "id": 4,
+            "name": ".external-ecmascript.js",
+            "type": "file",
+            "path": "./.external-ecmascript.js",
+            "imports": [],
+            "exports": [],
+            "extension": "js"
+        },
+        "5": {
+            "id": 5,
+            "name": ".gitignore",
+            "type": "file",
+            "path": "./.gitignore",
+            "imports": [],
+            "exports": [],
+            "extension": "gitignore"
+        },
+        "6": {
+            "id": 6,
+            "name": ".npmignore",
+            "type": "file",
+            "path": "./.npmignore",
+            "imports": [],
+            "exports": [],
+            "extension": "npmignore"
+        },
+        "7": {
+            "id": 7,
+            "name": ".travis.yml",
+            "type": "file",
+            "path": "./.travis.yml",
+            "imports": [],
+            "exports": [],
+            "extension": "yml"
+        },
+        "8": {
+            "id": 8,
+            "name": "CODE_OF_CONDUCT.md",
+            "type": "file",
+            "path": "./CODE_OF_CONDUCT.md",
+            "imports": [],
+            "exports": [],
+            "extension": "md"
+        },
+        "9": {
+            "id": 9,
+            "name": "License.txt",
+            "type": "file",
+            "path": "./License.txt",
+            "imports": [],
+            "exports": [],
+            "extension": "txt"
+        },
+        "10": {
+            "id": 10,
+            "name": "README.md",
+            "type": "file",
+            "path": "./README.md",
+            "imports": [],
+            "exports": [],
+            "extension": "md"
+        },
+        "11": {
+            "id": 11,
+            "name": "_config.yml",
+            "type": "file",
+            "path": "./_config.yml",
+            "imports": [],
+            "exports": [],
+            "extension": "yml"
+        },
+        "12": {
+            "id": 12,
+            "name": "appveyor.yml",
+            "type": "file",
+            "path": "./appveyor.yml",
+            "imports": [],
+            "exports": [],
+            "extension": "yml"
+        },
+        "13": {
+            "id": 13,
+            "name": "benchmarking.js",
+            "type": "file",
+            "path": "./benchmarking.js",
+            "imports": [
+                "./vecto.js",
+                "./coverage/lcov-report/vecto/vecto.js.html",
+                "./util/matmul.js",
+                "./coverage/lcov-report/vecto/util/matmul.js.html"
+            ],
+            "exports": [],
+            "extension": "js"
+        },
+        "14": {
+            "id": 14,
+            "name": "package-lock.json",
+            "type": "file",
+            "path": "./package-lock.json",
+            "imports": [],
+            "exports": [],
+            "extension": "json"
+        },
+        "15": {
+            "id": 15,
+            "name": "package.json",
+            "type": "file",
+            "path": "./package.json",
+            "imports": [],
+            "exports": [],
+            "extension": "json"
+        },
+        "16": {
+            "id": 16,
+            "name": "test.html",
+            "type": "file",
+            "path": "./test.html",
+            "imports": [
+                "./build/build.js"
+            ],
+            "exports": [],
+            "extension": "html"
+        },
+        "17": {
+            "id": 17,
+            "name": "testingGpu.js",
+            "type": "file",
+            "path": "./testingGpu.js",
+            "imports": [],
+            "exports": [],
+            "extension": "js"
+        },
+        "18": {
+            "id": 18,
+            "name": "tree.json",
+            "type": "file",
+            "path": "./tree.json",
+            "imports": [],
+            "exports": [],
+            "extension": "json"
+        },
+        "19": {
+            "id": 19,
+            "name": "vecto.js",
+            "type": "file",
+            "path": "./vecto.js",
+            "imports": [
+                "./src/lib/ndarray.js",
+                "./docs/file/lib/ndarray.js.html",
+                "./coverage/lcov-report/vecto/lib/ndarray.js.html",
+                "./src/lib/core.js",
+                "./docs/file/lib/core.js.html",
+                "./coverage/lcov-report/vecto/lib/core.js.html",
+                "./util/math.js",
+                "./coverage/lcov-report/vecto/util/math.js.html"
+            ],
+            "exports": [
+                "./benchmarking.js"
+            ],
+            "extension": "js"
+        },
+        "20": {
+            "id": 20,
+            "name": "webpack.config.js",
+            "type": "file",
+            "path": "./webpack.config.js",
+            "imports": [],
+            "exports": [],
+            "extension": "js"
+        },
+        ".git": {
+            "name": ".git",
+            "type": "dir",
+            "path": "./.git",
+            "files": {}
+        },
+        "build": {
+            "name": "build",
+            "type": "dir",
+            "path": "./build",
+            "files": {
+                "21": {
+                    "id": 21,
+                    "name": "build.js",
+                    "type": "file",
+                    "path": "./build/build.js",
+                    "imports": [],
+                    "exports": [
+                        "./test.html"
+                    ],
+                    "extension": "js"
+                }
+            }
+        },
+        "coverage": {
+            "name": "coverage",
+            "type": "dir",
+            "path": "./coverage",
+            "files": {
+                "22": {
+                    "id": 22,
+                    "name": "lcov.info",
+                    "type": "file",
+                    "path": "./coverage/lcov.info",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "info"
+                },
+                "lcov-report": {
+                    "name": "lcov-report",
+                    "type": "dir",
+                    "path": "./coverage/lcov-report",
+                    "files": {
+                        "49": {
+                            "id": 49,
+                            "name": "base.css",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/base.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "50": {
+                            "id": 50,
+                            "name": "index.html",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/index.html",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "html"
+                        },
+                        "51": {
+                            "id": 51,
+                            "name": "prettify.css",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/prettify.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "52": {
+                            "id": 52,
+                            "name": "prettify.js",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/prettify.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "53": {
+                            "id": 53,
+                            "name": "sort-arrow-sprite.png",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/sort-arrow-sprite.png",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "png"
+                        },
+                        "54": {
+                            "id": 54,
+                            "name": "sorter.js",
+                            "type": "file",
+                            "path": "./coverage/lcov-report/sorter.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "vecto": {
+                            "name": "vecto",
+                            "type": "dir",
+                            "path": "./coverage/lcov-report/vecto",
+                            "files": {
+                                "101": {
+                                    "id": 101,
+                                    "name": "index.html",
+                                    "type": "file",
+                                    "path": "./coverage/lcov-report/vecto/index.html",
+                                    "imports": [
+                                        "./coverage/lcov-report/vecto/index.html"
+                                    ],
+                                    "exports": [
+                                        "./coverage/lcov-report/vecto/index.html",
+                                        "./coverage/lcov-report/vecto/vecto.js.html"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "102": {
+                                    "id": 102,
+                                    "name": "vecto.js.html",
+                                    "type": "file",
+                                    "path": "./coverage/lcov-report/vecto/vecto.js.html",
+                                    "imports": [
+                                        "./coverage/lcov-report/vecto/index.html"
+                                    ],
+                                    "exports": [
+                                        "./benchmarking.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "lib": {
+                                    "name": "lib",
+                                    "type": "dir",
+                                    "path": "./coverage/lcov-report/vecto/lib",
+                                    "files": {
+                                        "138": {
+                                            "id": 138,
+                                            "name": "arrange.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/arrange.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "139": {
+                                            "id": 139,
+                                            "name": "calcShape.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/calcShape.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/divide.js",
+                                                "./util/exp.js",
+                                                "./util/log.js",
+                                                "./util/pow.js",
+                                                "./util/sqrt.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "140": {
+                                            "id": 140,
+                                            "name": "calcSize.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/calcSize.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/axisOps.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "141": {
+                                            "id": 141,
+                                            "name": "calc_shape.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/calc_shape.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "142": {
+                                            "id": 142,
+                                            "name": "calc_size.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/calc_size.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "143": {
+                                            "id": 143,
+                                            "name": "clip.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/clip.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "144": {
+                                            "id": 144,
+                                            "name": "core.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/core.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./vecto.js",
+                                                "./util/broadcast.js",
+                                                "./util/diff.js",
+                                                "./util/max.js",
+                                                "./util/min.js",
+                                                "./util/pad.js",
+                                                "./util/product.js",
+                                                "./util/sum.js",
+                                                "./src/lib/transpose.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "145": {
+                                            "id": 145,
+                                            "name": "fill.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/fill.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "146": {
+                                            "id": 146,
+                                            "name": "findDim.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/findDim.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "147": {
+                                            "id": 147,
+                                            "name": "find_dim.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/find_dim.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "148": {
+                                            "id": 148,
+                                            "name": "flatten.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/flatten.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/divide.js",
+                                                "./util/exp.js",
+                                                "./util/log.js",
+                                                "./util/pow.js",
+                                                "./util/sqrt.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "149": {
+                                            "id": 149,
+                                            "name": "formArr.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/formArr.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/matmul.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "150": {
+                                            "id": 150,
+                                            "name": "formChunks.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/formChunks.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "151": {
+                                            "id": 151,
+                                            "name": "form_arr.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/form_arr.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "152": {
+                                            "id": 152,
+                                            "name": "form_chunks.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/form_chunks.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "153": {
+                                            "id": 153,
+                                            "name": "index.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/index.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "154": {
+                                            "id": 154,
+                                            "name": "isTyped.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/isTyped.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "155": {
+                                            "id": 155,
+                                            "name": "matmul.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/matmul.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "156": {
+                                            "id": 156,
+                                            "name": "ndarray.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/ndarray.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./vecto.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "157": {
+                                            "id": 157,
+                                            "name": "transpose.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/lib/transpose.js.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        }
+                                    }
+                                },
+                                "util": {
+                                    "name": "util",
+                                    "type": "dir",
+                                    "path": "./coverage/lcov-report/vecto/util",
+                                    "files": {
+                                        "158": {
+                                            "id": 158,
+                                            "name": "axisOps.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/axisOps.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/max.js",
+                                                "./util/min.js",
+                                                "./util/sum.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "159": {
+                                            "id": 159,
+                                            "name": "broadcast.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/broadcast.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/product.js",
+                                                "./util/sum.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "160": {
+                                            "id": 160,
+                                            "name": "diff.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/diff.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "161": {
+                                            "id": 161,
+                                            "name": "divide.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/divide.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "162": {
+                                            "id": 162,
+                                            "name": "exp.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/exp.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "163": {
+                                            "id": 163,
+                                            "name": "index.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/index.html",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "html"
+                                        },
+                                        "164": {
+                                            "id": 164,
+                                            "name": "log.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/log.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "165": {
+                                            "id": 165,
+                                            "name": "math.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/math.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./vecto.js",
+                                                "./util/diff.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "166": {
+                                            "id": 166,
+                                            "name": "matmul.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/matmul.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./benchmarking.js",
+                                                "./util/product.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "167": {
+                                            "id": 167,
+                                            "name": "max.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/max.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/broadcast.js",
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "168": {
+                                            "id": 168,
+                                            "name": "min.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/min.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "169": {
+                                            "id": 169,
+                                            "name": "pad.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/pad.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "170": {
+                                            "id": 170,
+                                            "name": "pow.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/pow.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "171": {
+                                            "id": 171,
+                                            "name": "product.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/product.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "172": {
+                                            "id": 172,
+                                            "name": "sqrt.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/sqrt.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        },
+                                        "173": {
+                                            "id": 173,
+                                            "name": "sum.js.html",
+                                            "type": "file",
+                                            "path": "./coverage/lcov-report/vecto/util/sum.js.html",
+                                            "imports": [],
+                                            "exports": [
+                                                "./util/math.js"
+                                            ],
+                                            "extension": "html"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "doc": {
+            "name": "doc",
+            "type": "dir",
+            "path": "./doc",
+            "files": {
+                "23": {
+                    "id": 23,
+                    "name": "index.html",
+                    "type": "file",
+                    "path": "./doc/index.html",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "html"
+                },
+                "assets": {
+                    "name": "assets",
+                    "type": "dir",
+                    "path": "./doc/assets",
+                    "files": {
+                        "55": {
+                            "id": 55,
+                            "name": "anchor.js",
+                            "type": "file",
+                            "path": "./doc/assets/anchor.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "56": {
+                            "id": 56,
+                            "name": "bass-addons.css",
+                            "type": "file",
+                            "path": "./doc/assets/bass-addons.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "57": {
+                            "id": 57,
+                            "name": "bass.css",
+                            "type": "file",
+                            "path": "./doc/assets/bass.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "58": {
+                            "id": 58,
+                            "name": "github.css",
+                            "type": "file",
+                            "path": "./doc/assets/github.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "59": {
+                            "id": 59,
+                            "name": "site.js",
+                            "type": "file",
+                            "path": "./doc/assets/site.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "60": {
+                            "id": 60,
+                            "name": "split.css",
+                            "type": "file",
+                            "path": "./doc/assets/split.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "61": {
+                            "id": 61,
+                            "name": "split.js",
+                            "type": "file",
+                            "path": "./doc/assets/split.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "62": {
+                            "id": 62,
+                            "name": "style.css",
+                            "type": "file",
+                            "path": "./doc/assets/style.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "fonts": {
+                            "name": "fonts",
+                            "type": "dir",
+                            "path": "./doc/assets/fonts",
+                            "files": {
+                                "103": {
+                                    "id": 103,
+                                    "name": "LICENSE.txt",
+                                    "type": "file",
+                                    "path": "./doc/assets/fonts/LICENSE.txt",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "txt"
+                                },
+                                "104": {
+                                    "id": 104,
+                                    "name": "source-code-pro.css",
+                                    "type": "file",
+                                    "path": "./doc/assets/fonts/source-code-pro.css",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "css"
+                                },
+                                "EOT": {
+                                    "name": "EOT",
+                                    "type": "dir",
+                                    "path": "./doc/assets/fonts/EOT",
+                                    "files": {
+                                        "174": {
+                                            "id": 174,
+                                            "name": "SourceCodePro-Bold.eot",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/EOT/SourceCodePro-Bold.eot",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "eot"
+                                        },
+                                        "175": {
+                                            "id": 175,
+                                            "name": "SourceCodePro-Regular.eot",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/EOT/SourceCodePro-Regular.eot",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "eot"
+                                        }
+                                    }
+                                },
+                                "OTF": {
+                                    "name": "OTF",
+                                    "type": "dir",
+                                    "path": "./doc/assets/fonts/OTF",
+                                    "files": {
+                                        "176": {
+                                            "id": 176,
+                                            "name": "SourceCodePro-Bold.otf",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/OTF/SourceCodePro-Bold.otf",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "otf"
+                                        },
+                                        "177": {
+                                            "id": 177,
+                                            "name": "SourceCodePro-Regular.otf",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/OTF/SourceCodePro-Regular.otf",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "otf"
+                                        }
+                                    }
+                                },
+                                "TTF": {
+                                    "name": "TTF",
+                                    "type": "dir",
+                                    "path": "./doc/assets/fonts/TTF",
+                                    "files": {
+                                        "178": {
+                                            "id": 178,
+                                            "name": "SourceCodePro-Bold.ttf",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/TTF/SourceCodePro-Bold.ttf",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "ttf"
+                                        },
+                                        "179": {
+                                            "id": 179,
+                                            "name": "SourceCodePro-Regular.ttf",
+                                            "type": "file",
+                                            "path": "./doc/assets/fonts/TTF/SourceCodePro-Regular.ttf",
+                                            "imports": [],
+                                            "exports": [],
+                                            "extension": "ttf"
+                                        }
+                                    }
+                                },
+                                "WOFF": {
+                                    "name": "WOFF",
+                                    "type": "dir",
+                                    "path": "./doc/assets/fonts/WOFF",
+                                    "files": {
+                                        "OTF": {
+                                            "name": "OTF",
+                                            "type": "dir",
+                                            "path": "./doc/assets/fonts/WOFF/OTF",
+                                            "files": {
+                                                "180": {
+                                                    "id": 180,
+                                                    "name": "SourceCodePro-Bold.otf.woff",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF/OTF/SourceCodePro-Bold.otf.woff",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff"
+                                                },
+                                                "181": {
+                                                    "id": 181,
+                                                    "name": "SourceCodePro-Regular.otf.woff",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff"
+                                                }
+                                            }
+                                        },
+                                        "TTF": {
+                                            "name": "TTF",
+                                            "type": "dir",
+                                            "path": "./doc/assets/fonts/WOFF/TTF",
+                                            "files": {
+                                                "182": {
+                                                    "id": 182,
+                                                    "name": "SourceCodePro-Bold.ttf.woff",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF/TTF/SourceCodePro-Bold.ttf.woff",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff"
+                                                },
+                                                "183": {
+                                                    "id": 183,
+                                                    "name": "SourceCodePro-Regular.ttf.woff",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF/TTF/SourceCodePro-Regular.ttf.woff",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "WOFF2": {
+                                    "name": "WOFF2",
+                                    "type": "dir",
+                                    "path": "./doc/assets/fonts/WOFF2",
+                                    "files": {
+                                        "OTF": {
+                                            "name": "OTF",
+                                            "type": "dir",
+                                            "path": "./doc/assets/fonts/WOFF2/OTF",
+                                            "files": {
+                                                "184": {
+                                                    "id": 184,
+                                                    "name": "SourceCodePro-Bold.otf.woff2",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF2/OTF/SourceCodePro-Bold.otf.woff2",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff2"
+                                                },
+                                                "185": {
+                                                    "id": 185,
+                                                    "name": "SourceCodePro-Regular.otf.woff2",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF2/OTF/SourceCodePro-Regular.otf.woff2",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff2"
+                                                }
+                                            }
+                                        },
+                                        "TTF": {
+                                            "name": "TTF",
+                                            "type": "dir",
+                                            "path": "./doc/assets/fonts/WOFF2/TTF",
+                                            "files": {
+                                                "186": {
+                                                    "id": 186,
+                                                    "name": "SourceCodePro-Bold.ttf.woff2",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF2/TTF/SourceCodePro-Bold.ttf.woff2",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff2"
+                                                },
+                                                "187": {
+                                                    "id": 187,
+                                                    "name": "SourceCodePro-Regular.ttf.woff2",
+                                                    "type": "file",
+                                                    "path": "./doc/assets/fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2",
+                                                    "imports": [],
+                                                    "exports": [],
+                                                    "extension": "woff2"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "docs": {
+            "name": "docs",
+            "type": "dir",
+            "path": "./docs",
+            "files": {
+                "24": {
+                    "id": 24,
+                    "name": "badge.svg",
+                    "type": "file",
+                    "path": "./docs/badge.svg",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "svg"
+                },
+                "25": {
+                    "id": 25,
+                    "name": "coverage.json",
+                    "type": "file",
+                    "path": "./docs/coverage.json",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "json"
+                },
+                "26": {
+                    "id": 26,
+                    "name": "identifiers.html",
+                    "type": "file",
+                    "path": "./docs/identifiers.html",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "html"
+                },
+                "27": {
+                    "id": 27,
+                    "name": "index.html",
+                    "type": "file",
+                    "path": "./docs/index.html",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "html"
+                },
+                "28": {
+                    "id": 28,
+                    "name": "index.json",
+                    "type": "file",
+                    "path": "./docs/index.json",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "json"
+                },
+                "29": {
+                    "id": 29,
+                    "name": "lint.json",
+                    "type": "file",
+                    "path": "./docs/lint.json",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "json"
+                },
+                "30": {
+                    "id": 30,
+                    "name": "source.html",
+                    "type": "file",
+                    "path": "./docs/source.html",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "html"
+                },
+                "31": {
+                    "id": 31,
+                    "name": "test.html",
+                    "type": "file",
+                    "path": "./docs/test.html",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "html"
+                },
+                "ast": {
+                    "name": "ast",
+                    "type": "dir",
+                    "path": "./docs/ast",
+                    "files": {
+                        "source": {
+                            "name": "source",
+                            "type": "dir",
+                            "path": "./docs/ast/source",
+                            "files": {
+                                "105": {
+                                    "id": 105,
+                                    "name": ".external-ecmascript.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/.external-ecmascript.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "106": {
+                                    "id": 106,
+                                    "name": "arrange.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/arrange.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "107": {
+                                    "id": 107,
+                                    "name": "calcShape.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/calcShape.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "108": {
+                                    "id": 108,
+                                    "name": "calcSize.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/calcSize.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "109": {
+                                    "id": 109,
+                                    "name": "choose.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/choose.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "110": {
+                                    "id": 110,
+                                    "name": "clip.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/clip.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "111": {
+                                    "id": 111,
+                                    "name": "core.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/core.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "112": {
+                                    "id": 112,
+                                    "name": "fill.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/fill.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "113": {
+                                    "id": 113,
+                                    "name": "findDim.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/findDim.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "114": {
+                                    "id": 114,
+                                    "name": "flatten.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/flatten.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "115": {
+                                    "id": 115,
+                                    "name": "formArr.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/formArr.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "116": {
+                                    "id": 116,
+                                    "name": "formChunks.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/formChunks.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "117": {
+                                    "id": 117,
+                                    "name": "gputest.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/gputest.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "118": {
+                                    "id": 118,
+                                    "name": "ndarray.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/ndarray.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "119": {
+                                    "id": 119,
+                                    "name": "ndarray.proto.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/ndarray.proto.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                },
+                                "120": {
+                                    "id": 120,
+                                    "name": "transpose.js.json",
+                                    "type": "file",
+                                    "path": "./docs/ast/source/transpose.js.json",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "css": {
+                    "name": "css",
+                    "type": "dir",
+                    "path": "./docs/css",
+                    "files": {
+                        "63": {
+                            "id": 63,
+                            "name": "github.css",
+                            "type": "file",
+                            "path": "./docs/css/github.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "64": {
+                            "id": 64,
+                            "name": "identifiers.css",
+                            "type": "file",
+                            "path": "./docs/css/identifiers.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "65": {
+                            "id": 65,
+                            "name": "manual.css",
+                            "type": "file",
+                            "path": "./docs/css/manual.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "66": {
+                            "id": 66,
+                            "name": "prettify-tomorrow.css",
+                            "type": "file",
+                            "path": "./docs/css/prettify-tomorrow.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "67": {
+                            "id": 67,
+                            "name": "search.css",
+                            "type": "file",
+                            "path": "./docs/css/search.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "68": {
+                            "id": 68,
+                            "name": "source.css",
+                            "type": "file",
+                            "path": "./docs/css/source.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "69": {
+                            "id": 69,
+                            "name": "style.css",
+                            "type": "file",
+                            "path": "./docs/css/style.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        },
+                        "70": {
+                            "id": 70,
+                            "name": "test.css",
+                            "type": "file",
+                            "path": "./docs/css/test.css",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "css"
+                        }
+                    }
+                },
+                "file": {
+                    "name": "file",
+                    "type": "dir",
+                    "path": "./docs/file",
+                    "files": {
+                        "lib": {
+                            "name": "lib",
+                            "type": "dir",
+                            "path": "./docs/file/lib",
+                            "files": {
+                                "121": {
+                                    "id": 121,
+                                    "name": "arrange.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/arrange.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "122": {
+                                    "id": 122,
+                                    "name": "calcShape.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/calcShape.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./util/divide.js",
+                                        "./util/exp.js",
+                                        "./util/log.js",
+                                        "./util/pow.js",
+                                        "./util/sqrt.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "123": {
+                                    "id": 123,
+                                    "name": "calcSize.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/calcSize.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./util/axisOps.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "124": {
+                                    "id": 124,
+                                    "name": "choose.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/choose.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "125": {
+                                    "id": 125,
+                                    "name": "clip.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/clip.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "126": {
+                                    "id": 126,
+                                    "name": "core.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/core.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./vecto.js",
+                                        "./util/broadcast.js",
+                                        "./util/diff.js",
+                                        "./util/max.js",
+                                        "./util/min.js",
+                                        "./util/pad.js",
+                                        "./util/product.js",
+                                        "./util/sum.js",
+                                        "./src/lib/transpose.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "127": {
+                                    "id": 127,
+                                    "name": "fill.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/fill.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "128": {
+                                    "id": 128,
+                                    "name": "findDim.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/findDim.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "129": {
+                                    "id": 129,
+                                    "name": "flatten.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/flatten.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./util/divide.js",
+                                        "./util/exp.js",
+                                        "./util/log.js",
+                                        "./util/pow.js",
+                                        "./util/sqrt.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "130": {
+                                    "id": 130,
+                                    "name": "formArr.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/formArr.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./util/matmul.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "131": {
+                                    "id": 131,
+                                    "name": "formChunks.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/formChunks.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "132": {
+                                    "id": 132,
+                                    "name": "gputest.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/gputest.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                },
+                                "133": {
+                                    "id": 133,
+                                    "name": "ndarray.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/ndarray.js.html",
+                                    "imports": [],
+                                    "exports": [
+                                        "./vecto.js"
+                                    ],
+                                    "extension": "html"
+                                },
+                                "134": {
+                                    "id": 134,
+                                    "name": "transpose.js.html",
+                                    "type": "file",
+                                    "path": "./docs/file/lib/transpose.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                }
+                            }
+                        }
+                    }
+                },
+                "image": {
+                    "name": "image",
+                    "type": "dir",
+                    "path": "./docs/image",
+                    "files": {
+                        "71": {
+                            "id": 71,
+                            "name": "badge.svg",
+                            "type": "file",
+                            "path": "./docs/image/badge.svg",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "svg"
+                        },
+                        "72": {
+                            "id": 72,
+                            "name": "esdoc-logo-mini-black.png",
+                            "type": "file",
+                            "path": "./docs/image/esdoc-logo-mini-black.png",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "png"
+                        },
+                        "73": {
+                            "id": 73,
+                            "name": "esdoc-logo-mini.png",
+                            "type": "file",
+                            "path": "./docs/image/esdoc-logo-mini.png",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "png"
+                        },
+                        "74": {
+                            "id": 74,
+                            "name": "github.png",
+                            "type": "file",
+                            "path": "./docs/image/github.png",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "png"
+                        },
+                        "75": {
+                            "id": 75,
+                            "name": "manual-badge.svg",
+                            "type": "file",
+                            "path": "./docs/image/manual-badge.svg",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "svg"
+                        },
+                        "76": {
+                            "id": 76,
+                            "name": "search.png",
+                            "type": "file",
+                            "path": "./docs/image/search.png",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "png"
+                        }
+                    }
+                },
+                "manual": {
+                    "name": "manual",
+                    "type": "dir",
+                    "path": "./docs/manual",
+                    "files": {
+                        "77": {
+                            "id": 77,
+                            "name": "README.html",
+                            "type": "file",
+                            "path": "./docs/manual/README.html",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "html"
+                        },
+                        "78": {
+                            "id": 78,
+                            "name": "index.html",
+                            "type": "file",
+                            "path": "./docs/manual/index.html",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "html"
+                        }
+                    }
+                },
+                "script": {
+                    "name": "script",
+                    "type": "dir",
+                    "path": "./docs/script",
+                    "files": {
+                        "79": {
+                            "id": 79,
+                            "name": "inherited-summary.js",
+                            "type": "file",
+                            "path": "./docs/script/inherited-summary.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "80": {
+                            "id": 80,
+                            "name": "inner-link.js",
+                            "type": "file",
+                            "path": "./docs/script/inner-link.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "81": {
+                            "id": 81,
+                            "name": "manual.js",
+                            "type": "file",
+                            "path": "./docs/script/manual.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "82": {
+                            "id": 82,
+                            "name": "patch-for-local.js",
+                            "type": "file",
+                            "path": "./docs/script/patch-for-local.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "83": {
+                            "id": 83,
+                            "name": "pretty-print.js",
+                            "type": "file",
+                            "path": "./docs/script/pretty-print.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "84": {
+                            "id": 84,
+                            "name": "search.js",
+                            "type": "file",
+                            "path": "./docs/script/search.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "85": {
+                            "id": 85,
+                            "name": "search_index.js",
+                            "type": "file",
+                            "path": "./docs/script/search_index.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "86": {
+                            "id": 86,
+                            "name": "test-summary.js",
+                            "type": "file",
+                            "path": "./docs/script/test-summary.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "prettify": {
+                            "name": "prettify",
+                            "type": "dir",
+                            "path": "./docs/script/prettify",
+                            "files": {
+                                "135": {
+                                    "id": 135,
+                                    "name": "Apache-License-2.0.txt",
+                                    "type": "file",
+                                    "path": "./docs/script/prettify/Apache-License-2.0.txt",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "txt"
+                                },
+                                "136": {
+                                    "id": 136,
+                                    "name": "prettify.js",
+                                    "type": "file",
+                                    "path": "./docs/script/prettify/prettify.js",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "js"
+                                }
+                            }
+                        }
+                    }
+                },
+                "test-file": {
+                    "name": "test-file",
+                    "type": "dir",
+                    "path": "./docs/test-file",
+                    "files": {
+                        "test": {
+                            "name": "test",
+                            "type": "dir",
+                            "path": "./docs/test-file/test",
+                            "files": {
+                                "137": {
+                                    "id": 137,
+                                    "name": "vecto.test.js.html",
+                                    "type": "file",
+                                    "path": "./docs/test-file/test/vecto.test.js.html",
+                                    "imports": [],
+                                    "exports": [],
+                                    "extension": "html"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "node_modules": {
+            "name": "node_modules",
+            "type": "dir",
+            "path": "./node_modules",
+            "files": {}
+        },
+        "src": {
+            "name": "src",
+            "type": "dir",
+            "path": "./src",
+            "files": {
+                "lib": {
+                    "name": "lib",
+                    "type": "dir",
+                    "path": "./src/lib",
+                    "files": {
+                        "87": {
+                            "id": 87,
+                            "name": "arrange.js",
+                            "type": "file",
+                            "path": "./src/lib/arrange.js",
+                            "imports": [
+                                "./src/lib/core.js"
+                            ],
+                            "exports": [
+                                "./src/lib/clip.js",
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "88": {
+                            "id": 88,
+                            "name": "calcShape.js",
+                            "type": "file",
+                            "path": "./src/lib/calcShape.js",
+                            "imports": [],
+                            "exports": [
+                                "./util/divide.js",
+                                "./util/exp.js",
+                                "./util/log.js",
+                                "./util/pow.js",
+                                "./util/sqrt.js",
+                                "./src/lib/calcSize.js",
+                                "./src/lib/clip.js",
+                                "./src/lib/core.js",
+                                "./src/lib/findDim.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "89": {
+                            "id": 89,
+                            "name": "calcSize.js",
+                            "type": "file",
+                            "path": "./src/lib/calcSize.js",
+                            "imports": [
+                                "./src/lib/calcShape.js"
+                            ],
+                            "exports": [
+                                "./util/axisOps.js",
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "90": {
+                            "id": 90,
+                            "name": "choose.js",
+                            "type": "file",
+                            "path": "./src/lib/choose.js",
+                            "imports": [
+                                "./src/lib/core.js"
+                            ],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "91": {
+                            "id": 91,
+                            "name": "clip.js",
+                            "type": "file",
+                            "path": "./src/lib/clip.js",
+                            "imports": [
+                                "./src/lib/flatten.js",
+                                "./src/lib/arrange.js",
+                                "./src/lib/calcShape.js"
+                            ],
+                            "exports": [
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "92": {
+                            "id": 92,
+                            "name": "core.js",
+                            "type": "file",
+                            "path": "./src/lib/core.js",
+                            "imports": [
+                                "./src/lib/arrange.js",
+                                "./src/lib/calcShape.js",
+                                "./src/lib/calcSize.js",
+                                "./src/lib/clip.js",
+                                "./src/lib/fill.js",
+                                "./src/lib/findDim.js",
+                                "./src/lib/flatten.js",
+                                "./src/lib/formArr.js",
+                                "./src/lib/formChunks.js",
+                                "./src/lib/transpose.js"
+                            ],
+                            "exports": [
+                                "./vecto.js",
+                                "./util/broadcast.js",
+                                "./util/diff.js",
+                                "./util/max.js",
+                                "./util/min.js",
+                                "./util/pad.js",
+                                "./util/product.js",
+                                "./util/sum.js",
+                                "./src/lib/arrange.js",
+                                "./src/lib/choose.js",
+                                "./src/lib/fill.js",
+                                "./src/lib/ndarray.js",
+                                "./src/lib/transpose.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "93": {
+                            "id": 93,
+                            "name": "fill.js",
+                            "type": "file",
+                            "path": "./src/lib/fill.js",
+                            "imports": [
+                                "./src/lib/core.js"
+                            ],
+                            "exports": [
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "94": {
+                            "id": 94,
+                            "name": "findDim.js",
+                            "type": "file",
+                            "path": "./src/lib/findDim.js",
+                            "imports": [
+                                "./src/lib/calcShape.js"
+                            ],
+                            "exports": [
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "95": {
+                            "id": 95,
+                            "name": "flatten.js",
+                            "type": "file",
+                            "path": "./src/lib/flatten.js",
+                            "imports": [],
+                            "exports": [
+                                "./util/divide.js",
+                                "./util/exp.js",
+                                "./util/log.js",
+                                "./util/pow.js",
+                                "./util/sqrt.js",
+                                "./src/lib/clip.js",
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "96": {
+                            "id": 96,
+                            "name": "formArr.js",
+                            "type": "file",
+                            "path": "./src/lib/formArr.js",
+                            "imports": [],
+                            "exports": [
+                                "./util/matmul.js",
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "97": {
+                            "id": 97,
+                            "name": "formChunks.js",
+                            "type": "file",
+                            "path": "./src/lib/formChunks.js",
+                            "imports": [],
+                            "exports": [
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "98": {
+                            "id": 98,
+                            "name": "gputest.js",
+                            "type": "file",
+                            "path": "./src/lib/gputest.js",
+                            "imports": [],
+                            "exports": [],
+                            "extension": "js"
+                        },
+                        "99": {
+                            "id": 99,
+                            "name": "ndarray.js",
+                            "type": "file",
+                            "path": "./src/lib/ndarray.js",
+                            "imports": [
+                                "./src/lib/core.js"
+                            ],
+                            "exports": [
+                                "./vecto.js"
+                            ],
+                            "extension": "js"
+                        },
+                        "100": {
+                            "id": 100,
+                            "name": "transpose.js",
+                            "type": "file",
+                            "path": "./src/lib/transpose.js",
+                            "imports": [
+                                "./src/lib/core.js",
+                                "./docs/file/lib/core.js.html",
+                                "./coverage/lcov-report/vecto/lib/core.js.html"
+                            ],
+                            "exports": [
+                                "./util/divide.js",
+                                "./util/exp.js",
+                                "./util/log.js",
+                                "./util/pow.js",
+                                "./util/sqrt.js",
+                                "./src/lib/core.js"
+                            ],
+                            "extension": "js"
+                        }
+                    }
+                }
+            }
+        },
+        "test": {
+            "name": "test",
+            "type": "dir",
+            "path": "./test",
+            "files": {
+                "32": {
+                    "id": 32,
+                    "name": "vecto.test.js",
+                    "type": "file",
+                    "path": "./test/vecto.test.js",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "js"
+                }
+            }
+        },
+        "util": {
+            "name": "util",
+            "type": "dir",
+            "path": "./util",
+            "files": {
+                "33": {
+                    "id": 33,
+                    "name": "axisOps.js",
+                    "type": "file",
+                    "path": "./util/axisOps.js",
+                    "imports": [
+                        "./src/lib/calcSize.js",
+                        "./docs/file/lib/calcSize.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcSize.js.html"
+                    ],
+                    "exports": [
+                        "./util/max.js",
+                        "./util/min.js",
+                        "./util/sum.js"
+                    ],
+                    "extension": "js"
+                },
+                "34": {
+                    "id": 34,
+                    "name": "broadcast.js",
+                    "type": "file",
+                    "path": "./util/broadcast.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html",
+                        "./util/max.js",
+                        "./coverage/lcov-report/vecto/util/max.js.html"
+                    ],
+                    "exports": [
+                        "./util/product.js",
+                        "./util/sum.js"
+                    ],
+                    "extension": "js"
+                },
+                "35": {
+                    "id": 35,
+                    "name": "convOps.js",
+                    "type": "file",
+                    "path": "./util/convOps.js",
+                    "imports": [],
+                    "exports": [],
+                    "extension": "js"
+                },
+                "36": {
+                    "id": 36,
+                    "name": "diff.js",
+                    "type": "file",
+                    "path": "./util/diff.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html",
+                        "./util/math.js",
+                        "./coverage/lcov-report/vecto/util/math.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "37": {
+                    "id": 37,
+                    "name": "divide.js",
+                    "type": "file",
+                    "path": "./util/divide.js",
+                    "imports": [
+                        "./src/lib/calcShape.js",
+                        "./docs/file/lib/calcShape.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcShape.js.html",
+                        "./src/lib/transpose.js",
+                        "./src/lib/flatten.js",
+                        "./docs/file/lib/flatten.js.html",
+                        "./coverage/lcov-report/vecto/lib/flatten.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "38": {
+                    "id": 38,
+                    "name": "exp.js",
+                    "type": "file",
+                    "path": "./util/exp.js",
+                    "imports": [
+                        "./src/lib/flatten.js",
+                        "./docs/file/lib/flatten.js.html",
+                        "./coverage/lcov-report/vecto/lib/flatten.js.html",
+                        "./src/lib/transpose.js",
+                        "./src/lib/calcShape.js",
+                        "./docs/file/lib/calcShape.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcShape.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "39": {
+                    "id": 39,
+                    "name": "log.js",
+                    "type": "file",
+                    "path": "./util/log.js",
+                    "imports": [
+                        "./src/lib/flatten.js",
+                        "./docs/file/lib/flatten.js.html",
+                        "./coverage/lcov-report/vecto/lib/flatten.js.html",
+                        "./src/lib/transpose.js",
+                        "./src/lib/calcShape.js",
+                        "./docs/file/lib/calcShape.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcShape.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "40": {
+                    "id": 40,
+                    "name": "math.js",
+                    "type": "file",
+                    "path": "./util/math.js",
+                    "imports": [
+                        "./util/diff.js",
+                        "./coverage/lcov-report/vecto/util/diff.js.html",
+                        "./util/divide.js",
+                        "./coverage/lcov-report/vecto/util/divide.js.html",
+                        "./util/exp.js",
+                        "./coverage/lcov-report/vecto/util/exp.js.html",
+                        "./util/log.js",
+                        "./coverage/lcov-report/vecto/util/log.js.html",
+                        "./util/max.js",
+                        "./coverage/lcov-report/vecto/util/max.js.html",
+                        "./util/min.js",
+                        "./coverage/lcov-report/vecto/util/min.js.html",
+                        "./util/pad.js",
+                        "./coverage/lcov-report/vecto/util/pad.js.html",
+                        "./util/pow.js",
+                        "./coverage/lcov-report/vecto/util/pow.js.html",
+                        "./util/product.js",
+                        "./coverage/lcov-report/vecto/util/product.js.html",
+                        "./util/sqrt.js",
+                        "./coverage/lcov-report/vecto/util/sqrt.js.html",
+                        "./util/sum.js",
+                        "./coverage/lcov-report/vecto/util/sum.js.html"
+                    ],
+                    "exports": [
+                        "./vecto.js",
+                        "./util/diff.js"
+                    ],
+                    "extension": "js"
+                },
+                "41": {
+                    "id": 41,
+                    "name": "matmul.js",
+                    "type": "file",
+                    "path": "./util/matmul.js",
+                    "imports": [
+                        "./src/lib/formArr.js",
+                        "./docs/file/lib/formArr.js.html",
+                        "./coverage/lcov-report/vecto/lib/formArr.js.html"
+                    ],
+                    "exports": [
+                        "./benchmarking.js",
+                        "./util/product.js"
+                    ],
+                    "extension": "js"
+                },
+                "42": {
+                    "id": 42,
+                    "name": "max.js",
+                    "type": "file",
+                    "path": "./util/max.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html",
+                        "./util/axisOps.js",
+                        "./coverage/lcov-report/vecto/util/axisOps.js.html"
+                    ],
+                    "exports": [
+                        "./util/broadcast.js",
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "43": {
+                    "id": 43,
+                    "name": "min.js",
+                    "type": "file",
+                    "path": "./util/min.js",
+                    "imports": [
+                        "./util/axisOps.js",
+                        "./coverage/lcov-report/vecto/util/axisOps.js.html",
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "44": {
+                    "id": 44,
+                    "name": "pad.js",
+                    "type": "file",
+                    "path": "./util/pad.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "45": {
+                    "id": 45,
+                    "name": "pow.js",
+                    "type": "file",
+                    "path": "./util/pow.js",
+                    "imports": [
+                        "./src/lib/flatten.js",
+                        "./docs/file/lib/flatten.js.html",
+                        "./coverage/lcov-report/vecto/lib/flatten.js.html",
+                        "./src/lib/transpose.js",
+                        "./src/lib/calcShape.js",
+                        "./docs/file/lib/calcShape.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcShape.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "46": {
+                    "id": 46,
+                    "name": "product.js",
+                    "type": "file",
+                    "path": "./util/product.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html",
+                        "./util/matmul.js",
+                        "./coverage/lcov-report/vecto/util/matmul.js.html",
+                        "./util/broadcast.js",
+                        "./coverage/lcov-report/vecto/util/broadcast.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "47": {
+                    "id": 47,
+                    "name": "sqrt.js",
+                    "type": "file",
+                    "path": "./util/sqrt.js",
+                    "imports": [
+                        "./src/lib/flatten.js",
+                        "./docs/file/lib/flatten.js.html",
+                        "./coverage/lcov-report/vecto/lib/flatten.js.html",
+                        "./src/lib/calcShape.js",
+                        "./docs/file/lib/calcShape.js.html",
+                        "./coverage/lcov-report/vecto/lib/calcShape.js.html",
+                        "./src/lib/transpose.js"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                },
+                "48": {
+                    "id": 48,
+                    "name": "sum.js",
+                    "type": "file",
+                    "path": "./util/sum.js",
+                    "imports": [
+                        "./src/lib/core.js",
+                        "./docs/file/lib/core.js.html",
+                        "./coverage/lcov-report/vecto/lib/core.js.html",
+                        "./util/broadcast.js",
+                        "./coverage/lcov-report/vecto/util/broadcast.js.html",
+                        "./util/axisOps.js",
+                        "./coverage/lcov-report/vecto/util/axisOps.js.html"
+                    ],
+                    "exports": [
+                        "./util/math.js"
+                    ],
+                    "extension": "js"
+                }
+            }
+        }
+    }
+}

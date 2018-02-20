@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">test/vecto.test.js | vecto</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Mini JS Library to deal with Ndarrays"><meta property="og:type" content="website"><meta property="og:url" content="https://abtExp.github.io/vecto"><meta property="og:site_name" content="vecto"><meta property="og:title" content="vecto"><meta property="og:image" content="http://my-library.org/logo.png"><meta property="og:description" content="Mini JS Library to deal with Ndarrays"><meta property="og:author" content="https://twitter.com/@_thennable"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="vecto"><meta property="twitter:description" content="Mini JS Library to deal with Ndarrays"><meta property="twitter:image" content="http://my-library.org/logo.png"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/abtExp/vecto"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">test/vecto.test.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const { Ndarray, core, math } = require(&apos;./vecto&apos;);
+
+function regMatMul(s1, s2, ar1, ar2) {
+    let c = [];
+    for (let i = 0; i &lt; s1[0]; i++) {
+        let ar = [];
+        for (let j = 0; j &lt; s2[1]; j++) {
+            ar.push(0);
+        }
+        c.push(ar);
+    }
+
+    for (let i = 0; i &lt; s1[0]; i++) {
+        for (let j = 0; j &lt; s2[1]; j++) {
+            for (let k = 0; k &lt; s2[0]; k++) {
+                c[i][j] += ar1[i][k] * ar2[k][j];
+            }
+        }
+    }
+
+    return c;
+}
+
+// Ndarray tests
+test(&apos;Ndarray construction method:1 (constructor)&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3], dtype: &apos;float32&apos;, initializer: &apos;zeros&apos; });
+    expect(n1).toBeInstanceOf(Ndarray) &amp;&amp;
+        expect(n1).toEqual({
+            shape: [2, 3],
+            size: 6,
+            dim: 2,
+            dtype: &apos;float32&apos;,
+            data: Float32Array[0, 0, 0, 0, 0, 0]
+        })
+});
+
+test(&apos;Ndarray construction method:2 (zeroes)&apos;, () =&gt; {
+    let n1 = Ndarray.zeroes([2, 3]);
+    expect(n1).toBeInstanceOf(Ndarray) &amp;&amp;
+        expect(n1).toEqual({
+            shape: [2, 3],
+            size: 6,
+            dim: 2,
+            dtype: &apos;uint8&apos;,
+            data: Uint8Array
+        });
+})
+
+test(&apos;Ndarray construction method:3 (array)&apos;, () =&gt; {
+    let n1 = Ndarray.array([
+        [
+            [1, 2, 3],
+            [4, 5, 6]
+        ],
+        [
+            [7, 8, 9],
+            [10, 11, 12]
+        ]
+    ]);
+
+    expect(n1).toBeInstanceOf(Ndarray) &amp;&amp;
+        expect(n1).toEqual({
+            shape: [2, 2, 3],
+            size: 12,
+            dim: 3,
+            dtype: &apos;uint8&apos;,
+            data: Uint8Array
+        })
+
+})
+
+test(&apos;NdarrayObject.arrange method&apos;, () =&gt; {
+    let n1 = Ndarray.zeroes([2, 3]);
+    n1.arrange([2]);
+    expect(n1.val()).toEqual([
+        [2, 2, 2],
+        [2, 2, 2]
+    ]);
+})
+
+test(&apos;NdarrayObject.resize method&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3, 4] });
+    n1.arrange([1]);
+    let oldval = n1.val();
+    n1.resize([4, 4]);
+    let newval = n1.val();
+    console.log(oldval);
+    console.log(newval);
+    expect(core.calcShape(newval)).toEqual([4, 4]) &amp;&amp;
+        expect(core.calcShape(oldval)).toEqual([2, 3, 4]);
+})
+
+test(&apos;NdarrayObject.reshape method&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3, 4] });
+    n1.arrange([2]);
+    let oldval = n1.val();
+    n1.reshape([4, 6]);
+    let newval = n1.val();
+
+    expect(oldval).toEqual([
+            [
+                [2, 2, 2, 2],
+                [2, 2, 2, 2],
+                [2, 2, 2, 2]
+            ],
+            [
+                [2, 2, 2, 2],
+                [2, 2, 2, 2],
+                [2, 2, 2, 2]
+            ]
+        ]) &amp;&amp;
+        expect(newval).toEqual([
+            [2, 2, 2, 2, 2, 2],
+            [2, 2, 2, 2, 2, 2],
+            [2, 2, 2, 2, 2, 2],
+            [2, 2, 2, 2, 2, 2]
+        ]);
+})
+
+
+test(&apos;NdarrayObject.clip method&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3] });
+    n1.arrange([12, 31, 11, 24, 2, 20]);
+    expect(n1.val()).toEqual([
+        [12, 31, 11],
+        [24, 2, 20]
+    ]);
+    n1.clip(10, 20);
+    expect(n1.val()).toEqual([
+        [12, 20, 11],
+        [20, 10, 20]
+    ]);
+})
+
+
+test(&apos;NdarrayObject.flatten method&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3, 4] });
+    n1.arrange([2]);
+    expect(n1.data.toString()).toEqual([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].toString());
+})
+
+test(&apos;NdarrayObject.transpose method&apos;, () =&gt; {
+    let n1 = new Ndarray({ shape: [2, 3] });
+    n1.arrange([1, 2, 3, 4, 5, 6])
+    let nt = n1.transpose();
+    expect(nt).toEqual([
+        [1, 4],
+        [2, 5],
+        [3, 6]
+    ]);
+})
+
+
+//core tests
+test(&apos;core.arrange&apos;, () =&gt; {
+    let a = core.arrange([2, 3], [2]);
+    expect(a).toEqual([
+        [2, 2, 2],
+        [2, 2, 2]
+    ]);
+})
+
+test(&apos;core.calcShape&apos;, () =&gt; {
+    let a = [
+        [
+            [1, 2],
+            [3, 4]
+        ],
+        [
+            [5, 6],
+            [7, 8]
+        ]
+    ];
+    expect(core.calcShape(a)).toEqual([2, 2, 2]);
+})
+
+test(&apos;core.calcSize&apos;, () =&gt; {
+    let a = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+    expect(core.calcSize(a)).toBe(6);
+})
+
+test(&apos;core.clip&apos;, () =&gt; {
+    let a = [
+        [12, 20, 10, 2],
+        [4, 7, 10, 11]
+    ];
+    expect(core.clip(a, 10, 20)).toEqual([
+            [12, 20, 10, 10],
+            [10, 10, 10, 11]
+        ]) &amp;&amp;
+        expect(core.clip(a, [
+            [14, 18, 12, 4],
+            [5, 10, 10, 10]
+        ], 20)).toEqual([
+            [14, 20, 12, 4],
+            [5, 10, 10, 11]
+        ]) &amp;&amp;
+        expect(core.clip(a, [
+            [14, 18, 12, 4],
+            [5, 10, 10, 10]
+        ], [
+            [18, 19, 12, 5],
+            [6, 11, 11, 11]
+        ])).toEqual([
+            [14, 19, 12, 4],
+            [5, 10, 10, 11]
+        ]);
+})
+
+
+test(&apos;core.findDim&apos;, () =&gt; {
+    let a = [
+        [
+            [1, 2, 3],
+            [4, 5, 6]
+        ],
+        [
+            [1, 2, 4],
+            [53, 12, 12]
+        ]
+    ];
+    expect(core.findDim(a)).toBe(3);
+})
+
+test(&apos;core.flatten&apos;, () =&gt; {
+    expect(core.flatten([2, 3, 4])).toEqual([2, 3, 4]);
+    expect(core.flatten([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(core.flatten([
+        [
+            [1, 2],
+            [3, 4]
+        ],
+        [
+            [5, 6],
+            [7, 8]
+        ]
+    ])).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+})
+
+
+test(&apos;core.formChunks&apos;, () =&gt; {
+    let arr = [1, 2, 2, 4, 5235, 2, 13, 156, 623, 622, 21, 61, 6, 126];
+    let b = core.formChunks(4, 5, arr);
+    expect(b).toEqual([
+        [1, 2, 2, 4],
+        [5235, 2, 13, 156],
+        [623, 622, 21, 61],
+        [6, 126, 1, 2],
+        [2, 4, 5235, 2]
+    ]);
+})
+
+test(&apos;core.transpose&apos;, () =&gt; {
+    let a = [
+        [12, 24, 2, 1],
+        [2, 4, 1, 5]
+    ];
+    expect(core.transpose(a)).toEqual(
+        [
+            [12, 2],
+            [24, 4],
+            [2, 1],
+            [1, 5]
+        ]
+    );
+})
+
+test(&apos;core.fill&apos;, () =&gt; {
+    let a = core.fill([8, 1], &apos;linear&apos;, 1, 10);
+    expect(a).toEqual([
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [6],
+        [7],
+        [8]
+    ]);
+})
+
+test(&apos;core.formArr&apos;, () =&gt; {
+    let a = [1, 2, 4, 2366, 1241, 1, 3124, 1254, 15];
+    let b = core.formArr(a, &apos;uint32&apos;);
+    expect(a.constructor.name).toBe(&apos;Array&apos;) &amp;&amp;
+        expect(b.constructor.name).toBe(&apos;Uint32Array&apos;);
+})
+
+
+// test for product method
+
+test(&apos;product tests&apos;, () =&gt; {
+    let shape11 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape12 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape21 = shape12,
+        shape22 = parseInt(Math.floor(Math.random() * 10)) || 1,
+        shape1 = [shape11, shape12],
+        shape2 = [shape21, shape22],
+        ar1 = new Ndarray({ shape: shape1, initializer: &apos;linear&apos; }),
+        ar2 = new Ndarray({ shape: shape2, initializer: &apos;linear&apos; }),
+        ar3 = new Ndarray({ shape: shape2, initializer: &apos;linear&apos; }),
+        prearr1 = ar1.val(),
+        prearr2 = ar2.val(),
+        prearr3 = ar3.val();
+    console.log(shape1, shape2);
+    expect(math.product(prearr1, prearr2, &apos;dot&apos;)).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
+})
+
+test(&apos;sum test&apos;, () =&gt; {
+    let a = [
+            [1, 2, 4],
+            [5, 6, 7]
+        ],
+        b = [
+            [2, 4, 5],
+            [6, 2, 1]
+        ];
+
+    expect(math.sum(a, b)).toEqual([
+            [3, 6, 9],
+            [11, 8, 8]
+        ]) &amp;&amp;
+        expect(math.sum(a)).toEqual([7, 18]);
+})
+
+test(&apos;log test&apos;, () =&gt; {
+    let a = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+    expect(math.log(a)[0][0]).toEqual(Math.log(a[0][0]));
+})
+
+test(&apos;exp test&apos;, () =&gt; {
+    let a = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+    let b = Math.exp(a[0][0]);
+    expect(math.exp(a)[0][0]).toBe(b);
+})
+
+test(&apos;divide test&apos;, () =&gt; {
+    let a = new Ndarray({ shape: [2, 3], initializer: &apos;linear&apos; });
+    let b = new Ndarray({ shape: [2, 3], initializer: &apos;linear&apos; });
+
+    let c = math.divide(a.val(), b.val());
+    let d = [];
+    a = Array.from(a.data);
+    b = Array.from(b.data);
+
+    for (let i = 0; i &lt; a.length; i++) {
+        d[i] = (a[i] / b[i]);
+    }
+
+    expect(core.flatten(c)).toEqual(d);
+})
+
+test(&apos;formArr&apos;, () =&gt; {
+    let arr = [1, 2, 3];
+    let a = core.formArr(arr, &apos;uint8&apos;);
+    let b = core.formArr(arr, &apos;uint16&apos;);
+    let c = core.formArr(arr, &apos;uint32&apos;);
+    let d = core.formArr(arr, &apos;int8&apos;);
+    let e = core.formArr(arr, &apos;int16&apos;);
+    let f = core.formArr(arr, &apos;int32&apos;);
+    let g = core.formArr(arr, &apos;float32&apos;);
+    let h = core.formArr(arr, &apos;float64&apos;);
+    let i = core.formArr(arr, &apos;uint8clamped&apos;);
+
+
+    expect(a.constructor.name).toBe(&apos;Uint8Array&apos;) &amp;&amp;
+        expect(b.constructor.name).toBe(&apos;Uint16Array&apos;) &amp;&amp;
+        expect(c.constructor.name).toBe(&apos;Uint32Array&apos;) &amp;&amp;
+        expect(d.constructor.name).toBe(&apos;Int8Array&apos;) &amp;&amp;
+        expect(e.constructor.name).toBe(&apos;Int16Array&apos;) &amp;&amp;
+        expect(f.constructor.name).toBe(&apos;Int32Array&apos;) &amp;&amp;
+        expect(g.constructor.name).toBe(&apos;Float32Array&apos;) &amp;&amp;
+        expect(h.constructor.name).toBe(&apos;Float64Array&apos;) &amp;&amp;
+        expect(i.constructor.name).toBe(&apos;Uint8ClampedArray&apos;);
+})
+
+test(&apos;pad test&apos;, () =&gt; {
+    // const a =   
+})</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

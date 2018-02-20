@@ -1,10 +1,10 @@
 "use strict";
 
-function divide(arr1, arr2) {
-    const calcShape = require('../lib/calcShape'),
-        arrange = require('../lib/arrange'),
-        flatten = require('../lib/flatten');
+const calcShape = require('../lib/calcShape'),
+    arrange = require('../lib/transpose'),
+    flatten = require('../lib/flatten');
 
+function divide(arr1, arr2) {
     if (Array.isArray(arr1) && Array.isArray(arr2)) {
         if (calcShape(arr1).toString() === calcShape(arr2).toString()) {
             let t1 = flatten(arr1),

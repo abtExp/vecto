@@ -1,5 +1,8 @@
 'use strict';
 
+const { calcShape, fill } = require('../lib/core'),
+    max = require('./max');
+
 /**
  * 
  * @function broadcast - broadcasts the arrays to compatible shapes
@@ -11,9 +14,6 @@
  * @returns {Array} - The broadcasted arrays.
  * 
  */
-
-const { calcShape, fill } = require('../lib/core'),
-    max = require('./max');
 
 module.exports = function broadcast(s1, s2) {
     let [len, sarr, larr] = s1.length > s2.length ? [s1.length, s2, s1] : [s2.length, s1, s2],

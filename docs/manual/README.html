@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | vecto</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Mini JS Library to deal with Ndarrays"><meta property="og:type" content="website"><meta property="og:url" content="https://abtExp.github.io/vecto"><meta property="og:site_name" content="vecto"><meta property="og:title" content="vecto"><meta property="og:image" content="http://my-library.org/logo.png"><meta property="og:description" content="Mini JS Library to deal with Ndarrays"><meta property="og:author" content="https://twitter.com/@_thennable"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="vecto"><meta property="twitter:description" content="Mini JS Library to deal with Ndarrays"><meta property="twitter:image" content="http://my-library.org/logo.png"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/abtExp/vecto"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/README.html"><a href="manual/README.html#vecto--construction---sparkles---art-" data-ice="link">vecto :construction: :sparkles: :art:</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/README.html"><a href="manual/README.html#-0-7-1" data-ice="link">@0.7.1</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/README.html"><a href="manual/README.html#a-javascript-mini-library-to-deal-with-n-dimensional-arrays-" data-ice="link">A JavaScript Mini Library to deal with N-dimensional arrays.</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/README.html"><a href="manual/README.html#-lt-b-gt--what--39-s-new--lt--b-gt-" data-ice="link">&lt;b&gt; What&apos;s new &lt;/b&gt;</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/README.html"><a href="manual/README.html#-lt-b-gt-upcoming-lt--b-gt-" data-ice="link">&lt;b&gt;Upcoming&lt;/b&gt;</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/README.html"><a href="manual/README.html#installation" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#api" data-ice="link">API</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#api-list--" data-ice="link">Api List :</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#-a-href---ndarray--ndarray--a-" data-ice="link">Ndarray</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#-a-href---core--core--a-" data-ice="link">core</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#-a-href---math--math--a-" data-ice="link">math</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#-p-id--ndarray--ndarray--a-" data-ice="link">Ndarray</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#constructor" data-ice="link">Constructor</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#other-methods-for-creation" data-ice="link">Other Methods For creation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#ndarray-properties-and-methods" data-ice="link">Ndarray properties and methods</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#properties" data-ice="link">Properties</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#methods" data-ice="link">Methods</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#-p-id--math--math--p-" data-ice="link">math</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#math-product" data-ice="link">math.product</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#math-sum" data-ice="link">math.sum</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/README.html"><a href="manual/README.html#-p-id--core--core--p-" data-ice="link">Core</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-arrange--shape---array--" data-ice="link">core.arrange([shape],[array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-calc-shape--array--" data-ice="link">core.calc_shape([array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-calc-size--array--" data-ice="link">core.calc_size([array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#clip--array--min-val--min-val--max-val--max-val--" data-ice="link">clip([array],min_val/[min_val],max_val/[max_val])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-find-dim--array--" data-ice="link">core.find_dim([array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-flatten--array--" data-ice="link">core.flatten([array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-form-chunks-size-number--array--" data-ice="link">core.form_chunks(size,number,[array])</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/README.html"><a href="manual/README.html#core-transpose--arr--dtype---39-string--39--" data-ice="link">core.transpose([arr],dtype=&apos;string&apos;)</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><p><a href="https://www.codacy.com/app/atworkstudios/vecto?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=abtExp/vecto&amp;utm_campaign=badger"><img src="https://api.codacy.com/project/badge/Grade/18afea85bbb2469095c6df35638f5626" alt="Codacy Badge"></a>
+<a href="https://codeclimate.com/github/abtExp/vecto"><img src="https://codeclimate.com/github/abtExp/vecto/badges/gpa.svg" alt="Code Climate"></a>  <a href="https://travis-ci.org/abtExp/vecto"><img src="https://travis-ci.org/abtExp/vecto.svg?branch=master" alt="Build Status"></a>  <a href="https://badge.fury.io/js/vecto"><img src="https://badge.fury.io/js/vecto.svg" alt="npm"></a>
+<a href="https://coveralls.io/github/abtExp/vecto?branch=master"><img src="https://coveralls.io/repos/github/abtExp/vecto/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://codecov.io/gh/abtExp/vecto"><img src="https://codecov.io/gh/abtExp/vecto/branch/master/graph/badge.svg" alt="codecov"></a></p>
+<h1 id="vecto--construction---sparkles---art-">vecto :construction: :sparkles: :art:</h1><h1 id="-0-7-1">@0.7.1</h1><h1 id="a-javascript-mini-library-to-deal-with-n-dimensional-arrays-">A JavaScript Mini Library to deal with N-dimensional arrays.</h1><h2 id="-lt-b-gt--what--39-s-new--lt--b-gt-">&lt;b&gt; What&apos;s new &lt;/b&gt;</h2><ul>
+<li>ndarray -&gt; Ndarray</li>
+<li><a href="#fill">fill</a> method</li>
+<li><a href="#max">max</a> &amp; <a href="#min">min</a> methods</li>
+<li><a href="#divide">divide</a>, <a href="#exp">exp</a>,<a href="#log">log</a>,<a href="#pow">pow</a> &amp; <a href="#sqrt">sqrt</a> in math</li>
+</ul>
+<h2 id="-lt-b-gt-upcoming-lt--b-gt-">&lt;b&gt;Upcoming&lt;/b&gt;</h2><ul>
+<li>Choose function</li>
+</ul>
+<p><br>
+<br>
+<br>
+<br></p>
+<h2 id="installation">Installation</h2><pre><code class="lang-shell"><code class="source-code prettyprint">npm install vecto</code>
+</code></pre>
+<h3 id="api">API</h3><pre><code class="lang-js"><code class="source-code prettyprint">// for whole pkg
+const vecto = require(&apos;vecto&apos;);
+
+//selective 
+const { Ndarray, core, math } = require(&apos;vecto&apos;);</code>
+</code></pre>
+<h3 id="api-list--">Api List :</h3><ul>
+<li><h5 id="-a-href---ndarray--ndarray--a-"><a href="#Ndarray">Ndarray</a></h5></li>
+<li><h5 id="-a-href---core--core--a-"><a href="#core">core</a></h5></li>
+<li><h5 id="-a-href---math--math--a-"><a href="#math">math</a></h5></li>
+</ul>
+<p>The Ndarray provides a class to construct ndarrays and operate on them.</p>
+<h3 id="-p-id--ndarray--ndarray--a-"><p id="Ndarray">Ndarray</p></h3><h5 id="constructor">Constructor</h5><pre><code class="lang-js"><code class="source-code prettyprint">let v1 = new Ndarray(?[shape], ?&apos;dtype&apos;, ?&apos;initializer&apos;, ?[array]);</code>
+</code></pre>
+<ul>
+<li><p>Shape : [Number] , Shape is the structure of the array, ex., shape of [2,3] means a 2x3 matrix having 2 array elements that have 3 elements each.</p>
+</li>
+<li><p>dtype : &apos;String&apos;, The data type for the elements of the array</p>
+<pre><code><code class="source-code prettyprint">    Options : {
+        &apos;uint8&apos;,&apos;uint16&apos;,&apos;uint32&apos;,&apos;int8&apos;,&apos;int16&apos;,&apos;int32&apos;,&apos;float32&apos;,&apos;float64&apos;,&apos;uint8clamped&apos;
+    }</code>
+</code></pre></li>
+<li><p>initializer : &apos;String&apos;, The initializer to initialize the data for the Ndarray</p>
+<pre><code><code class="source-code prettyprint">          Options : {
+              &apos;zeros&apos;,&apos;linear&apos;,&apos;gaussian&apos;
+          }</code>
+</code></pre></li>
+<li><p>Array : [[Number]], The Array that you want to create ndarray with.(if any).</p>
+</li>
+</ul>
+<h5 id="other-methods-for-creation">Other Methods For creation</h5><ul>
+<li>&lt;b&gt;Ndarray.array(array)&lt;/b&gt;</li>
+</ul>
+<p>/<strong> Ndarray.array : This Constructs an ndarray object for passed in array.
+ </strong>
+ <strong> @array : [[Number]]
+ </strong>
+ <strong> Returns : { NdarrayObject }
+ </strong>
+ **/</p>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let v = Ndarray.array([[1,2,3],[4,5,6]]);</code>
+</code></pre>
+<ul>
+<li>&lt;b&gt;Ndarray.zeroes(shape)&lt;/b&gt;</li>
+</ul>
+<p>/<strong> Ndarray.zeros : Constructs an ndarray object of given shape filled with placeholder 0&apos;s.
+ </strong> 
+ <strong> @shape : [Number], the shape of the ndarray
+ </strong>
+ <strong> Returns : { NdarrayObject }
+ </strong>
+ **/</p>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let zv = Ndarray.zeroes([2,2,3]);</code>
+</code></pre>
+<h3 id="ndarray-properties-and-methods">Ndarray properties and methods</h3><h5 id="properties">Properties</h5><ul>
+<li><p>this.shape : [Number], It defines the structure of the ndarray.</p>
+</li>
+<li><p>this.array :  [[Number]], Data of the ndarray.</p>
+</li>
+<li><p>this.size : int, The total number of elements in the ndarray.</p>
+</li>
+<li><p>this.dim : int, The Dimensions of the ndarray ( number of dimensions ).</p>
+</li>
+<li><p>this.dtype : &apos;String&apos;, The Data type of the elements of the array, currently only numbers are supported.</p>
+</li>
+<li><p>this.flat : TypedArrayObject, 1-D version of the ndarray, stored as typed arrays, Faster operations can be performed on this.</p>
+</li>
+</ul>
+<h5 id="methods">Methods</h5><ul>
+<li>&lt;b&gt; NdarrayObject.resize([new_shape]) &lt;/b&gt;</li>
+</ul>
+<p>This Method is used to alter the shape of an already existing ndarray, The new shape in form of array is provided and the current ndarray object is rearranged according to this new shape.</p>
+<p>ex :</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],&apos;float32&apos;);
+// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];
+nv.resize([2,3]);
+//nv.array = [[5,5,5],[5,5,5]]</code>
+</code></pre>
+<ul>
+<li>&lt;b&gt; NdarrayObject.reshape([new_shape]) &lt;/b&gt;</li>
+</ul>
+<p>This method is used to rearrange an already existing ndarray object, The new shape in form of array is provided and the current ndarray object is rearranged only if the size for the new shape === the size for the old shape , i.e., the total number of elements in both configurations remain the same.</p>
+<p>ex :</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],&apos;float32&apos;);
+// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];
+nv.reshape([2,3]); // not possible
+nv.reshape([6,2]);
+//nv.array = [[5,5],[5,5],[5,5],[5,5],[5,5],[5,5]]</code>
+</code></pre>
+<ul>
+<li>&lt;b&gt; *NdarrayObject.flatten() &lt;/b&gt;</li>
+</ul>
+<p>Creates 1-D form of the ndarray. * = called implicitly (don&apos;t need to call explicitly).</p>
+<ul>
+<li>&lt;b&gt; NdarrayObject.arrange([array]) &lt;/b&gt;</li>
+</ul>
+<p>Arranges The passed in 1-d array according to the shape of the NdarrayObject</p>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let nv = new ndarray([2,3]);
+nv.arrange([2]);
+//nv.array = [[2,2,2],[2,2,2]]
+nv.arrange([1,2]);
+//nv.array = [[1,2,1],[2,1,2]]
+nv.arrange([1,2,3,4,5,6,7]);
+//nv.array = [[1,2,3],[4,5,6]]</code>
+</code></pre>
+<ul>
+<li>&lt;b&gt; NdarrayObject.transpose() &lt;/b&gt;</li>
+</ul>
+<p>Performs transpose operation on 2d ndarrays (nd not supported yet) and returns the transposed array.<br>
+: return type = array.</p>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let nv = new ndarray([2,3]);
+nv.arrange([1,2,3,4,5,6]);
+//nv.array = [[1,2,3],[4,5,6]]
+console.log(nv.transpose())
+//[[1,4],[2,5],[3,6]]</code>
+</code></pre>
+<ul>
+<li>&lt;b&gt;NdarrayObject.fill()&lt;/b&gt;
+fill the Ndarray according to a distribution
+ex : <pre><code class="lang-js"><code class="source-code prettyprint">let nd = new Ndarray([2,3]);
+nd.fill(&apos;gaussian&apos;,0,1);
+//      initializer,mean,stdDev
+nd.fill(&apos;linear&apos;,2);
+// fills the array with 2s;
+nd.fill(&apos;linear&apos;,2,5);
+// provided a range [min-max], fills with steps of 1 or min;
+nd.fill(&apos;linear&apos;,2,25,2);
+// fills in the range of 2 and 25 with steps of 2;
+nd.fill(&apos;zeros&apos;);
+// fills with zeros;</code>
+</code></pre>
+</li>
+</ul>
+<h3 id="-p-id--math--math--p-"><p id="math">math</p></h3><p>Provides The Following functions :</p>
+<ul>
+<li>math.divide(arg1,arg2)</li>
+<li>math.exp(arg1)</li>
+<li>math.log(arg1)</li>
+<li>math.max(arg1,arg2,axis)</li>
+<li>math.min(arg1,arg2,axis)</li>
+<li>math.pow(arg1,pow)</li>
+<li>math.product(arg1,arg2,mode)</li>
+<li>math.sum(arg1,?arg2)</li>
+</ul>
+<p>// Most of them are just wrappers around the normal Math class methods
+<br></p>
+<ul>
+<li><h5 id="math-product">math.product</h5></li>
+</ul>
+<pre><code class="lang-js"><code class="source-code prettyprint">product([arg1],[arg2],mode=&apos;string&apos;);</code>
+</code></pre>
+<p>&lt;b&gt; return type : array&lt;/b&gt;</p>
+<p>&lt;b&gt; Modes : &lt;/b&gt;</p>
+<ul>
+<li>&lt;b&gt;dot&lt;/b&gt; : Performs hadmard product or elementwise product on the arrays.</li>
+<li>&lt;b&gt;matrix&lt;/b&gt; : Performs matrix multiplication</li>
+</ul>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">b = [[10,20,30],[10,10,10]]
+
+console.log(product(a,b,&apos;dot&apos;));
+// [[10,40,90],[40,50,60]]
+**************************
+
+let a = [[1,2,3],[4,5,6],[2,4,6]],
+b = [2,4,5];
+console.log(product(a,b,&apos;dot&apos;));
+//[[2,4,6],[16,20,24],[10,20,30]]
+console.log(product(a,b,&apos;matrix&apos;));
+//[ [ 2, 4, 6 ], [ 16, 20, 24 ], [ 35, 40, 45 ] ]
+**************************
+
+let a = [1,2,3],
+b = [1,2,3];
+console.log(product(a,b,&apos;dot&apos;));
+//[1,4,9]
+
+**************************</code>
+</code></pre>
+<ul>
+<li><h5 id="math-sum">math.sum</h5></li>
+</ul>
+<p>Performs addition on two ndarrays.</p>
+<h3 id="-p-id--core--core--p-"><p id="core">Core</p></h3><p>The core object exports all the methods to normal arrays instead of just ndarray objects.</p>
+<p>Methods provided by the core are : </p>
+<ul>
+<li><h5 id="core-arrange--shape---array--">core.arrange([shape],[array])</h5></li>
+</ul>
+<p>Takes in the shape of the ndarray in which the passed elements are to be arranged.</p>
+<p>ex : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let elems_arr = [1,2,3,4,5,6,7,8,9,10];
+let nd = core.arrange([2,5],elems_arr);
+//nd = [[1,2,3,4,5],[6,7,8,9,10]]</code>
+</code></pre>
+<ul>
+<li><h5 id="core-calc-shape--array--">core.calc_shape([array])</h5></li>
+</ul>
+<p>Takes in an array and outputs the shape(configuration) of that array.</p>
+<p>ex :</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let ar = [[[1,2],[4,5]],[[2,3],[6,7]],[[7,8],[9,1]]],
+shape = core.calc_shape(ar);
+//shape = [3,2,2];</code>
+</code></pre>
+<ul>
+<li><h5 id="core-calc-size--array--">core.calc_size([array])</h5></li>
+</ul>
+<p>Takes in a array and calculates the size of the ndarray.</p>
+<p>ex :</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let shape = [4,5];
+console.log(core.calc_size(shape));
+//20</code>
+</code></pre>
+<ul>
+<li><h5 id="clip--array--min-val--min-val--max-val--max-val--">clip([array],min_val/[min_val],max_val/[max_val])</h5></li>
+</ul>
+<p>Makes the array elements contained in a limit provided as 
+min_val and max_val.</p>
+<p>[array] : the array to be clipped.
+min_val/[min_val] : the minimum limit for the data in the array.
+if provided as array, it&apos;s shape should match the shape of the provided array, with every element of the [min_val]describing the min val for the respective element of the provided array. </p>
+<p>max_val/[max_val] : the maximum limit for the data in the array.
+if provided as array, it&apos;s shape should match the shape of the provided array, with every element of the [max_val]describing the max val for the respective element of the provided array. </p>
+<p>( ^ = only one of min_val or max_val could be null.)</p>
+<p>example : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">
+let a = [[10,24,12,3],[7,1,20,9]];
+clip(a,10,12);
+// returns [[10,12,12,10],[10,10,12,10]]
+
+clip(a,[[10,12,14,4],[8,0,10,10]],[[12,20,20,31],[10,1,10,10]]);
+//returns [ [ 10, 20, 14, 4 ], [ 8, 1, 10, 10 ] ]
+
+clip(a,[[10,12,14,4],[8,0,10,10]],2);
+//returns [ [ 2, 2, 14, 4 ], [ 8, 1, 2, 10 ] ]</code>
+</code></pre>
+<ul>
+<li><h5 id="core-find-dim--array--">core.find_dim([array])</h5></li>
+</ul>
+<p>Return the dimension of the array</p>
+<ul>
+<li><h5 id="core-flatten--array--">core.flatten([array])</h5></li>
+</ul>
+<p>Takes in an ndarray.
+Return the flattened version(1d) version of ndarray.</p>
+<p>example : </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">
+let a = [[[1,2],[3,4]],[[5,6],[7,8]]];
+core.flatten(a);
+//returns [1,2,3,4,5,6,7,8];</code>
+</code></pre>
+<ul>
+<li><h5 id="core-form-chunks-size-number--array--">core.form_chunks(size,number,[array])</h5></li>
+</ul>
+<p>size : The Size of a chunk.
+number : the number of chunks to be formed
+array : The array from which the chunks will be formed.</p>
+<p>ex :</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">let ar = [1,2,3,4,5];
+console.log(core.form_arr(2,2,ar));
+//[[1,2],[3,4]]
+
+let br = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(core.form_chunks(2,2,br));
+//[[[1,2,3],[4,5,6]],[[7,8,9],[1,2,3]]]</code>
+</code></pre>
+<ul>
+<li><h5 id="core-transpose--arr--dtype---39-string--39--">core.transpose([arr],dtype=&apos;string&apos;)</h5></li>
+</ul>
+<p>Performs transpose operation on passed array.</p>
+<p><a href="https://github.com/abtExp">@abtExp</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
