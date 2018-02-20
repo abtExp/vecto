@@ -1,284 +1,530 @@
 window.esdocSearchIndex = [
   [
-    "vecto/.external-ecmascript.js~array",
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber25",
+    "Ndarray construction method:1 (constructor)",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber37",
+    "Ndarray construction method:2 (zeroes)",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber49",
+    "Ndarray construction method:3 (array)",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber72",
+    "NdarrayObject.arrange method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber121",
+    "NdarrayObject.clip method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber136",
+    "NdarrayObject.flatten method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber93",
+    "NdarrayObject.reshape method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber81",
+    "NdarrayObject.resize method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber142",
+    "NdarrayObject.transpose method",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber155",
+    "core.arrange",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber163",
+    "core.calcShape",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber177",
+    "core.calcSize",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber185",
+    "core.clip",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber274",
+    "core.fill",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber214",
+    "core.findDim",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber228",
+    "core.flatten",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber288",
+    "core.formArr",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber247",
+    "core.formChunks",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber259",
+    "core.transpose",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber349",
+    "divide test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber340",
+    "exp test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber365",
+    "formArr",
+    "test"
+  ],
+  [
+    "lib/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "vecto/.external-ecmascript.js~Array",
+    "lib/.external-ecmascript.js~Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~arraybuffer",
+    "lib/.external-ecmascript.js~arraybuffer",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "vecto/.external-ecmascript.js~ArrayBuffer",
+    "lib/.external-ecmascript.js~ArrayBuffer",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~boolean",
+    "lib/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "vecto/.external-ecmascript.js~Boolean",
+    "lib/.external-ecmascript.js~Boolean",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~dataview",
+    "lib/.external-ecmascript.js~dataview",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "vecto/.external-ecmascript.js~DataView",
+    "lib/.external-ecmascript.js~DataView",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~date",
+    "lib/.external-ecmascript.js~date",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "vecto/.external-ecmascript.js~Date",
+    "lib/.external-ecmascript.js~Date",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~error",
+    "lib/.external-ecmascript.js~error",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "vecto/.external-ecmascript.js~Error",
+    "lib/.external-ecmascript.js~Error",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~evalerror",
+    "lib/.external-ecmascript.js~evalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "vecto/.external-ecmascript.js~EvalError",
+    "lib/.external-ecmascript.js~EvalError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~float32array",
+    "lib/.external-ecmascript.js~float32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "vecto/.external-ecmascript.js~Float32Array",
+    "lib/.external-ecmascript.js~Float32Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~float64array",
+    "lib/.external-ecmascript.js~float64array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "vecto/.external-ecmascript.js~Float64Array",
+    "lib/.external-ecmascript.js~Float64Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~function",
+    "lib/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "vecto/.external-ecmascript.js~Function",
+    "lib/.external-ecmascript.js~Function",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~generator",
+    "lib/.external-ecmascript.js~generator",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "vecto/.external-ecmascript.js~Generator",
+    "lib/.external-ecmascript.js~Generator",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~generatorfunction",
+    "lib/.external-ecmascript.js~generatorfunction",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "vecto/.external-ecmascript.js~GeneratorFunction",
+    "lib/.external-ecmascript.js~GeneratorFunction",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~infinity",
+    "lib/.external-ecmascript.js~infinity",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "vecto/.external-ecmascript.js~Infinity",
+    "lib/.external-ecmascript.js~Infinity",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~int16array",
+    "lib/.external-ecmascript.js~int16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "vecto/.external-ecmascript.js~Int16Array",
+    "lib/.external-ecmascript.js~Int16Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~int32array",
+    "lib/.external-ecmascript.js~int32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "vecto/.external-ecmascript.js~Int32Array",
+    "lib/.external-ecmascript.js~Int32Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~int8array",
+    "lib/.external-ecmascript.js~int8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "vecto/.external-ecmascript.js~Int8Array",
+    "lib/.external-ecmascript.js~Int8Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~internalerror",
+    "lib/.external-ecmascript.js~internalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "vecto/.external-ecmascript.js~InternalError",
+    "lib/.external-ecmascript.js~InternalError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~json",
+    "lib/.external-ecmascript.js~json",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "vecto/.external-ecmascript.js~JSON",
+    "lib/.external-ecmascript.js~JSON",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~map",
+    "lib/.external-ecmascript.js~map",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "vecto/.external-ecmascript.js~Map",
+    "lib/.external-ecmascript.js~Map",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~nan",
+    "lib/.external-ecmascript.js~nan",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "vecto/.external-ecmascript.js~NaN",
+    "lib/.external-ecmascript.js~NaN",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~number",
+    "lib/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "vecto/.external-ecmascript.js~Number",
+    "lib/.external-ecmascript.js~Number",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~object",
+    "lib/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "vecto/.external-ecmascript.js~Object",
+    "lib/.external-ecmascript.js~Object",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~promise",
+    "lib/.external-ecmascript.js~promise",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "vecto/.external-ecmascript.js~Promise",
+    "lib/.external-ecmascript.js~Promise",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~proxy",
+    "lib/.external-ecmascript.js~proxy",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "vecto/.external-ecmascript.js~Proxy",
+    "lib/.external-ecmascript.js~Proxy",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~rangeerror",
+    "lib/.external-ecmascript.js~rangeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "vecto/.external-ecmascript.js~RangeError",
+    "lib/.external-ecmascript.js~RangeError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~referenceerror",
+    "lib/.external-ecmascript.js~referenceerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "vecto/.external-ecmascript.js~ReferenceError",
+    "lib/.external-ecmascript.js~ReferenceError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~reflect",
+    "lib/.external-ecmascript.js~reflect",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "vecto/.external-ecmascript.js~Reflect",
+    "lib/.external-ecmascript.js~Reflect",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~regexp",
+    "lib/.external-ecmascript.js~regexp",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "vecto/.external-ecmascript.js~RegExp",
+    "lib/.external-ecmascript.js~RegExp",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~set",
+    "lib/.external-ecmascript.js~set",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "vecto/.external-ecmascript.js~Set",
+    "lib/.external-ecmascript.js~Set",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~string",
+    "lib/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "vecto/.external-ecmascript.js~String",
+    "lib/.external-ecmascript.js~String",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~symbol",
+    "lib/.external-ecmascript.js~symbol",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "vecto/.external-ecmascript.js~Symbol",
+    "lib/.external-ecmascript.js~Symbol",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~syntaxerror",
+    "lib/.external-ecmascript.js~syntaxerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "vecto/.external-ecmascript.js~SyntaxError",
+    "lib/.external-ecmascript.js~SyntaxError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~typeerror",
+    "lib/.external-ecmascript.js~typeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "vecto/.external-ecmascript.js~TypeError",
+    "lib/.external-ecmascript.js~TypeError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~urierror",
+    "lib/.external-ecmascript.js~urierror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "vecto/.external-ecmascript.js~URIError",
+    "lib/.external-ecmascript.js~URIError",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~uint16array",
+    "lib/.external-ecmascript.js~uint16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "vecto/.external-ecmascript.js~Uint16Array",
+    "lib/.external-ecmascript.js~Uint16Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~uint32array",
+    "lib/.external-ecmascript.js~uint32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "vecto/.external-ecmascript.js~Uint32Array",
+    "lib/.external-ecmascript.js~Uint32Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~uint8array",
+    "lib/.external-ecmascript.js~uint8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "vecto/.external-ecmascript.js~Uint8Array",
+    "lib/.external-ecmascript.js~Uint8Array",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~uint8clampedarray",
+    "lib/.external-ecmascript.js~uint8clampedarray",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "vecto/.external-ecmascript.js~Uint8ClampedArray",
+    "lib/.external-ecmascript.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~weakmap",
+    "lib/.external-ecmascript.js~weakmap",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "vecto/.external-ecmascript.js~WeakMap",
+    "lib/.external-ecmascript.js~WeakMap",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~weakset",
+    "lib/.external-ecmascript.js~weakset",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "vecto/.external-ecmascript.js~WeakSet",
+    "lib/.external-ecmascript.js~WeakSet",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~boolean",
+    "lib/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "vecto/.external-ecmascript.js~boolean",
+    "lib/.external-ecmascript.js~boolean",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~function",
+    "lib/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "vecto/.external-ecmascript.js~function",
+    "lib/.external-ecmascript.js~function",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~null",
+    "lib/.external-ecmascript.js~null",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "vecto/.external-ecmascript.js~null",
+    "lib/.external-ecmascript.js~null",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~number",
+    "lib/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "vecto/.external-ecmascript.js~number",
+    "lib/.external-ecmascript.js~number",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~object",
+    "lib/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "vecto/.external-ecmascript.js~object",
+    "lib/.external-ecmascript.js~object",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~string",
+    "lib/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "vecto/.external-ecmascript.js~string",
+    "lib/.external-ecmascript.js~string",
     "external"
   ],
   [
-    "vecto/.external-ecmascript.js~undefined",
+    "lib/.external-ecmascript.js~undefined",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "vecto/.external-ecmascript.js~undefined",
+    "lib/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "lib/arrange.js",
+    "file/lib/arrange.js.html",
+    "lib/arrange.js",
+    "file"
+  ],
+  [
+    "lib/calcshape.js",
+    "file/lib/calcShape.js.html",
+    "lib/calcShape.js",
+    "file"
+  ],
+  [
+    "lib/calcsize.js",
+    "file/lib/calcSize.js.html",
+    "lib/calcSize.js",
+    "file"
+  ],
+  [
+    "lib/choose.js",
+    "file/lib/choose.js.html",
+    "lib/choose.js",
+    "file"
+  ],
+  [
+    "lib/clip.js",
+    "file/lib/clip.js.html",
+    "lib/clip.js",
+    "file"
+  ],
+  [
+    "lib/core.js",
+    "file/lib/core.js.html",
+    "lib/core.js",
+    "file"
+  ],
+  [
+    "lib/fill.js",
+    "file/lib/fill.js.html",
+    "lib/fill.js",
+    "file"
+  ],
+  [
+    "lib/finddim.js",
+    "file/lib/findDim.js.html",
+    "lib/findDim.js",
+    "file"
+  ],
+  [
+    "lib/flatten.js",
+    "file/lib/flatten.js.html",
+    "lib/flatten.js",
+    "file"
+  ],
+  [
+    "lib/formarr.js",
+    "file/lib/formArr.js.html",
+    "lib/formArr.js",
+    "file"
+  ],
+  [
+    "lib/formchunks.js",
+    "file/lib/formChunks.js.html",
+    "lib/formChunks.js",
+    "file"
+  ],
+  [
+    "lib/gputest.js",
+    "file/lib/gputest.js.html",
+    "lib/gputest.js",
+    "file"
+  ],
+  [
+    "lib/ndarray.js",
+    "file/lib/ndarray.js.html",
+    "lib/ndarray.js",
+    "file"
+  ],
+  [
+    "lib/transpose.js",
+    "file/lib/transpose.js.html",
+    "lib/transpose.js",
+    "file"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber332",
+    "log test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber389",
+    "pad test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber298",
+    "product tests",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/vecto.test.js.html#lineNumber315",
+    "sum test",
+    "test"
+  ],
+  [
+    "test/vecto.test.js",
+    "test-file/test/vecto.test.js.html",
+    "test/vecto.test.js",
+    "testFile"
   ]
 ]

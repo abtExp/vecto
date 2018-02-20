@@ -1,5 +1,6 @@
 const path = require('path'),
-    ujsp = require('uglifyjs-webpack-plugin');
+    uglify = require('uglifyjs-webpack-plugin');
+
 module.exports = {
     entry: path.resolve(__dirname, 'vecto.js'),
     output: {
@@ -11,11 +12,11 @@ module.exports = {
             test: /\.js$/,
             loader: 'babel-loader',
             query: {
-                presets: ['es2015']
+                presets: ['env']
             }
         }]
     },
     plugins: [
-        new ujsp()
+        new uglify()
     ]
 };

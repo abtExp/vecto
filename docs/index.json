@@ -4,9 +4,9 @@
     "kind": "external",
     "name": "Infinity",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Infinity",
+    "longname": "lib/.external-ecmascript.js~Infinity",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -16,9 +16,9 @@
     "kind": "external",
     "name": "NaN",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~NaN",
+    "longname": "lib/.external-ecmascript.js~NaN",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -28,9 +28,9 @@
     "kind": "external",
     "name": "undefined",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~undefined",
+    "longname": "lib/.external-ecmascript.js~undefined",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -40,9 +40,9 @@
     "kind": "external",
     "name": "null",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~null",
+    "longname": "lib/.external-ecmascript.js~null",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -52,9 +52,9 @@
     "kind": "external",
     "name": "Object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Object",
+    "longname": "lib/.external-ecmascript.js~Object",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -64,9 +64,9 @@
     "kind": "external",
     "name": "object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~object",
+    "longname": "lib/.external-ecmascript.js~object",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -76,9 +76,9 @@
     "kind": "external",
     "name": "Function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Function",
+    "longname": "lib/.external-ecmascript.js~Function",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -88,9 +88,9 @@
     "kind": "external",
     "name": "function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~function",
+    "longname": "lib/.external-ecmascript.js~function",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -100,9 +100,9 @@
     "kind": "external",
     "name": "Boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Boolean",
+    "longname": "lib/.external-ecmascript.js~Boolean",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -112,9 +112,9 @@
     "kind": "external",
     "name": "boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~boolean",
+    "longname": "lib/.external-ecmascript.js~boolean",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -124,9 +124,9 @@
     "kind": "external",
     "name": "Symbol",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Symbol",
+    "longname": "lib/.external-ecmascript.js~Symbol",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -136,9 +136,9 @@
     "kind": "external",
     "name": "Error",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Error",
+    "longname": "lib/.external-ecmascript.js~Error",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -148,9 +148,9 @@
     "kind": "external",
     "name": "EvalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~EvalError",
+    "longname": "lib/.external-ecmascript.js~EvalError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -160,9 +160,9 @@
     "kind": "external",
     "name": "InternalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~InternalError",
+    "longname": "lib/.external-ecmascript.js~InternalError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -172,9 +172,9 @@
     "kind": "external",
     "name": "RangeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~RangeError",
+    "longname": "lib/.external-ecmascript.js~RangeError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -184,9 +184,9 @@
     "kind": "external",
     "name": "ReferenceError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~ReferenceError",
+    "longname": "lib/.external-ecmascript.js~ReferenceError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -196,9 +196,9 @@
     "kind": "external",
     "name": "SyntaxError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~SyntaxError",
+    "longname": "lib/.external-ecmascript.js~SyntaxError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -208,9 +208,9 @@
     "kind": "external",
     "name": "TypeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~TypeError",
+    "longname": "lib/.external-ecmascript.js~TypeError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -220,9 +220,9 @@
     "kind": "external",
     "name": "URIError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~URIError",
+    "longname": "lib/.external-ecmascript.js~URIError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -232,9 +232,9 @@
     "kind": "external",
     "name": "Number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Number",
+    "longname": "lib/.external-ecmascript.js~Number",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -244,9 +244,9 @@
     "kind": "external",
     "name": "number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~number",
+    "longname": "lib/.external-ecmascript.js~number",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -256,9 +256,9 @@
     "kind": "external",
     "name": "Date",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Date",
+    "longname": "lib/.external-ecmascript.js~Date",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -268,9 +268,9 @@
     "kind": "external",
     "name": "String",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~String",
+    "longname": "lib/.external-ecmascript.js~String",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -280,9 +280,9 @@
     "kind": "external",
     "name": "string",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~string",
+    "longname": "lib/.external-ecmascript.js~string",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -292,9 +292,9 @@
     "kind": "external",
     "name": "RegExp",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~RegExp",
+    "longname": "lib/.external-ecmascript.js~RegExp",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -304,9 +304,9 @@
     "kind": "external",
     "name": "Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Array",
+    "longname": "lib/.external-ecmascript.js~Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -316,9 +316,9 @@
     "kind": "external",
     "name": "Int8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Int8Array",
+    "longname": "lib/.external-ecmascript.js~Int8Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -328,9 +328,9 @@
     "kind": "external",
     "name": "Uint8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Uint8Array",
+    "longname": "lib/.external-ecmascript.js~Uint8Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -340,9 +340,9 @@
     "kind": "external",
     "name": "Uint8ClampedArray",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Uint8ClampedArray",
+    "longname": "lib/.external-ecmascript.js~Uint8ClampedArray",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -352,9 +352,9 @@
     "kind": "external",
     "name": "Int16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Int16Array",
+    "longname": "lib/.external-ecmascript.js~Int16Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -364,9 +364,9 @@
     "kind": "external",
     "name": "Uint16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Uint16Array",
+    "longname": "lib/.external-ecmascript.js~Uint16Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -376,9 +376,9 @@
     "kind": "external",
     "name": "Int32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Int32Array",
+    "longname": "lib/.external-ecmascript.js~Int32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -388,9 +388,9 @@
     "kind": "external",
     "name": "Uint32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Uint32Array",
+    "longname": "lib/.external-ecmascript.js~Uint32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -400,9 +400,9 @@
     "kind": "external",
     "name": "Float32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Float32Array",
+    "longname": "lib/.external-ecmascript.js~Float32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -412,9 +412,9 @@
     "kind": "external",
     "name": "Float64Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Float64Array",
+    "longname": "lib/.external-ecmascript.js~Float64Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -424,9 +424,9 @@
     "kind": "external",
     "name": "Map",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Map",
+    "longname": "lib/.external-ecmascript.js~Map",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -436,9 +436,9 @@
     "kind": "external",
     "name": "Set",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Set",
+    "longname": "lib/.external-ecmascript.js~Set",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -448,9 +448,9 @@
     "kind": "external",
     "name": "WeakMap",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~WeakMap",
+    "longname": "lib/.external-ecmascript.js~WeakMap",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -460,9 +460,9 @@
     "kind": "external",
     "name": "WeakSet",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~WeakSet",
+    "longname": "lib/.external-ecmascript.js~WeakSet",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -472,9 +472,9 @@
     "kind": "external",
     "name": "ArrayBuffer",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~ArrayBuffer",
+    "longname": "lib/.external-ecmascript.js~ArrayBuffer",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -484,9 +484,9 @@
     "kind": "external",
     "name": "DataView",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~DataView",
+    "longname": "lib/.external-ecmascript.js~DataView",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -496,9 +496,9 @@
     "kind": "external",
     "name": "JSON",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~JSON",
+    "longname": "lib/.external-ecmascript.js~JSON",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -508,9 +508,9 @@
     "kind": "external",
     "name": "Promise",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Promise",
+    "longname": "lib/.external-ecmascript.js~Promise",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -520,9 +520,9 @@
     "kind": "external",
     "name": "Generator",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Generator",
+    "longname": "lib/.external-ecmascript.js~Generator",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -532,9 +532,9 @@
     "kind": "external",
     "name": "GeneratorFunction",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~GeneratorFunction",
+    "longname": "lib/.external-ecmascript.js~GeneratorFunction",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -544,9 +544,9 @@
     "kind": "external",
     "name": "Reflect",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Reflect",
+    "longname": "lib/.external-ecmascript.js~Reflect",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -556,12 +556,1609 @@
     "kind": "external",
     "name": "Proxy",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "memberof": "vecto/.external-ecmascript.js",
+    "memberof": "lib/.external-ecmascript.js",
     "static": true,
-    "longname": "vecto/.external-ecmascript.js~Proxy",
+    "longname": "lib/.external-ecmascript.js~Proxy",
     "access": "public",
     "description": "",
     "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "lib/arrange.js",
+    "content": "/**\n * @function arrange : A method to arrange or create a Vector from the given elements \n *            \n * @param {Array} shape - @requires shape -The shape of the array to be filled or arranged\n * \n * @param {Array} elems_arr - The elements to be arranged\n * \n * @returns {Array} - Array of the provided shape filled with the passed elements or random elements\n * \n */\n\nmodule.exports = function arrange(shape, elems_arr) {\n    const { formChunks, flatten } = require('./core');\n    let base_arr = flatten(elems_arr),\n        curr_arr = [];\n    for (let i = shape.length - 1; i > 0; i--) {\n        let size = shape[i],\n            no = 1;\n        for (let j = 0; j < i; j++) {\n            no *= shape[j];\n        }\n        curr_arr = formChunks(size, no, base_arr);\n        base_arr = curr_arr;\n    }\n    return base_arr;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/arrange.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/arrange.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/arrange.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/arrange.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "arrange : A method to arrange or create a Vector from the given elements \n           "
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} - Array of the provided shape filled with the passed elements or random elements"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "shape",
+        "description": "@requires shape -The shape of the array to be filled or arranged"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "elems_arr",
+        "description": "The elements to be arranged"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Array of the provided shape filled with the passed elements or random elements"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "lib/calcShape.js",
+    "content": "/**\n * @function calcShape - find the shape of array\n * \n * @param {Array} arr - The array whose shape is to be found.\n * \n * @returns {Array} The Shape of the array.\n *  \n */\nmodule.exports = function calcShape(arr) {\n    const shape = [];\n    if (!Array.isArray(arr)) return [1];\n    shape.push(arr.length);\n    let elem = arr[0];\n    while (Array.isArray(elem)) {\n        shape.push(elem.length);\n        elem = elem[0];\n    }\n    return shape;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/calcShape.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/calcShape.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/calcShape.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/calcShape.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "calcShape - find the shape of array"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The Shape of the array.\n "
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "The array whose shape is to be found."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The Shape of the array."
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "lib/calcSize.js",
+    "content": "/**\n * @function calcSize - Calculate the size of the ndarray\n * \n * @param {Array} array - Either the ndarray or the shape of array\n * \n * @param {String} flag - Defining either array or shape is being passed\n * \n * @returns {int} The size of the array\n *   \n */\nmodule.exports = function calcSize(array, flag = 'array') {\n    const calcShape = require('./calcShape');\n    let shape = flag === 'array' ? calcShape(array) : array;\n    let size = 1;\n    for (let i = 0; i < shape.length; i++) {\n        size *= shape[i];\n    }\n    return size;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/calcSize.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/calcSize.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/calcSize.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/calcSize.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "calcSize - Calculate the size of the ndarray"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{int} The size of the array\n  "
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "Either the ndarray or the shape of array"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flag",
+        "description": "Defining either array or shape is being passed"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "int"
+      ],
+      "spread": false,
+      "description": "The size of the array"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "lib/choose.js",
+    "content": "/** \n * choose : Forms a new array consisting of selected elements \n *          ( Selects elements from a given array and forms a new array of those elements )  \n *\n * @array : [Number] : Required\n *          \n * @...args : Number/[Number] : either a single digit to select the \n *                              element at given index from every element of \n *                              the given ndarray or depicting the dimension of the elements\n *                              to select\n * \n * Returns : [Number] the new array\n * \n */\n\n\nmodule.exports = function choose(array, ...args) {\n    const { calc_shape, calc_size, form_arr, flatten, arrange } = require('./core');\n    const axisOps = require('../util/axisOps');\n    if (!args || args.length === 0) {\n        return array;\n    } else {\n        let arr = flatten(array),\n            shape = calcShape(array),\n            axis = args[0],\n            idx = args[1] || null,\n            range = args[2] || null,\n            retVals = [],\n            elems = axisOps(shape, axis);\n        if (idx >= 0) {\n            for (let i = 0; i < elems[idx].length; i++) {\n                retVals.push(arr[elems[idx][i]]);\n            }\n            return retVals;\n        }\n        if (range) {\n            for (let i = 0; i < elems.length; i++) {\n                let rv = [];\n                for (let j = 0; j < elems[i].length; j++) {\n                    if (elems[i][j] >= idx && elems[i][j] <= range) {\n                        rv.push(arr[elems[i][j]]);\n                    }\n                }\n                retVals.push(rv);\n            }\n            return retVals;\n        } else {\n            for (let i = 0; i < elems.length; i++) {\n                let rv = [];\n                for (let j = 0; j < elems[i].length; j++) {\n                    rv.push(arr[elems[i][j]]);\n                }\n                retVals.push(rv);\n            }\n        }\n        return retVals;\n    }\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/choose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/choose.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/choose.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/choose.js",
+    "importStyle": null,
+    "description": "choose : Forms a new array consisting of selected elements \n         ( Selects elements from a given array and forms a new array of those elements )  ",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@array",
+        "tagValue": ": [Number] : Required\n         \n@...args : Number/[Number] : either a single digit to select the \n                             element at given index from every element of \n                             the given ndarray or depicting the dimension of the elements\n                             to select\n\nReturns : [Number] the new array"
+      }
+    ],
+    "params": [
+      {
+        "name": "array",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "lib/clip.js",
+    "content": "/**\n * @function clip : Clips the array ( converts elements according to max and min val passed )  \n *\n * @param {Array} arr : @requires\n *   \n * @param {Array|int} min_val - Optional if max_val is provided, if [number] is provided ,\n *                              then ith val in [min_val] defines a min_val for \n *                              ith val in array.\n * \n * @param {Array|int} max_val - Optional if min_val is provided,\n *                              same as [min_val] but defines a max_val\n * \n * @returns {Array} the clipped array\n * \n */\n\n\nmodule.exports = function clip(arr, min_val, max_val) {\n    const flatten = require('./flatten');\n    const arrange = require('./arrange');\n    const calcShape = require('./calcShape');\n\n    let a = flatten(arr),\n        min = [],\n        max = [],\n        a_shape = calcShape(arr),\n        f1 = false,\n        f2 = false,\n        l = 0,\n        k = 0;\n\n    if (!min_val && !max_val) throw new Error('Expected atleast one clipping parameter');\n\n    if (Array.isArray(min_val)) {\n        f1 = true;\n        if (toString(calcShape(min_val)) === toString(a_shape)) {\n            min = flatten(min_val);\n        } else throw new Error(`Uneven shape : arg1 is ${a_shape}, given shape ${calcShape(min_val)}`);\n    } else {\n        min[0] = min_val;\n    }\n\n    if (Array.isArray(max_val)) {\n        f2 = true;\n        if (toString(calcShape(max_val)) === toString(a_shape)) {\n            max = flatten(max_val);\n        } else throw new Error(`Uneven shape : arg1 is ${a_shape}, given shape ${calcShape(min_val)}`);\n    } else {\n        max[0] = max_val;\n    }\n\n    for (let i = 0; i < a.length; i++) {\n        a[i] = Math.max(min[k], Math.min(a[i], max[l]));\n        if (f1) k++;\n        if (f2) l++;\n    }\n\n    return (arrange(a_shape, a));\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/clip.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/clip.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/clip.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/clip.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "clip : Clips the array ( converts elements according to max and min val passed )  "
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} the clipped array"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": ": @requires"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "min_val",
+        "description": "Optional if max_val is provided, if [number] is provided ,\n                             then ith val in [min_val] defines a min_val for \n                             ith val in array."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "max_val",
+        "description": "Optional if min_val is provided,\n                             same as [min_val] but defines a max_val"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "the clipped array"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "lib/core.js",
+    "content": "const arrange = require('./arrange');\nconst calcShape = require('./calcShape');\nconst calcSize = require('./calcSize');\nconst clip = require('./clip');\nconst fill = require('./fill');\nconst findDim = require('./findDim');\nconst flatten = require('./flatten');\nconst formArr = require('./formArr');\nconst formChunks = require('./formChunks');\nconst transpose = require('./transpose');\n\n\nmodule.exports = {\n    arrange,\n    calcShape,\n    calcSize,\n    clip,\n    fill,\n    findDim,\n    flatten,\n    formArr,\n    formChunks,\n    transpose\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/core.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "arrange",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~arrange",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "calcShape",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~calcShape",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "calcSize",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~calcSize",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "clip",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~clip",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "fill",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~fill",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "findDim",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~findDim",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "flatten",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~flatten",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "formArr",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~formArr",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "formChunks",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~formChunks",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "transpose",
+    "memberof": "lib/core.js",
+    "static": true,
+    "longname": "lib/core.js~transpose",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/core.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "lib/fill.js",
+    "content": "\"use strict\";\n\n/**\n *\n * @function fill - fills the vector according to passed args\n *\n * @param {Array} shape - The shape of the array to be filled (Required)\n * \n * @param {String} initializer - The distribution of elements to be filled\n *                                      { \n *                                          1. 'linear' (random or uniform filling or single elem filling)\n *                                          2. 'zeros'  (filling with zeroes)\n *                                          3. 'gaussian' (gaussian distribution)\n *                                          4. 'custom' (fills the value acc to a passed function)\n *                                      }\n * \n * @param {rest} ...args -   {\n *                               1. for linear, args.len === 0 => random filling\n *                                              args.len === 1 => fill with that value\n *                                              args.len === 2 => the max and min ranges with steps of min\n *                                              args.len === 3 => the max, min and the step\n *                               2. for gaussian, args[0] = mean (defaults to 0)\n *                                              args[1] = variance (defaults to 1)\n *                            }\n * \n * @returns {Array} - The filled array\n * \n */\n\nmodule.exports = function fill(shape, initializer = 'linear', ...args) {\n    const { calcSize, arrange } = require('./core');\n    initializer = initializer || 'zeros';\n    let arr = [],\n        size = calcSize(shape, 'shape');\n    if (initializer === 'zeros') {\n        arr = zeros(size);\n    } else if (initializer === 'linear') {\n        switch (args.length) {\n            case 0:\n                for (let i = 0; i < size; i++) {\n                    arr[i] = Math.random();\n                }\n                break;\n            case 1:\n                for (let i = 0; i < size; i++) {\n                    arr[i] = args[0];\n                }\n                break;\n            default:\n                let min = args[0],\n                    max = args[1],\n                    num = min,\n                    digs;\n                // calculating the step size\n                (() => {\n                    digs = 0;\n                    let nums = min;\n                    while (Math.floor(nums) !== nums) {\n                        digs++;\n                        nums *= 10;\n                    }\n                })();\n                let step = args[2] || (1 / Math.pow(10, digs));\n                for (let i = 0; i < size; i++) {\n                    arr[i] = num;\n                    num += step;\n                    if (num > max) num = min;\n                }\n                break;\n        }\n    } else if (initializer === 'gaussian') {\n        arr = gaussian(args[0], args[1], size);\n    } else if (initializer === 'custom') {\n        for (let i = 0; i < size; i++) {\n            arr[i] = args[0]();\n        }\n    }\n    let retval = arrange(shape, arr);\n    return retval;\n}\n\n\nfunction zeros(size) {\n    let arr = [];\n    for (let i = 0; i < size; i++) {\n        arr[i] = 0;\n    }\n    return arr;\n}\n\nfunction gaussian(mean = 0, stddev = 1, size) {\n    let v1, v2, s, arr = [];\n    for (let i = 0; i < size; i++) {\n        do {\n            v1 = 2 * Math.random() - 1;\n            v2 = 2 * Math.random() - 1;\n            s = v1 * v1 + v2 * v2;\n        } while (s > 1);\n\n        let res = Math.sqrt(-2 * Math.log(s) / s) * v1;\n        arr[i] = mean + (stddev * res);\n    }\n    return arr;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/fill.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/fill.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/fill.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/fill.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "fill - fills the vector according to passed args"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} - The filled array"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "shape",
+        "description": "The shape of the array to be filled (Required)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "initializer",
+        "description": "The distribution of elements to be filled\n                                     { \n                                         1. 'linear' (random or uniform filling or single elem filling)\n                                         2. 'zeros'  (filling with zeroes)\n                                         3. 'gaussian' (gaussian distribution)\n                                         4. 'custom' (fills the value acc to a passed function)\n                                     }"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "rest"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "...args",
+        "description": "{\n                              1. for linear, args.len === 0 => random filling\n                                             args.len === 1 => fill with that value\n                                             args.len === 2 => the max and min ranges with steps of min\n                                             args.len === 3 => the max, min and the step\n                              2. for gaussian, args[0] = mean (defaults to 0)\n                                             args[1] = variance (defaults to 1)\n                           }"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The filled array"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "zeros",
+    "memberof": "lib/fill.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/fill.js~zeros",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/fill.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 83,
+    "undocument": true,
+    "params": [
+      {
+        "name": "size",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "gaussian",
+    "memberof": "lib/fill.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/fill.js~gaussian",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/fill.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 91,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mean",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      },
+      {
+        "name": "stddev",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 1,
+        "defaultValue": "1"
+      },
+      {
+        "name": "size",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "lib/findDim.js",
+    "content": "/**\n * @function findDim - find the dimensions of the ndarray\n * \n * @param {Array} array - The array or shape of the array\n * \n * @param {String} flag - Defines if the array or a shape is provided\n * \n * @returns {int} the dimensions of the array\n * \n */\nmodule.exports = function findDim(array, flag = 'array') {\n    const calcShape = require('./calcShape');\n    let shape = array;\n    if (flag === 'array') shape = calcShape(array);\n    return shape.length;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/findDim.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/findDim.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/findDim.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/findDim.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "findDim - find the dimensions of the ndarray"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{int} the dimensions of the array"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The array or shape of the array"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flag",
+        "description": "Defines if the array or a shape is provided"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "int"
+      ],
+      "spread": false,
+      "description": "the dimensions of the array"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "lib/flatten.js",
+    "content": "/**\n * @function flatten - Convert NDarray to 1Darray\n * \n * @param {Array} arr - The Array to be converted from ND to 1D\n * \n * @returns {Array} the 1D version of the passed ndarray\n *  \n */\nmodule.exports = function flatten(arr) {\n    let flatarr = [];\n    if (!Array.isArray(arr)) return [arr];\n    for (let i of arr) {\n        if (Array.isArray(i))\n            flatarr = Array.prototype.concat.apply(flatarr, Array.prototype.concat.apply([], i));\n        else flatarr.push(i);\n    }\n    return flatarr;\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/flatten.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/flatten.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/flatten.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/flatten.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "flatten - Convert NDarray to 1Darray"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} the 1D version of the passed ndarray\n "
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "The Array to be converted from ND to 1D"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "the 1D version of the passed ndarray"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "lib/formArr.js",
+    "content": "/**\n * @function formArr - Make typed arrays\n * \n * @param {Array} arr - Array to form a typed array of\n * \n * @param {String} dtype - The dtype of which the typed array will be\n * \n * @returns {TypedArray}\n * \n */\n\nmodule.exports = function formArr(arr, dtype = 'array') {\n    switch (dtype) {\n        case 'uint8':\n            return new Uint8Array(arr);\n\n        case 'uint16':\n            return new Uint16Array(arr);\n\n        case 'uint32':\n            return new Uint32Array(arr);\n\n        case 'int8':\n            return new Int8Array(arr);\n\n        case 'int16':\n            return new Int16Array(arr);\n\n        case 'int32':\n            return new Int32Array(arr);\n\n        case 'float32':\n            return new Float32Array(arr);\n\n        case 'float64':\n            return new Float64Array(arr);\n\n        case 'uint8clamped':\n            return new Uint8ClampedArray(arr);\n\n        default:\n            return Array.from(arr);\n    }\n}",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/formArr.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/formArr.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/formArr.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/formArr.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "formArr - Make typed arrays"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{TypedArray}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "Array to form a typed array of"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dtype",
+        "description": "The dtype of which the typed array will be"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "TypedArray"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "file",
+    "name": "lib/formChunks.js",
+    "content": "/* form chunks  */\nmodule.exports = function formChunks(size, no, arr) {\n    let chunk = [],\n        final = [],\n        k = 0;\n    for (let i = 0; i < no; i++) {\n        chunk = [];\n        for (let j = 0; j < size; j++) {\n            chunk[j] = arr[k++];\n            if (k >= arr.length) k = 0;\n        }\n        final.push(chunk);\n    }\n    return final;\n}\n",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/formChunks.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/formChunks.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/formChunks.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/formChunks.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "size",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "no",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "arr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "lib/gputest.js",
+    "content": "const GPU = require('gpu.js');\nconsole.log(new GPU());",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/gputest.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "GPU",
+    "memberof": "lib/gputest.js",
+    "static": true,
+    "longname": "lib/gputest.js~GPU",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/gputest.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "lib/ndarray.js",
+    "content": "\"use strict\";\n\n/* A JS library for dealing with n-dimensional arrays. \n * Referenced from numpy.\n * Author : Anubhav Tiwari <atworkstudios@gmail.com>\n */\n\nconst core = require('./core'),\n    math = require('../util/math');\n\n/**\n * \n * @class Ndarray \n * \n */\nclass Ndarray {\n    /**\n     * @constructor\n     * \n     * @param {Object} param0 - The arguments destructured\n     * \n     * @param {Array} param0.shape - The Shape of the Ndarray to be created\n     * \n     * @param {String} param0.dtype [dtype='float32'] - The Data Type of the Ndarray data\n     * \n     * @param {String} param0.initializer - The initializer to be used to fill Ndarray if \n     *                                      no data is provided.\n     * \n     * @param {Array} param0.data - The data, if available, to fill the ndarray \n     * \n     * @param {Rest} args - Rest arguments for initializer\n     * \n     */\n    constructor({ shape = [], dtype = 'float32', initializer = 'zeros', data = [] } = {}, ...args) {\n        this.shape = shape;\n        this.dtype = dtype;\n        this.size = core.calcSize(this.shape, 'shape');\n        this.dim = core.findDim(this.shape, 'shape');\n        this.data = data.length > 0 ? core.formArr(core.flatten(data), this.dtype) :\n            core.formArr(core.fill([this.size], initializer, ...args), this.dtype);\n    }\n\n    /**\n     * @method @static  Ndarray.array - form a new Ndarray for the given array \n     * \n     * @param {Array} arr - The Data used to create the Ndarray\n     * \n     * @param {String} dtype - The Data type of the ndarray data\n     * \n     * @returns {Ndarray.Object} - The new created Ndarray\n     * \n     */\n    static array(arr, dtype = 'float32') {\n        return new Ndarray({ dtype: dtype, data: arr });\n    }\n\n    /**\n     * \n     * @method @static - Creates a new Ndarray filled with zeroes of specified shape\n     *                   Equivalent to new Ndarray({shape, initializer:'zeros'})\n     * \n     * @param {Array} shape - The Shape of ndarray to be filled with zeroes \n     * \n     */\n    static zeroes(shape) {\n        return new Ndarray({ shape, dtype: 'float32', initializer: 'zeros' });\n    }\n\n\n    /* sum of 2 Ndarrays */\n    add(v2) {\n        return math.sum(this.data, v2.array);\n    }\n\n    /* get the shaped data out as ndarray */\n    val() {\n        return core.arrange(this.shape, core.formArr(this.data));\n    }\n\n    /* reshapes the Ndarray only if for the new shape the number of elements remain same */\n    reshape(newShape) {\n        if (core.calcSize(newShape, 'shape') === this.size) {\n            this.shape = newShape;\n        } else {\n            throw new Error(\n                `Resizing error : can't change the shape from ${this.shape} to ${newShape}`\n            );\n        }\n    }\n\n    /* changes the shape and size of the Ndarray in place */\n    resize(newShape) {\n        this.shape = newShape;\n        this.size = core.calcSize(newShape, 'shape');\n        this.dim = core.findDim(this.shape, 'shape');\n        this.arrange(this.val());\n    }\n\n    arrange(elemsArr) {\n        this.data = core.formArr(core.flatten(core.arrange(this.shape, elemsArr)), this.dtype);\n    }\n\n    fill(initializer, ...args) {\n        this.data = core.formArr(core.fill([this.size], initializer, ...args), this.dtype);\n    }\n\n    clip(minVal, maxVal) {\n        this.arrange(core.clip(this.val(), minVal, maxVal));\n    }\n\n    flatten() {\n        return this.data;\n    }\n\n    transpose() {\n        return core.transpose(this.val(), this.dtype);\n    }\n\n    pad(padding) {\n        return math.pad(this.val(), padding);\n    }\n}\n\nmodule.exports = Ndarray;",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/ndarray.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "core",
+    "memberof": "lib/ndarray.js",
+    "static": true,
+    "longname": "lib/ndarray.js~core",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/ndarray.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "class",
+    "name": "Ndarray",
+    "memberof": "lib/ndarray.js",
+    "static": true,
+    "longname": "lib/ndarray.js~Ndarray",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/ndarray.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "Ndarray "
+      }
+    ],
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 34,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0",
+        "description": "The arguments destructured"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0.shape",
+        "description": "The Shape of the Ndarray to be created"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0.dtype",
+        "description": "[dtype='float32'] - The Data Type of the Ndarray data"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0.initializer",
+        "description": "The initializer to be used to fill Ndarray if \n                                     no data is provided."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0.data",
+        "description": "The data, if available, to fill the ndarray"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Rest"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Rest arguments for initializer"
+      }
+    ]
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "shape",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#shape",
+    "access": "public",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "member",
+    "name": "dtype",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#dtype",
+    "access": "public",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "member",
+    "name": "size",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#size",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "member",
+    "name": "dim",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#dim",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "data",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "array",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/ndarray.js~Ndarray.array",
+    "access": "public",
+    "description": "",
+    "lineNumber": 53,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      },
+      {
+        "tagName": "@static  Ndarray.array - form a new Ndarray for the given array \n\n",
+        "tagValue": ""
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{Ndarray.Object} - The new created Ndarray"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "The Data used to create the Ndarray"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dtype",
+        "description": "The Data type of the ndarray data"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Ndarray.Object"
+      ],
+      "spread": false,
+      "description": "The new created Ndarray"
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "zeroes",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/ndarray.js~Ndarray.zeroes",
+    "access": "public",
+    "description": "",
+    "lineNumber": 65,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      },
+      {
+        "tagName": "@static - Creates a new Ndarray filled with zeroes of specified shape\n                  Equivalent to new Ndarray({shape, initializer:'zeros'})\n\n",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "shape",
+        "description": "The Shape of ndarray to be filled with zeroes"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "add",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#add",
+    "access": "public",
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "params": [
+      {
+        "name": "v2",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "val",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#val",
+    "access": "public",
+    "description": null,
+    "lineNumber": 76,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "reshape",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#reshape",
+    "access": "public",
+    "description": null,
+    "lineNumber": 81,
+    "undocument": true,
+    "params": [
+      {
+        "name": "newShape",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "resize",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#resize",
+    "access": "public",
+    "description": null,
+    "lineNumber": 92,
+    "undocument": true,
+    "params": [
+      {
+        "name": "newShape",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "arrange",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#arrange",
+    "access": "public",
+    "description": null,
+    "lineNumber": 99,
+    "undocument": true,
+    "params": [
+      {
+        "name": "elemsArr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "fill",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#fill",
+    "access": "public",
+    "description": null,
+    "lineNumber": 103,
+    "undocument": true,
+    "params": [
+      {
+        "name": "initializer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "clip",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#clip",
+    "access": "public",
+    "description": null,
+    "lineNumber": 107,
+    "undocument": true,
+    "params": [
+      {
+        "name": "minVal",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "maxVal",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "flatten",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#flatten",
+    "access": "public",
+    "description": null,
+    "lineNumber": 111,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "method",
+    "name": "transpose",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#transpose",
+    "access": "public",
+    "description": null,
+    "lineNumber": 115,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "method",
+    "name": "pad",
+    "memberof": "lib/ndarray.js~Ndarray",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/ndarray.js~Ndarray#pad",
+    "access": "public",
+    "description": null,
+    "lineNumber": 119,
+    "undocument": true,
+    "params": [
+      {
+        "name": "padding",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "lib/transpose.js",
+    "content": "\"use strict\";\n\n/* function to find the transpose */\nmodule.exports = function transpose(arr, dtype = 'float32') {\n    const { calcShape, flatten, formArr, arrange } = require('./core');\n    let flatArr = flatten(arr),\n        s = calcShape(arr),\n        t = formArr(flatArr, dtype),\n        r = s.length > 1 ? s[0] : 1,\n        c = s.length > 1 ? s[1] : s[0],\n        k = 0,\n        b = [];\n    for (let i = 0; i < c; i++) {\n        for (let j = i; j < t.length; j += c) {\n            b[k++] = t[j];\n        }\n    }\n    return arrange([c, r], b);\n}\n",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/lib/transpose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "lib/transpose.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/transpose.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "vecto/lib/transpose.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "arr",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "dtype",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": "float32",
+        "defaultValue": "float32"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
   },
   {
     "kind": "index",
@@ -573,10 +2170,376 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"vecto\",\n  \"jest\": {\n    \"collectCoverage\": true,\n    \"coverageReporters\": [\n      \"lcov\",\n      \"text-summary\"\n    ],\n    \"coverageDirectory\": \"./coverage\"\n  },\n  \"version\": \"0.7.6\",\n  \"description\": \"A JS mini library to deal with ndarrays and vectors\",\n  \"main\": \"vecto.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"build\": \"webpack\",\n    \"coverage\": \"cat ./coverage/lcov.info | ./node_modules/.bin/coveralls\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/abtexp/vecto.git\"\n  },\n  \"keywords\": [\n    \"ndarray\",\n    \"vectors\"\n  ],\n  \"author\": \"abtExp <atworkstudios@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/abtexp/vecto/issues\"\n  },\n  \"homepage\": \"https://abtexp.github.io/vecto\",\n  \"devDependencies\": {\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-preset-es2015\": \"^6.24.1\",\n    \"benchmark\": \"^2.1.4\",\n    \"coveralls\": \"^2.13.1\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"gpu.js\": \"0.0.0\",\n    \"istanbul\": \"^0.4.5\",\n    \"jest\": \"^20.0.4\",\n    \"lodash\": \"^4.17.4\",\n    \"uglify-js\": \"^3.1.0\",\n    \"uglifyjs-webpack-plugin\": \"^0.4.6\",\n    \"webpack\": \"^3.5.5\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"vecto\",\n  \"jest\": {\n    \"collectCoverage\": true,\n    \"coverageReporters\": [\n      \"lcov\",\n      \"text-summary\"\n    ],\n    \"coverageDirectory\": \"./coverage\"\n  },\n  \"version\": \"0.7.8\",\n  \"description\": \"A JS mini library to deal with ndarrays and vectors\",\n  \"main\": \"vecto.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"build\": \"webpack\",\n    \"coverage\": \"cat ./coverage/lcov.info | ./node_modules/.bin/coveralls\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/abtexp/vecto.git\"\n  },\n  \"keywords\": [\n    \"ndarray\",\n    \"vectors\"\n  ],\n  \"author\": \"abtExp <atworkstudios@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/abtexp/vecto/issues\"\n  },\n  \"homepage\": \"https://abtexp.github.io/vecto\",\n  \"devDependencies\": {\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-preset-es2015\": \"^6.24.1\",\n    \"benchmark\": \"^2.1.4\",\n    \"coveralls\": \"^2.13.1\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"gpu.js\": \"0.0.0\",\n    \"istanbul\": \"^0.4.5\",\n    \"jest\": \"^20.0.4\",\n    \"lodash\": \"^4.17.4\",\n    \"uglify-js\": \"^3.1.0\",\n    \"uglifyjs-webpack-plugin\": \"^0.4.6\",\n    \"webpack\": \"^3.5.5\"\n  }\n}\n",
     "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": true,
+    "content": "[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18afea85bbb2469095c6df35638f5626)](https://www.codacy.com/app/atworkstudios/vecto?utm_source=github.com&utm_medium=referral&utm_content=abtExp/vecto&utm_campaign=badger)\n[![Code Climate](https://codeclimate.com/github/abtExp/vecto/badges/gpa.svg)](https://codeclimate.com/github/abtExp/vecto)  [![Build Status](https://travis-ci.org/abtExp/vecto.svg?branch=master)](https://travis-ci.org/abtExp/vecto)  [![npm](https://badge.fury.io/js/vecto.svg)](https://badge.fury.io/js/vecto)\n[![Coverage Status](https://coveralls.io/repos/github/abtExp/vecto/badge.svg?branch=master)](https://coveralls.io/github/abtExp/vecto?branch=master)\n[![codecov](https://codecov.io/gh/abtExp/vecto/branch/master/graph/badge.svg)](https://codecov.io/gh/abtExp/vecto)\n\n# vecto :construction: :sparkles: :art:\n# @0.7.1\n# A JavaScript Mini Library to deal with N-dimensional arrays.\n\n\n## <b> What's new </b>\n\n* ndarray -> Ndarray\n* <a href='#fill'>fill</a> method\n* <a href='#max'>max</a> & <a href='#min'>min</a> methods\n* <a href='#divide'>divide</a>, <a href='#exp'>exp</a>,<a href='#log'>log</a>,<a href='#pow'>pow</a> & <a href='#sqrt'>sqrt</a> in math\n\n## <b>Upcoming</b>\n* Choose function\n\n<br />\n<br />\n<br />\n<br />\n\n## Installation\n\n```shell\nnpm install vecto\n```\n\n### API \n\n```js\n// for whole pkg\nconst vecto = require('vecto');\n\n//selective \nconst { Ndarray, core, math } = require('vecto');\n```\n\n\n### Api List : \n* ##### <a href='#Ndarray'>Ndarray</a>\n* ##### <a href='#core'>core</a>\n* ##### <a href='#math'>math</a>\n\n\n\nThe Ndarray provides a class to construct ndarrays and operate on them.\n\n\n### <p id='Ndarray'>Ndarray</a>\n##### Constructor\n\n```js\nlet v1 = new Ndarray(?[shape], ?'dtype', ?'initializer', ?[array]);\n```\n\n* Shape : [Number] , Shape is the structure of the array, ex., shape of [2,3] means a 2x3 matrix having 2 array elements that have 3 elements each.\n\n* dtype : 'String', The data type for the elements of the array\n          Options : {\n              'uint8','uint16','uint32','int8','int16','int32','float32','float64','uint8clamped'\n          }\n\n* initializer : 'String', The initializer to initialize the data for the Ndarray\n                Options : {\n                    'zeros','linear','gaussian'\n                }\n\n* Array : [[Number]], The Array that you want to create ndarray with.(if any).\n\n##### Other Methods For creation \n\n* <b>Ndarray.array(array)</b>\n\n/** Ndarray.array : This Constructs an ndarray object for passed in array.\n **\n ** @array : [[Number]]\n **\n ** Returns : { NdarrayObject }\n **\n **/\n\nex : \n```js \nlet v = Ndarray.array([[1,2,3],[4,5,6]]);\n```\n\n\n* <b>Ndarray.zeroes(shape)</b>\n\n/** Ndarray.zeros : Constructs an ndarray object of given shape filled with placeholder 0's.\n ** \n ** @shape : [Number], the shape of the ndarray\n **\n ** Returns : { NdarrayObject }\n **\n **/\n\nex : \n```js\nlet zv = Ndarray.zeroes([2,2,3]);\n```\n\n### Ndarray properties and methods\n\n#####  Properties\n\n* this.shape : [Number], It defines the structure of the ndarray.\n\n* this.array :  [[Number]], Data of the ndarray.\n\n* this.size : int, The total number of elements in the ndarray.\n\n* this.dim : int, The Dimensions of the ndarray ( number of dimensions ).\n\n* this.dtype : 'String', The Data type of the elements of the array, currently only numbers are supported.\n\n* this.flat : TypedArrayObject, 1-D version of the ndarray, stored as typed arrays, Faster operations can be performed on this.\n\n\n##### Methods\n\n* <b> NdarrayObject.resize([new_shape]) </b>\n\nThis Method is used to alter the shape of an already existing ndarray, The new shape in form of array is provided and the current ndarray object is rearranged according to this new shape.\n\nex :\n\n```js\nlet nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],'float32');\n// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];\nnv.resize([2,3]);\n//nv.array = [[5,5,5],[5,5,5]]\n```\n\n* <b> NdarrayObject.reshape([new_shape]) </b>\n\nThis method is used to rearrange an already existing ndarray object, The new shape in form of array is provided and the current ndarray object is rearranged only if the size for the new shape === the size for the old shape , i.e., the total number of elements in both configurations remain the same.\n\nex :\n\n```js\nlet nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],'float32');\n// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];\nnv.reshape([2,3]); // not possible\nnv.reshape([6,2]);\n//nv.array = [[5,5],[5,5],[5,5],[5,5],[5,5],[5,5]]\n```\n\n* <b> *NdarrayObject.flatten() </b>\n\nCreates 1-D form of the ndarray. * = called implicitly (don't need to call explicitly).\n\n\n* <b> NdarrayObject.arrange([array]) </b>\n\nArranges The passed in 1-d array according to the shape of the NdarrayObject\n\nex : \n\n```js\nlet nv = new ndarray([2,3]);\nnv.arrange([2]);\n//nv.array = [[2,2,2],[2,2,2]]\nnv.arrange([1,2]);\n//nv.array = [[1,2,1],[2,1,2]]\nnv.arrange([1,2,3,4,5,6,7]);\n//nv.array = [[1,2,3],[4,5,6]]\n```\n\n* <b> NdarrayObject.transpose() </b>\n\nPerforms transpose operation on 2d ndarrays (nd not supported yet) and returns the transposed array.<br />\n: return type = array.\n\nex : \n\n```js\nlet nv = new ndarray([2,3]);\nnv.arrange([1,2,3,4,5,6]);\n//nv.array = [[1,2,3],[4,5,6]]\nconsole.log(nv.transpose())\n//[[1,4],[2,5],[3,6]]\n```\n\n* <b>NdarrayObject.fill()</b>\nfill the Ndarray according to a distribution\nex : \n```js\nlet nd = new Ndarray([2,3]);\nnd.fill('gaussian',0,1);\n//      initializer,mean,stdDev\nnd.fill('linear',2);\n// fills the array with 2s;\nnd.fill('linear',2,5);\n// provided a range [min-max], fills with steps of 1 or min;\nnd.fill('linear',2,25,2);\n// fills in the range of 2 and 25 with steps of 2;\nnd.fill('zeros');\n// fills with zeros;\n```\n\n### <p id='math'>math</p>\n\nProvides The Following functions :\n* math.divide(arg1,arg2)\n* math.exp(arg1)\n* math.log(arg1)\n* math.max(arg1,arg2,axis)\n* math.min(arg1,arg2,axis)\n* math.pow(arg1,pow)\n* math.product(arg1,arg2,mode)\n* math.sum(arg1,?arg2)\n\n// Most of them are just wrappers around the normal Math class methods\n<br />\n* ##### math.product\n\n```js\nproduct([arg1],[arg2],mode='string');\n```\n<b> return type : array</b>\n\n<b> Modes : </b>\n* <b>dot</b> : Performs hadmard product or elementwise product on the arrays.\n* <b>matrix</b> : Performs matrix multiplication\n\n\nex : \n\n```js\nb = [[10,20,30],[10,10,10]]\n\nconsole.log(product(a,b,'dot'));\n// [[10,40,90],[40,50,60]]\n**************************\n\nlet a = [[1,2,3],[4,5,6],[2,4,6]],\nb = [2,4,5];\nconsole.log(product(a,b,'dot'));\n//[[2,4,6],[16,20,24],[10,20,30]]\nconsole.log(product(a,b,'matrix'));\n//[ [ 2, 4, 6 ], [ 16, 20, 24 ], [ 35, 40, 45 ] ]\n**************************\n\nlet a = [1,2,3],\nb = [1,2,3];\nconsole.log(product(a,b,'dot'));\n//[1,4,9]\n\n**************************\n```\n\n* ##### math.sum\n\nPerforms addition on two ndarrays.\n\n\n### <p id='core'>Core</p>\n\nThe core object exports all the methods to normal arrays instead of just ndarray objects.\n\nMethods provided by the core are : \n\n* ##### core.arrange([shape],[array])\n\nTakes in the shape of the ndarray in which the passed elements are to be arranged.\n\nex : \n```js\nlet elems_arr = [1,2,3,4,5,6,7,8,9,10];\nlet nd = core.arrange([2,5],elems_arr);\n//nd = [[1,2,3,4,5],[6,7,8,9,10]]\n```\n\n* ##### core.calc_shape([array])\n\nTakes in an array and outputs the shape(configuration) of that array.\n\nex :\n```js\nlet ar = [[[1,2],[4,5]],[[2,3],[6,7]],[[7,8],[9,1]]],\nshape = core.calc_shape(ar);\n//shape = [3,2,2];\n```\n\n\n* ##### core.calc_size([array])\n\nTakes in a array and calculates the size of the ndarray.\n\nex :\n```js\nlet shape = [4,5];\nconsole.log(core.calc_size(shape));\n//20\n```\n\n* ##### clip([array],min_val/[min_val],max_val/[max_val])\n\nMakes the array elements contained in a limit provided as \nmin_val and max_val.\n\n[array] : the array to be clipped.\nmin_val/[min_val] : the minimum limit for the data in the array.\nif provided as array, it's shape should match the shape of the provided array, with every element of the [min_val]describing the min val for the respective element of the provided array. \n\nmax_val/[max_val] : the maximum limit for the data in the array.\nif provided as array, it's shape should match the shape of the provided array, with every element of the [max_val]describing the max val for the respective element of the provided array. \n\n( ^ = only one of min_val or max_val could be null.)\n\nexample : \n```js\n\nlet a = [[10,24,12,3],[7,1,20,9]];\nclip(a,10,12);\n// returns [[10,12,12,10],[10,10,12,10]]\n\nclip(a,[[10,12,14,4],[8,0,10,10]],[[12,20,20,31],[10,1,10,10]]);\n//returns [ [ 10, 20, 14, 4 ], [ 8, 1, 10, 10 ] ]\n\nclip(a,[[10,12,14,4],[8,0,10,10]],2);\n//returns [ [ 2, 2, 14, 4 ], [ 8, 1, 2, 10 ] ]\n```\n\n* ##### core.find_dim([array])\n\nReturn the dimension of the array\n\n\n* ##### core.flatten([array])\n\nTakes in an ndarray.\nReturn the flattened version(1d) version of ndarray.\n\nexample : \n```js\n\nlet a = [[[1,2],[3,4]],[[5,6],[7,8]]];\ncore.flatten(a);\n//returns [1,2,3,4,5,6,7,8];\n\n```\n\n* ##### core.form_chunks(size,number,[array])\n\nsize : The Size of a chunk.\nnumber : the number of chunks to be formed\narray : The array from which the chunks will be formed.\n\nex :\n```js\nlet ar = [1,2,3,4,5];\nconsole.log(core.form_arr(2,2,ar));\n//[[1,2],[3,4]]\n\nlet br = [[1,2,3],[4,5,6],[7,8,9]];\nconsole.log(core.form_chunks(2,2,br));\n//[[[1,2,3],[4,5,6]],[[7,8,9],[1,2,3]]]\n```\n\n* ##### core.transpose([arr],dtype='string')\n\nPerforms transpose operation on passed array.\n\n\n<a href='https://github.com/abtExp'>@abtExp</a>\n\n",
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/README.md",
+    "name": "./README.md",
+    "content": "[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18afea85bbb2469095c6df35638f5626)](https://www.codacy.com/app/atworkstudios/vecto?utm_source=github.com&utm_medium=referral&utm_content=abtExp/vecto&utm_campaign=badger)\n[![Code Climate](https://codeclimate.com/github/abtExp/vecto/badges/gpa.svg)](https://codeclimate.com/github/abtExp/vecto)  [![Build Status](https://travis-ci.org/abtExp/vecto.svg?branch=master)](https://travis-ci.org/abtExp/vecto)  [![npm](https://badge.fury.io/js/vecto.svg)](https://badge.fury.io/js/vecto)\n[![Coverage Status](https://coveralls.io/repos/github/abtExp/vecto/badge.svg?branch=master)](https://coveralls.io/github/abtExp/vecto?branch=master)\n[![codecov](https://codecov.io/gh/abtExp/vecto/branch/master/graph/badge.svg)](https://codecov.io/gh/abtExp/vecto)\n\n# vecto :construction: :sparkles: :art:\n# @0.7.1\n# A JavaScript Mini Library to deal with N-dimensional arrays.\n\n\n## <b> What's new </b>\n\n* ndarray -> Ndarray\n* <a href='#fill'>fill</a> method\n* <a href='#max'>max</a> & <a href='#min'>min</a> methods\n* <a href='#divide'>divide</a>, <a href='#exp'>exp</a>,<a href='#log'>log</a>,<a href='#pow'>pow</a> & <a href='#sqrt'>sqrt</a> in math\n\n## <b>Upcoming</b>\n* Choose function\n\n<br />\n<br />\n<br />\n<br />\n\n## Installation\n\n```shell\nnpm install vecto\n```\n\n### API \n\n```js\n// for whole pkg\nconst vecto = require('vecto');\n\n//selective \nconst { Ndarray, core, math } = require('vecto');\n```\n\n\n### Api List : \n* ##### <a href='#Ndarray'>Ndarray</a>\n* ##### <a href='#core'>core</a>\n* ##### <a href='#math'>math</a>\n\n\n\nThe Ndarray provides a class to construct ndarrays and operate on them.\n\n\n### <p id='Ndarray'>Ndarray</a>\n##### Constructor\n\n```js\nlet v1 = new Ndarray(?[shape], ?'dtype', ?'initializer', ?[array]);\n```\n\n* Shape : [Number] , Shape is the structure of the array, ex., shape of [2,3] means a 2x3 matrix having 2 array elements that have 3 elements each.\n\n* dtype : 'String', The data type for the elements of the array\n          Options : {\n              'uint8','uint16','uint32','int8','int16','int32','float32','float64','uint8clamped'\n          }\n\n* initializer : 'String', The initializer to initialize the data for the Ndarray\n                Options : {\n                    'zeros','linear','gaussian'\n                }\n\n* Array : [[Number]], The Array that you want to create ndarray with.(if any).\n\n##### Other Methods For creation \n\n* <b>Ndarray.array(array)</b>\n\n/** Ndarray.array : This Constructs an ndarray object for passed in array.\n **\n ** @array : [[Number]]\n **\n ** Returns : { NdarrayObject }\n **\n **/\n\nex : \n```js \nlet v = Ndarray.array([[1,2,3],[4,5,6]]);\n```\n\n\n* <b>Ndarray.zeroes(shape)</b>\n\n/** Ndarray.zeros : Constructs an ndarray object of given shape filled with placeholder 0's.\n ** \n ** @shape : [Number], the shape of the ndarray\n **\n ** Returns : { NdarrayObject }\n **\n **/\n\nex : \n```js\nlet zv = Ndarray.zeroes([2,2,3]);\n```\n\n### Ndarray properties and methods\n\n#####  Properties\n\n* this.shape : [Number], It defines the structure of the ndarray.\n\n* this.array :  [[Number]], Data of the ndarray.\n\n* this.size : int, The total number of elements in the ndarray.\n\n* this.dim : int, The Dimensions of the ndarray ( number of dimensions ).\n\n* this.dtype : 'String', The Data type of the elements of the array, currently only numbers are supported.\n\n* this.flat : TypedArrayObject, 1-D version of the ndarray, stored as typed arrays, Faster operations can be performed on this.\n\n\n##### Methods\n\n* <b> NdarrayObject.resize([new_shape]) </b>\n\nThis Method is used to alter the shape of an already existing ndarray, The new shape in form of array is provided and the current ndarray object is rearranged according to this new shape.\n\nex :\n\n```js\nlet nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],'float32');\n// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];\nnv.resize([2,3]);\n//nv.array = [[5,5,5],[5,5,5]]\n```\n\n* <b> NdarrayObject.reshape([new_shape]) </b>\n\nThis method is used to rearrange an already existing ndarray object, The new shape in form of array is provided and the current ndarray object is rearranged only if the size for the new shape === the size for the old shape , i.e., the total number of elements in both configurations remain the same.\n\nex :\n\n```js\nlet nv = new ndarray([2,2,3],[[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]],'float32');\n// nv.array = [[[5,5,5],[5,5,5]],[[5,5,5],[5,5,5]]];\nnv.reshape([2,3]); // not possible\nnv.reshape([6,2]);\n//nv.array = [[5,5],[5,5],[5,5],[5,5],[5,5],[5,5]]\n```\n\n* <b> *NdarrayObject.flatten() </b>\n\nCreates 1-D form of the ndarray. * = called implicitly (don't need to call explicitly).\n\n\n* <b> NdarrayObject.arrange([array]) </b>\n\nArranges The passed in 1-d array according to the shape of the NdarrayObject\n\nex : \n\n```js\nlet nv = new ndarray([2,3]);\nnv.arrange([2]);\n//nv.array = [[2,2,2],[2,2,2]]\nnv.arrange([1,2]);\n//nv.array = [[1,2,1],[2,1,2]]\nnv.arrange([1,2,3,4,5,6,7]);\n//nv.array = [[1,2,3],[4,5,6]]\n```\n\n* <b> NdarrayObject.transpose() </b>\n\nPerforms transpose operation on 2d ndarrays (nd not supported yet) and returns the transposed array.<br />\n: return type = array.\n\nex : \n\n```js\nlet nv = new ndarray([2,3]);\nnv.arrange([1,2,3,4,5,6]);\n//nv.array = [[1,2,3],[4,5,6]]\nconsole.log(nv.transpose())\n//[[1,4],[2,5],[3,6]]\n```\n\n* <b>NdarrayObject.fill()</b>\nfill the Ndarray according to a distribution\nex : \n```js\nlet nd = new Ndarray([2,3]);\nnd.fill('gaussian',0,1);\n//      initializer,mean,stdDev\nnd.fill('linear',2);\n// fills the array with 2s;\nnd.fill('linear',2,5);\n// provided a range [min-max], fills with steps of 1 or min;\nnd.fill('linear',2,25,2);\n// fills in the range of 2 and 25 with steps of 2;\nnd.fill('zeros');\n// fills with zeros;\n```\n\n### <p id='math'>math</p>\n\nProvides The Following functions :\n* math.divide(arg1,arg2)\n* math.exp(arg1)\n* math.log(arg1)\n* math.max(arg1,arg2,axis)\n* math.min(arg1,arg2,axis)\n* math.pow(arg1,pow)\n* math.product(arg1,arg2,mode)\n* math.sum(arg1,?arg2)\n\n// Most of them are just wrappers around the normal Math class methods\n<br />\n* ##### math.product\n\n```js\nproduct([arg1],[arg2],mode='string');\n```\n<b> return type : array</b>\n\n<b> Modes : </b>\n* <b>dot</b> : Performs hadmard product or elementwise product on the arrays.\n* <b>matrix</b> : Performs matrix multiplication\n\n\nex : \n\n```js\nb = [[10,20,30],[10,10,10]]\n\nconsole.log(product(a,b,'dot'));\n// [[10,40,90],[40,50,60]]\n**************************\n\nlet a = [[1,2,3],[4,5,6],[2,4,6]],\nb = [2,4,5];\nconsole.log(product(a,b,'dot'));\n//[[2,4,6],[16,20,24],[10,20,30]]\nconsole.log(product(a,b,'matrix'));\n//[ [ 2, 4, 6 ], [ 16, 20, 24 ], [ 35, 40, 45 ] ]\n**************************\n\nlet a = [1,2,3],\nb = [1,2,3];\nconsole.log(product(a,b,'dot'));\n//[1,4,9]\n\n**************************\n```\n\n* ##### math.sum\n\nPerforms addition on two ndarrays.\n\n\n### <p id='core'>Core</p>\n\nThe core object exports all the methods to normal arrays instead of just ndarray objects.\n\nMethods provided by the core are : \n\n* ##### core.arrange([shape],[array])\n\nTakes in the shape of the ndarray in which the passed elements are to be arranged.\n\nex : \n```js\nlet elems_arr = [1,2,3,4,5,6,7,8,9,10];\nlet nd = core.arrange([2,5],elems_arr);\n//nd = [[1,2,3,4,5],[6,7,8,9,10]]\n```\n\n* ##### core.calc_shape([array])\n\nTakes in an array and outputs the shape(configuration) of that array.\n\nex :\n```js\nlet ar = [[[1,2],[4,5]],[[2,3],[6,7]],[[7,8],[9,1]]],\nshape = core.calc_shape(ar);\n//shape = [3,2,2];\n```\n\n\n* ##### core.calc_size([array])\n\nTakes in a array and calculates the size of the ndarray.\n\nex :\n```js\nlet shape = [4,5];\nconsole.log(core.calc_size(shape));\n//20\n```\n\n* ##### clip([array],min_val/[min_val],max_val/[max_val])\n\nMakes the array elements contained in a limit provided as \nmin_val and max_val.\n\n[array] : the array to be clipped.\nmin_val/[min_val] : the minimum limit for the data in the array.\nif provided as array, it's shape should match the shape of the provided array, with every element of the [min_val]describing the min val for the respective element of the provided array. \n\nmax_val/[max_val] : the maximum limit for the data in the array.\nif provided as array, it's shape should match the shape of the provided array, with every element of the [max_val]describing the max val for the respective element of the provided array. \n\n( ^ = only one of min_val or max_val could be null.)\n\nexample : \n```js\n\nlet a = [[10,24,12,3],[7,1,20,9]];\nclip(a,10,12);\n// returns [[10,12,12,10],[10,10,12,10]]\n\nclip(a,[[10,12,14,4],[8,0,10,10]],[[12,20,20,31],[10,1,10,10]]);\n//returns [ [ 10, 20, 14, 4 ], [ 8, 1, 10, 10 ] ]\n\nclip(a,[[10,12,14,4],[8,0,10,10]],2);\n//returns [ [ 2, 2, 14, 4 ], [ 8, 1, 2, 10 ] ]\n```\n\n* ##### core.find_dim([array])\n\nReturn the dimension of the array\n\n\n* ##### core.flatten([array])\n\nTakes in an ndarray.\nReturn the flattened version(1d) version of ndarray.\n\nexample : \n```js\n\nlet a = [[[1,2],[3,4]],[[5,6],[7,8]]];\ncore.flatten(a);\n//returns [1,2,3,4,5,6,7,8];\n\n```\n\n* ##### core.form_chunks(size,number,[array])\n\nsize : The Size of a chunk.\nnumber : the number of chunks to be formed\narray : The array from which the chunks will be formed.\n\nex :\n```js\nlet ar = [1,2,3,4,5];\nconsole.log(core.form_arr(2,2,ar));\n//[[1,2],[3,4]]\n\nlet br = [[1,2,3],[4,5,6],[7,8,9]];\nconsole.log(core.form_chunks(2,2,br));\n//[[[1,2,3],[4,5,6]],[[7,8,9],[1,2,3]]]\n```\n\n* ##### core.transpose([arr],dtype='string')\n\nPerforms transpose operation on passed array.\n\n\n<a href='https://github.com/abtExp'>@abtExp</a>\n\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 112,
+    "kind": "testFile",
+    "name": "test/vecto.test.js",
+    "content": "const { Ndarray, core, math } = require('./vecto');\n\nfunction regMatMul(s1, s2, ar1, ar2) {\n    let c = [];\n    for (let i = 0; i < s1[0]; i++) {\n        let ar = [];\n        for (let j = 0; j < s2[1]; j++) {\n            ar.push(0);\n        }\n        c.push(ar);\n    }\n\n    for (let i = 0; i < s1[0]; i++) {\n        for (let j = 0; j < s2[1]; j++) {\n            for (let k = 0; k < s2[0]; k++) {\n                c[i][j] += ar1[i][k] * ar2[k][j];\n            }\n        }\n    }\n\n    return c;\n}\n\n// Ndarray tests\ntest('Ndarray construction method:1 (constructor)', () => {\n    let n1 = new Ndarray({ shape: [2, 3], dtype: 'float32', initializer: 'zeros' });\n    expect(n1).toBeInstanceOf(Ndarray) &&\n        expect(n1).toEqual({\n            shape: [2, 3],\n            size: 6,\n            dim: 2,\n            dtype: 'float32',\n            data: Float32Array[0, 0, 0, 0, 0, 0]\n        })\n});\n\ntest('Ndarray construction method:2 (zeroes)', () => {\n    let n1 = Ndarray.zeroes([2, 3]);\n    expect(n1).toBeInstanceOf(Ndarray) &&\n        expect(n1).toEqual({\n            shape: [2, 3],\n            size: 6,\n            dim: 2,\n            dtype: 'uint8',\n            data: Uint8Array\n        });\n})\n\ntest('Ndarray construction method:3 (array)', () => {\n    let n1 = Ndarray.array([\n        [\n            [1, 2, 3],\n            [4, 5, 6]\n        ],\n        [\n            [7, 8, 9],\n            [10, 11, 12]\n        ]\n    ]);\n\n    expect(n1).toBeInstanceOf(Ndarray) &&\n        expect(n1).toEqual({\n            shape: [2, 2, 3],\n            size: 12,\n            dim: 3,\n            dtype: 'uint8',\n            data: Uint8Array\n        })\n\n})\n\ntest('NdarrayObject.arrange method', () => {\n    let n1 = Ndarray.zeroes([2, 3]);\n    n1.arrange([2]);\n    expect(n1.val()).toEqual([\n        [2, 2, 2],\n        [2, 2, 2]\n    ]);\n})\n\ntest('NdarrayObject.resize method', () => {\n    let n1 = new Ndarray({ shape: [2, 3, 4] });\n    n1.arrange([1]);\n    let oldval = n1.val();\n    n1.resize([4, 4]);\n    let newval = n1.val();\n    console.log(oldval);\n    console.log(newval);\n    expect(core.calcShape(newval)).toEqual([4, 4]) &&\n        expect(core.calcShape(oldval)).toEqual([2, 3, 4]);\n})\n\ntest('NdarrayObject.reshape method', () => {\n    let n1 = new Ndarray({ shape: [2, 3, 4] });\n    n1.arrange([2]);\n    let oldval = n1.val();\n    n1.reshape([4, 6]);\n    let newval = n1.val();\n\n    expect(oldval).toEqual([\n            [\n                [2, 2, 2, 2],\n                [2, 2, 2, 2],\n                [2, 2, 2, 2]\n            ],\n            [\n                [2, 2, 2, 2],\n                [2, 2, 2, 2],\n                [2, 2, 2, 2]\n            ]\n        ]) &&\n        expect(newval).toEqual([\n            [2, 2, 2, 2, 2, 2],\n            [2, 2, 2, 2, 2, 2],\n            [2, 2, 2, 2, 2, 2],\n            [2, 2, 2, 2, 2, 2]\n        ]);\n})\n\n\ntest('NdarrayObject.clip method', () => {\n    let n1 = new Ndarray({ shape: [2, 3] });\n    n1.arrange([12, 31, 11, 24, 2, 20]);\n    expect(n1.val()).toEqual([\n        [12, 31, 11],\n        [24, 2, 20]\n    ]);\n    n1.clip(10, 20);\n    expect(n1.val()).toEqual([\n        [12, 20, 11],\n        [20, 10, 20]\n    ]);\n})\n\n\ntest('NdarrayObject.flatten method', () => {\n    let n1 = new Ndarray({ shape: [2, 3, 4] });\n    n1.arrange([2]);\n    expect(n1.data.toString()).toEqual([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].toString());\n})\n\ntest('NdarrayObject.transpose method', () => {\n    let n1 = new Ndarray({ shape: [2, 3] });\n    n1.arrange([1, 2, 3, 4, 5, 6])\n    let nt = n1.transpose();\n    expect(nt).toEqual([\n        [1, 4],\n        [2, 5],\n        [3, 6]\n    ]);\n})\n\n\n//core tests\ntest('core.arrange', () => {\n    let a = core.arrange([2, 3], [2]);\n    expect(a).toEqual([\n        [2, 2, 2],\n        [2, 2, 2]\n    ]);\n})\n\ntest('core.calcShape', () => {\n    let a = [\n        [\n            [1, 2],\n            [3, 4]\n        ],\n        [\n            [5, 6],\n            [7, 8]\n        ]\n    ];\n    expect(core.calcShape(a)).toEqual([2, 2, 2]);\n})\n\ntest('core.calcSize', () => {\n    let a = [\n        [1, 2, 3],\n        [4, 5, 6]\n    ];\n    expect(core.calcSize(a)).toBe(6);\n})\n\ntest('core.clip', () => {\n    let a = [\n        [12, 20, 10, 2],\n        [4, 7, 10, 11]\n    ];\n    expect(core.clip(a, 10, 20)).toEqual([\n            [12, 20, 10, 10],\n            [10, 10, 10, 11]\n        ]) &&\n        expect(core.clip(a, [\n            [14, 18, 12, 4],\n            [5, 10, 10, 10]\n        ], 20)).toEqual([\n            [14, 20, 12, 4],\n            [5, 10, 10, 11]\n        ]) &&\n        expect(core.clip(a, [\n            [14, 18, 12, 4],\n            [5, 10, 10, 10]\n        ], [\n            [18, 19, 12, 5],\n            [6, 11, 11, 11]\n        ])).toEqual([\n            [14, 19, 12, 4],\n            [5, 10, 10, 11]\n        ]);\n})\n\n\ntest('core.findDim', () => {\n    let a = [\n        [\n            [1, 2, 3],\n            [4, 5, 6]\n        ],\n        [\n            [1, 2, 4],\n            [53, 12, 12]\n        ]\n    ];\n    expect(core.findDim(a)).toBe(3);\n})\n\ntest('core.flatten', () => {\n    expect(core.flatten([2, 3, 4])).toEqual([2, 3, 4]);\n    expect(core.flatten([\n        [1, 2, 3],\n        [4, 5, 6]\n    ])).toEqual([1, 2, 3, 4, 5, 6]);\n    expect(core.flatten([\n        [\n            [1, 2],\n            [3, 4]\n        ],\n        [\n            [5, 6],\n            [7, 8]\n        ]\n    ])).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);\n})\n\n\ntest('core.formChunks', () => {\n    let arr = [1, 2, 2, 4, 5235, 2, 13, 156, 623, 622, 21, 61, 6, 126];\n    let b = core.formChunks(4, 5, arr);\n    expect(b).toEqual([\n        [1, 2, 2, 4],\n        [5235, 2, 13, 156],\n        [623, 622, 21, 61],\n        [6, 126, 1, 2],\n        [2, 4, 5235, 2]\n    ]);\n})\n\ntest('core.transpose', () => {\n    let a = [\n        [12, 24, 2, 1],\n        [2, 4, 1, 5]\n    ];\n    expect(core.transpose(a)).toEqual(\n        [\n            [12, 2],\n            [24, 4],\n            [2, 1],\n            [1, 5]\n        ]\n    );\n})\n\ntest('core.fill', () => {\n    let a = core.fill([8, 1], 'linear', 1, 10);\n    expect(a).toEqual([\n        [1],\n        [2],\n        [3],\n        [4],\n        [5],\n        [6],\n        [7],\n        [8]\n    ]);\n})\n\ntest('core.formArr', () => {\n    let a = [1, 2, 4, 2366, 1241, 1, 3124, 1254, 15];\n    let b = core.formArr(a, 'uint32');\n    expect(a.constructor.name).toBe('Array') &&\n        expect(b.constructor.name).toBe('Uint32Array');\n})\n\n\n// test for product method\n\ntest('product tests', () => {\n    let shape11 = parseInt(Math.floor(Math.random() * 10)) || 1,\n        shape12 = parseInt(Math.floor(Math.random() * 10)) || 1,\n        shape21 = shape12,\n        shape22 = parseInt(Math.floor(Math.random() * 10)) || 1,\n        shape1 = [shape11, shape12],\n        shape2 = [shape21, shape22],\n        ar1 = new Ndarray({ shape: shape1, initializer: 'linear' }),\n        ar2 = new Ndarray({ shape: shape2, initializer: 'linear' }),\n        ar3 = new Ndarray({ shape: shape2, initializer: 'linear' }),\n        prearr1 = ar1.val(),\n        prearr2 = ar2.val(),\n        prearr3 = ar3.val();\n    console.log(shape1, shape2);\n    expect(math.product(prearr1, prearr2, 'dot')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));\n})\n\ntest('sum test', () => {\n    let a = [\n            [1, 2, 4],\n            [5, 6, 7]\n        ],\n        b = [\n            [2, 4, 5],\n            [6, 2, 1]\n        ];\n\n    expect(math.sum(a, b)).toEqual([\n            [3, 6, 9],\n            [11, 8, 8]\n        ]) &&\n        expect(math.sum(a)).toEqual([7, 18]);\n})\n\ntest('log test', () => {\n    let a = [\n        [1, 2, 3],\n        [4, 5, 6]\n    ];\n    expect(math.log(a)[0][0]).toEqual(Math.log(a[0][0]));\n})\n\ntest('exp test', () => {\n    let a = [\n        [1, 2, 3],\n        [4, 5, 6]\n    ];\n    let b = Math.exp(a[0][0]);\n    expect(math.exp(a)[0][0]).toBe(b);\n})\n\ntest('divide test', () => {\n    let a = new Ndarray({ shape: [2, 3], initializer: 'linear' });\n    let b = new Ndarray({ shape: [2, 3], initializer: 'linear' });\n\n    let c = math.divide(a.val(), b.val());\n    let d = [];\n    a = Array.from(a.data);\n    b = Array.from(b.data);\n\n    for (let i = 0; i < a.length; i++) {\n        d[i] = (a[i] / b[i]);\n    }\n\n    expect(core.flatten(c)).toEqual(d);\n})\n\ntest('formArr', () => {\n    let arr = [1, 2, 3];\n    let a = core.formArr(arr, 'uint8');\n    let b = core.formArr(arr, 'uint16');\n    let c = core.formArr(arr, 'uint32');\n    let d = core.formArr(arr, 'int8');\n    let e = core.formArr(arr, 'int16');\n    let f = core.formArr(arr, 'int32');\n    let g = core.formArr(arr, 'float32');\n    let h = core.formArr(arr, 'float64');\n    let i = core.formArr(arr, 'uint8clamped');\n\n\n    expect(a.constructor.name).toBe('Uint8Array') &&\n        expect(b.constructor.name).toBe('Uint16Array') &&\n        expect(c.constructor.name).toBe('Uint32Array') &&\n        expect(d.constructor.name).toBe('Int8Array') &&\n        expect(e.constructor.name).toBe('Int16Array') &&\n        expect(f.constructor.name).toBe('Int32Array') &&\n        expect(g.constructor.name).toBe('Float32Array') &&\n        expect(h.constructor.name).toBe('Float64Array') &&\n        expect(i.constructor.name).toBe('Uint8ClampedArray');\n})\n\ntest('pad test', () => {\n    // const a =   \n})",
+    "static": true,
+    "longname": "/home/abtexp/Desktop/devWorks/mlDevSuite/vecto/test/vecto.test.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "test",
+    "name": "test0",
+    "testId": 0,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test0",
+    "access": null,
+    "description": "Ndarray construction method:1 (constructor)",
+    "lineNumber": 25
+  },
+  {
+    "__docId__": 114,
+    "kind": "test",
+    "name": "test1",
+    "testId": 1,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test1",
+    "access": null,
+    "description": "Ndarray construction method:2 (zeroes)",
+    "lineNumber": 37
+  },
+  {
+    "__docId__": 115,
+    "kind": "test",
+    "name": "test2",
+    "testId": 2,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test2",
+    "access": null,
+    "description": "Ndarray construction method:3 (array)",
+    "lineNumber": 49
+  },
+  {
+    "__docId__": 116,
+    "kind": "test",
+    "name": "test3",
+    "testId": 3,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test3",
+    "access": null,
+    "description": "NdarrayObject.arrange method",
+    "lineNumber": 72
+  },
+  {
+    "__docId__": 117,
+    "kind": "test",
+    "name": "test4",
+    "testId": 4,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test4",
+    "access": null,
+    "description": "NdarrayObject.resize method",
+    "lineNumber": 81
+  },
+  {
+    "__docId__": 118,
+    "kind": "test",
+    "name": "test5",
+    "testId": 5,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test5",
+    "access": null,
+    "description": "NdarrayObject.reshape method",
+    "lineNumber": 93
+  },
+  {
+    "__docId__": 119,
+    "kind": "test",
+    "name": "test6",
+    "testId": 6,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test6",
+    "access": null,
+    "description": "NdarrayObject.clip method",
+    "lineNumber": 121
+  },
+  {
+    "__docId__": 120,
+    "kind": "test",
+    "name": "test7",
+    "testId": 7,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test7",
+    "access": null,
+    "description": "NdarrayObject.flatten method",
+    "lineNumber": 136
+  },
+  {
+    "__docId__": 121,
+    "kind": "test",
+    "name": "test8",
+    "testId": 8,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test8",
+    "access": null,
+    "description": "NdarrayObject.transpose method",
+    "lineNumber": 142
+  },
+  {
+    "__docId__": 122,
+    "kind": "test",
+    "name": "test9",
+    "testId": 9,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test9",
+    "access": null,
+    "description": "core.arrange",
+    "lineNumber": 155
+  },
+  {
+    "__docId__": 123,
+    "kind": "test",
+    "name": "test10",
+    "testId": 10,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test10",
+    "access": null,
+    "description": "core.calcShape",
+    "lineNumber": 163
+  },
+  {
+    "__docId__": 124,
+    "kind": "test",
+    "name": "test11",
+    "testId": 11,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test11",
+    "access": null,
+    "description": "core.calcSize",
+    "lineNumber": 177
+  },
+  {
+    "__docId__": 125,
+    "kind": "test",
+    "name": "test12",
+    "testId": 12,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test12",
+    "access": null,
+    "description": "core.clip",
+    "lineNumber": 185
+  },
+  {
+    "__docId__": 126,
+    "kind": "test",
+    "name": "test13",
+    "testId": 13,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test13",
+    "access": null,
+    "description": "core.findDim",
+    "lineNumber": 214
+  },
+  {
+    "__docId__": 127,
+    "kind": "test",
+    "name": "test14",
+    "testId": 14,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test14",
+    "access": null,
+    "description": "core.flatten",
+    "lineNumber": 228
+  },
+  {
+    "__docId__": 128,
+    "kind": "test",
+    "name": "test15",
+    "testId": 15,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test15",
+    "access": null,
+    "description": "core.formChunks",
+    "lineNumber": 247
+  },
+  {
+    "__docId__": 129,
+    "kind": "test",
+    "name": "test16",
+    "testId": 16,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test16",
+    "access": null,
+    "description": "core.transpose",
+    "lineNumber": 259
+  },
+  {
+    "__docId__": 130,
+    "kind": "test",
+    "name": "test17",
+    "testId": 17,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test17",
+    "access": null,
+    "description": "core.fill",
+    "lineNumber": 274
+  },
+  {
+    "__docId__": 131,
+    "kind": "test",
+    "name": "test18",
+    "testId": 18,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test18",
+    "access": null,
+    "description": "core.formArr",
+    "lineNumber": 288
+  },
+  {
+    "__docId__": 132,
+    "kind": "test",
+    "name": "test19",
+    "testId": 19,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test19",
+    "access": null,
+    "description": "product tests",
+    "lineNumber": 298
+  },
+  {
+    "__docId__": 133,
+    "kind": "test",
+    "name": "test20",
+    "testId": 20,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test20",
+    "access": null,
+    "description": "sum test",
+    "lineNumber": 315
+  },
+  {
+    "__docId__": 134,
+    "kind": "test",
+    "name": "test21",
+    "testId": 21,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test21",
+    "access": null,
+    "description": "log test",
+    "lineNumber": 332
+  },
+  {
+    "__docId__": 135,
+    "kind": "test",
+    "name": "test22",
+    "testId": 22,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test22",
+    "access": null,
+    "description": "exp test",
+    "lineNumber": 340
+  },
+  {
+    "__docId__": 136,
+    "kind": "test",
+    "name": "test23",
+    "testId": 23,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test23",
+    "access": null,
+    "description": "divide test",
+    "lineNumber": 349
+  },
+  {
+    "__docId__": 137,
+    "kind": "test",
+    "name": "test24",
+    "testId": 24,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test24",
+    "access": null,
+    "description": "formArr",
+    "lineNumber": 365
+  },
+  {
+    "__docId__": 138,
+    "kind": "test",
+    "name": "test25",
+    "testId": 25,
+    "memberof": "test/vecto.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/vecto.test.js~test25",
+    "access": null,
+    "description": "pad test",
+    "lineNumber": 389
   }
 ]

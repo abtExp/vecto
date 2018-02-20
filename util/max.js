@@ -1,21 +1,34 @@
-/** max : finds the max elements amongst the passed arrays or a single array
- *        along an axis
+const { flatten, arrange, calcShape, calcSize } = require('../lib/core'),
+    axisOps = require('./axisOps');
+
+
+/* Return Shaped Outputs                             ************
+ *      _______   _____           _____     _____    ************
+ ****  |#######| /#####\          |####\   /#####\   ************
+ ****     |#|   |#|   |#|  _____  |#| |#| |#|   |#|  ************
+ ****     |#|   |#|   |#| |_____| |#|_|#| |#|   |#|  ************
+ ****     |#|    \#####/          |####/   \#####/   ************
+ ***************************************************************/
+
+/** 
  * 
- * @ar1 : [Number] , The array for finding max elems
+ * @function max : finds the max elements amongst the passed arrays or a single array
+ *                 along an axis
  * 
- * @ar2 : [Number] , The second array (?Optional)
+ * @param {Array} ar1 - The array for finding max elems
  * 
- * @axis : int , the axis along which to find the max elems
+ * @param {Array} ar2 - The second array (?Optional)
  * 
- * Returns : [Number] , the array of max elems along the given axis
+ * @param {int} axis - The axis along which to find the max elems
+ * 
+ * @returns {Array} - The array of max elems along the given axis
  * 
  */
 
-function max({ ar1, ar2 = null, axis = 0 }) {
-    const axisOps = require('./axisOps'),
-        { flatten, arrange, calcShape, calcSize } = require('../lib/core');
+module.exports = function max({ ar1, ar2 = null, axis = 0 }) {
     let maxElems = [],
         opShape = [];
+
     if (ar2 === null) {
         let shape = calcShape(ar1),
             elems = axisOps(shape, axis);
@@ -48,5 +61,3 @@ function max({ ar1, ar2 = null, axis = 0 }) {
     }
     return arrange(opShape, maxElems);
 }
-
-module.exports = max;

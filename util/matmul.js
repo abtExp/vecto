@@ -1,9 +1,11 @@
 "use strict";
+
+const formArr = require('../lib/formArr');
+
 // Broken for inner dimension = 1;
 
 // Matrix multiplication
 module.exports = (s1, s2, ar1, ar2, dtype = 'float32') => {
-    const formArr = require('../lib/formArr');
     ar1 = formArr(ar1, dtype);
     ar2 = formArr(ar2, dtype);
     let r1 = s1[0],
