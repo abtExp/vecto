@@ -1,4 +1,4 @@
-const { Ndarray, core, math } = require('./vecto');
+const { Ndarray, core, math } = require('../vecto');
 
 function regMatMul(s1, s2, ar1, ar2) {
     let c = [];
