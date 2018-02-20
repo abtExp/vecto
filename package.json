@@ -12,7 +12,7 @@
     "description": "A JS mini library to deal with ndarrays and vectors",
     "main": "vecto.js",
     "scripts": {
-        "test": "jest ./test",
+        "test": "jest",
         "build": "webpack",
         "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
     },

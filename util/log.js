@@ -1,5 +1,5 @@
 const flatten = require('../lib/flatten'),
-    arrange = require('../lib/transpose'),
+    arrange = require('../lib/arrange'),
     calcShape = require('../lib/calcShape');
 
 module.exports = function log(arr) {

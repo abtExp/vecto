@@ -1,7 +1,7 @@
 "use strict";
 
 const calcShape = require('../lib/calcShape'),
-    arrange = require('../lib/transpose'),
+    arrange = require('../lib/arrange'),
     flatten = require('../lib/flatten');
 
 function divide(arr1, arr2) {
