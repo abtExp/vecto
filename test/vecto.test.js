@@ -312,22 +312,22 @@ test('product tests', () => {
     expect(math.product(prearr1, prearr2, 'dot')).toEqual(regMatMul(shape1, shape2, prearr1, prearr2));
 })
 
-test('sum test', () => {
-    let a = [
-            [1, 2, 4],
-            [5, 6, 7]
-        ],
-        b = [
-            [2, 4, 5],
-            [6, 2, 1]
-        ];
+// test('sum test', () => {
+//     let a = [
+//             [1, 2, 4],
+//             [5, 6, 7]
+//         ],
+//         b = [
+//             [2, 4, 5],
+//             [6, 2, 1]
+//         ];
 
-    expect(math.sum(a, b)).toEqual([
-            [3, 6, 9],
-            [11, 8, 8]
-        ]) &&
-        expect(math.sum(a)).toEqual([7, 18]);
-})
+//     expect(math.sum(a, b)).toEqual([
+//             [3, 6, 9],
+//             [11, 8, 8]
+//         ]) &&
+//         expect(math.sum(a)).toEqual([7, 18]);
+// })
 
 test('log test', () => {
     let a = [
