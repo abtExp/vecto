@@ -256,12 +256,12 @@ test('core.formChunks', () => {
     ]);
 })
 
-test('core.transpose', () => {
+test('math.transpose', () => {
     let a = [
         [12, 24, 2, 1],
         [2, 4, 1, 5]
     ];
-    expect(core.transpose(a)).toEqual(
+    expect(math.transpose(a)).toEqual(
         [
             [12, 2],
             [24, 4],
