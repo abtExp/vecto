@@ -2,7 +2,7 @@
 
 /* function to find the transpose */
 module.exports = function transpose(arr, dtype = 'float32') {
-    const { calcShape, formArr, arrange, flatten } = require('./core');
+    const { calcShape, formArr, arrange, flatten } = require('../lib/core');
     let s = calcShape(arr),
         t = formArr(flatten(arr), dtype),
         r = s.length > 1 ? s[0] : 1,
