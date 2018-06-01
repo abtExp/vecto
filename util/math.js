@@ -12,8 +12,8 @@ const argmax = require('./argmax'),
     pow = require('./pow'),
     product = require('./product'),
     sqrt = require('./sqrt'),
-    sum = require('./sum');
-transpose = require('./transpose');
+    sum = require('./sum'),
+    transpose = require('./transpose');
 
 
 module.exports = {
