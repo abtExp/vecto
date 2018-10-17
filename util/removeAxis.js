@@ -5,6 +5,5 @@ module.exports = function(shape, axis) {
         if (i >= shape.length) break;
         opShape.push(shape[i]);
     }
-
     return opShape;
 }
